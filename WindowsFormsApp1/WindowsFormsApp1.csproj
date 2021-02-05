@@ -105,5 +105,8 @@
   <ItemGroup>
     <Content Include="7303672.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

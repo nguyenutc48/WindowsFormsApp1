@@ -37,10 +37,10 @@ namespace WindowsFormsApp1
             this.bannerMain = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.glassButton1 = new EnhancedGlassButton.GlassButton();
-            this.glassButton2 = new EnhancedGlassButton.GlassButton();
-            this.glassButton3 = new EnhancedGlassButton.GlassButton();
-            this.glassButton4 = new EnhancedGlassButton.GlassButton();
+            this.btnGiamSat = new EnhancedGlassButton.GlassButton();
+            this.btnCaiDat = new EnhancedGlassButton.GlassButton();
+            this.btnGiaLap = new EnhancedGlassButton.GlassButton();
+            this.btnTaiLieu = new EnhancedGlassButton.GlassButton();
             this.btnMiniApp = new EnhancedGlassButton.GlassButton();
             this.btnCloseApp = new EnhancedGlassButton.GlassButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -114,12 +114,12 @@ namespace WindowsFormsApp1
             this.gauge1.BackColor = System.Drawing.Color.Transparent;
             this.gauge1.Location = new System.Drawing.Point(9, 30);
             this.gauge1.Margin = new System.Windows.Forms.Padding(0);
-            this.gauge1.Maximum = 1200;
+            this.gauge1.Maximum = 2100;
             this.gauge1.Minimum = 0;
             this.gauge1.Name = "gauge1";
             this.gauge1.Size = new System.Drawing.Size(159, 159);
             this.gauge1.TabIndex = 0;
-            this.gauge1.Value = 0D;
+            this.gauge1.Value = 1000D;
             this.gauge1.ValueScaleFactor = new decimal(new int[] {
             1,
             0,
@@ -162,10 +162,10 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.Controls.Add(this.glassButton4, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.glassButton3, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.glassButton2, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.glassButton1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnTaiLieu, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnGiaLap, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnCaiDat, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnGiamSat, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 113);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
@@ -175,69 +175,69 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1280, 35);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // glassButton1
+            // btnGiamSat
             // 
-            this.glassButton1.BackColor = System.Drawing.Color.OrangeRed;
-            this.glassButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.glassButton1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.glassButton1.ForeColor = System.Drawing.Color.Black;
-            this.glassButton1.GlowColor = System.Drawing.Color.Lime;
-            this.glassButton1.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton1.Location = new System.Drawing.Point(5, 2);
-            this.glassButton1.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.glassButton1.Name = "glassButton1";
-            this.glassButton1.OuterBorderColor = System.Drawing.Color.DarkGreen;
-            this.glassButton1.Size = new System.Drawing.Size(310, 31);
-            this.glassButton1.TabIndex = 0;
-            this.glassButton1.Text = "GIÁM SÁT HỆ THỐNG";
+            this.btnGiamSat.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnGiamSat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGiamSat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiamSat.ForeColor = System.Drawing.Color.Black;
+            this.btnGiamSat.GlowColor = System.Drawing.Color.Lime;
+            this.btnGiamSat.InnerBorderColor = System.Drawing.Color.Transparent;
+            this.btnGiamSat.Location = new System.Drawing.Point(5, 2);
+            this.btnGiamSat.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
+            this.btnGiamSat.Name = "btnGiamSat";
+            this.btnGiamSat.OuterBorderColor = System.Drawing.Color.DarkGreen;
+            this.btnGiamSat.Size = new System.Drawing.Size(310, 31);
+            this.btnGiamSat.TabIndex = 0;
+            this.btnGiamSat.Text = "GIÁM SÁT HỆ THỐNG";
             // 
-            // glassButton2
+            // btnCaiDat
             // 
-            this.glassButton2.BackColor = System.Drawing.Color.OrangeRed;
-            this.glassButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.glassButton2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.glassButton2.ForeColor = System.Drawing.Color.Black;
-            this.glassButton2.GlowColor = System.Drawing.Color.Lime;
-            this.glassButton2.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton2.Location = new System.Drawing.Point(325, 2);
-            this.glassButton2.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.glassButton2.Name = "glassButton2";
-            this.glassButton2.OuterBorderColor = System.Drawing.Color.DarkGreen;
-            this.glassButton2.Size = new System.Drawing.Size(310, 31);
-            this.glassButton2.TabIndex = 1;
-            this.glassButton2.Text = "CÀI ĐẶT THÔNG SỐ";
+            this.btnCaiDat.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnCaiDat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCaiDat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCaiDat.ForeColor = System.Drawing.Color.Black;
+            this.btnCaiDat.GlowColor = System.Drawing.Color.Lime;
+            this.btnCaiDat.InnerBorderColor = System.Drawing.Color.Transparent;
+            this.btnCaiDat.Location = new System.Drawing.Point(325, 2);
+            this.btnCaiDat.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
+            this.btnCaiDat.Name = "btnCaiDat";
+            this.btnCaiDat.OuterBorderColor = System.Drawing.Color.DarkGreen;
+            this.btnCaiDat.Size = new System.Drawing.Size(310, 31);
+            this.btnCaiDat.TabIndex = 1;
+            this.btnCaiDat.Text = "CÀI ĐẶT THÔNG SỐ";
             // 
-            // glassButton3
+            // btnGiaLap
             // 
-            this.glassButton3.BackColor = System.Drawing.Color.OrangeRed;
-            this.glassButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.glassButton3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.glassButton3.ForeColor = System.Drawing.Color.Black;
-            this.glassButton3.GlowColor = System.Drawing.Color.Lime;
-            this.glassButton3.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton3.Location = new System.Drawing.Point(645, 2);
-            this.glassButton3.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.glassButton3.Name = "glassButton3";
-            this.glassButton3.OuterBorderColor = System.Drawing.Color.DarkGreen;
-            this.glassButton3.Size = new System.Drawing.Size(310, 31);
-            this.glassButton3.TabIndex = 2;
-            this.glassButton3.Text = "ĐƯA TÍN HIỆU GIẢ LẬP";
+            this.btnGiaLap.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnGiaLap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGiaLap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiaLap.ForeColor = System.Drawing.Color.Black;
+            this.btnGiaLap.GlowColor = System.Drawing.Color.Lime;
+            this.btnGiaLap.InnerBorderColor = System.Drawing.Color.Transparent;
+            this.btnGiaLap.Location = new System.Drawing.Point(645, 2);
+            this.btnGiaLap.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
+            this.btnGiaLap.Name = "btnGiaLap";
+            this.btnGiaLap.OuterBorderColor = System.Drawing.Color.DarkGreen;
+            this.btnGiaLap.Size = new System.Drawing.Size(310, 31);
+            this.btnGiaLap.TabIndex = 2;
+            this.btnGiaLap.Text = "ĐƯA TÍN HIỆU GIẢ LẬP";
             // 
-            // glassButton4
+            // btnTaiLieu
             // 
-            this.glassButton4.BackColor = System.Drawing.Color.OrangeRed;
-            this.glassButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.glassButton4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.glassButton4.ForeColor = System.Drawing.Color.Black;
-            this.glassButton4.GlowColor = System.Drawing.Color.Lime;
-            this.glassButton4.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.glassButton4.Location = new System.Drawing.Point(965, 2);
-            this.glassButton4.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.glassButton4.Name = "glassButton4";
-            this.glassButton4.OuterBorderColor = System.Drawing.Color.DarkGreen;
-            this.glassButton4.Size = new System.Drawing.Size(310, 31);
-            this.glassButton4.TabIndex = 3;
-            this.glassButton4.Text = "TÀI LIỆU THAM KHẢO";
+            this.btnTaiLieu.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnTaiLieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTaiLieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiLieu.ForeColor = System.Drawing.Color.Black;
+            this.btnTaiLieu.GlowColor = System.Drawing.Color.Lime;
+            this.btnTaiLieu.InnerBorderColor = System.Drawing.Color.Transparent;
+            this.btnTaiLieu.Location = new System.Drawing.Point(965, 2);
+            this.btnTaiLieu.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
+            this.btnTaiLieu.Name = "btnTaiLieu";
+            this.btnTaiLieu.OuterBorderColor = System.Drawing.Color.DarkGreen;
+            this.btnTaiLieu.Size = new System.Drawing.Size(310, 31);
+            this.btnTaiLieu.TabIndex = 3;
+            this.btnTaiLieu.Text = "TÀI LIỆU THAM KHẢO";
             // 
             // btnMiniApp
             // 
@@ -333,7 +333,7 @@ namespace WindowsFormsApp1
             this.gauge4.BackColor = System.Drawing.Color.Transparent;
             this.gauge4.Location = new System.Drawing.Point(9, 30);
             this.gauge4.Margin = new System.Windows.Forms.Padding(0);
-            this.gauge4.Maximum = 1200;
+            this.gauge4.Maximum = 2100;
             this.gauge4.Minimum = 0;
             this.gauge4.Name = "gauge4";
             this.gauge4.Size = new System.Drawing.Size(159, 159);
@@ -375,7 +375,7 @@ namespace WindowsFormsApp1
             this.gauge5.BackColor = System.Drawing.Color.Transparent;
             this.gauge5.Location = new System.Drawing.Point(9, 30);
             this.gauge5.Margin = new System.Windows.Forms.Padding(0);
-            this.gauge5.Maximum = 1200;
+            this.gauge5.Maximum = 2100;
             this.gauge5.Minimum = 0;
             this.gauge5.Name = "gauge5";
             this.gauge5.Size = new System.Drawing.Size(159, 159);
@@ -431,12 +431,12 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel bannerMain;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private EnhancedGlassButton.GlassButton glassButton1;
+        private EnhancedGlassButton.GlassButton btnGiamSat;
         private EnhancedGlassButton.GlassButton btnMiniApp;
         private EnhancedGlassButton.GlassButton btnCloseApp;
-        private EnhancedGlassButton.GlassButton glassButton4;
-        private EnhancedGlassButton.GlassButton glassButton3;
-        private EnhancedGlassButton.GlassButton glassButton2;
+        private EnhancedGlassButton.GlassButton btnTaiLieu;
+        private EnhancedGlassButton.GlassButton btnGiaLap;
+        private EnhancedGlassButton.GlassButton btnCaiDat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Panel panel4;
         private MfgControl.AdvancedHMI.Controls.Gauge gauge5;
