@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Views;
 
 namespace WindowsFormsApp1
 {
@@ -41,6 +42,37 @@ namespace WindowsFormsApp1
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        public void LoadPage(Control control)
+        {
+            if (!pnlBodyData.Controls.Contains(control))
+            {
+                pnlBodyData.Controls.Add(control);
+                control.Dock = DockStyle.Fill;
+                control.Visible = false;
+            }
+        }
+
+        private void moveSidePanel(Control btn)
+        {
+            pnlBodyData.Top = btn.Top;
+            pnlBodyData.Height = btn.Height;
+        }
+
+        private void AddControlsToPanel(Control c)
+        {
+            c.Dock = DockStyle.Fill;
+            pnlBodyData.Controls.Clear();
+            pnlBodyData.Controls.Add(c);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            moveSidePanel(this);
+            gsOverview overview = new gsOverview();
+            AddControlsToPanel(overview);
+            btnGiamSat.BackColor = Color.Green;
         }
     }
 }

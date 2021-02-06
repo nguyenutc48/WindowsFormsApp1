@@ -70,6 +70,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\gsHethongDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\gsHethongDC.Designer.cs">
+      <DependentUpon>gsHethongDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\gsOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\gsOverview.Designer.cs">
+      <DependentUpon>gsOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ucGiamSatDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ucGiamSatDC.Designer.cs">
+      <DependentUpon>ucGiamSatDC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +101,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\gsHethongDC.resx">
+      <DependentUpon>gsHethongDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\gsOverview.resx">
+      <DependentUpon>gsOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ucGiamSatDC.resx">
+      <DependentUpon>ucGiamSatDC.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,9 +131,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="7303672.ico" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\home.jpg" />
+    <None Include="Resources\forward.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\PLC-MITSUBISHI.png" />
+    <None Include="Resources\pc.png" />
+    <None Include="Resources\hmi.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
