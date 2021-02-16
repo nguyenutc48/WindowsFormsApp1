@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Views;
+using WindowsFormsApp1.Views.Monitoring;
+using WindowsFormsApp1.Views.Setting;
 
 namespace WindowsFormsApp1
 {
@@ -44,35 +46,47 @@ namespace WindowsFormsApp1
             }
         }
 
-        public void LoadPage(Control control)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            if (!pnlBodyData.Controls.Contains(control))
+            btnClick_Menu(null, null);
+        }
+
+        private void btnClick_Menu(object sender, EventArgs e)
+        {
+            var btn = sender as EnhancedGlassButton.GlassButton;
+            string btnName = btn==null? "":btn.Name;
+            btnGiamSat.BackColor = Color.White;
+            btnCaiDat.BackColor = Color.White;
+            btnGiaLap.BackColor = Color.White;
+            btnTaiLieu.BackColor = Color.White;
+            switch (btnName)
             {
-                pnlBodyData.Controls.Add(control);
-                control.Dock = DockStyle.Fill;
-                control.Visible = false;
+                case "btnGiamSat":
+                    btnGiamSat.BackColor = Color.Yellow;
+                    StaticConfig.moveSidePanel(this, pnl_mainContent);
+                    mMainContent mMain = new mMainContent();
+                    StaticConfig.AddControlsToPanel(mMain, pnl_mainContent);
+                    break;
+                case "btnCaiDat":
+                    btnCaiDat.BackColor = Color.Yellow;
+                    StaticConfig.moveSidePanel(this, pnl_mainContent);
+                    sConfigMain sConfig = new sConfigMain();
+                    StaticConfig.AddControlsToPanel(sConfig, pnl_mainContent);
+                    break;
+                case "btnGiaLap":
+                    btnGiaLap.BackColor = Color.Yellow;
+                    break;
+                case "btnTaiLieu":
+                    btnTaiLieu.BackColor = Color.Yellow;
+                    break;
+                default:
+                    btnGiamSat.BackColor = Color.Yellow;
+                    StaticConfig.moveSidePanel(this, pnl_mainContent);
+                    mMainContent mdMain = new mMainContent();
+                    StaticConfig.AddControlsToPanel(mdMain, pnl_mainContent);
+                    break;
             }
         }
 
-        private void moveSidePanel(Control btn)
-        {
-            pnlBodyData.Top = btn.Top;
-            pnlBodyData.Height = btn.Height;
-        }
-
-        private void AddControlsToPanel(Control c)
-        {
-            c.Dock = DockStyle.Fill;
-            pnlBodyData.Controls.Clear();
-            pnlBodyData.Controls.Add(c);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            moveSidePanel(this);
-            gsOverview overview = new gsOverview();
-            AddControlsToPanel(overview);
-            btnGiamSat.BackColor = Color.Green;
-        }
     }
 }

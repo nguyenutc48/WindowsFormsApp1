@@ -70,22 +70,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\gsHethongDC.cs">
+    <Compile Include="StaticConfig.cs" />
+    <Compile Include="Views\Monitoring\gsHethongDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\gsHethongDC.Designer.cs">
+    <Compile Include="Views\Monitoring\gsHethongDC.Designer.cs">
       <DependentUpon>gsHethongDC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\gsOverview.cs">
+    <Compile Include="Views\Monitoring\gsOverview.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\gsOverview.Designer.cs">
+    <Compile Include="Views\Monitoring\gsOverview.Designer.cs">
       <DependentUpon>gsOverview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ucGiamSatDC.cs">
+    <Compile Include="Views\Monitoring\mMainContent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\ucGiamSatDC.Designer.cs">
+    <Compile Include="Views\Monitoring\mMainContent.Designer.cs">
+      <DependentUpon>mMainContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Setting\sConfigMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Setting\sConfigMain.Designer.cs">
+      <DependentUpon>sConfigMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monitoring\ucGiamSatDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring\ucGiamSatDC.Designer.cs">
       <DependentUpon>ucGiamSatDC.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -101,13 +114,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\gsHethongDC.resx">
+    <EmbeddedResource Include="Views\Monitoring\gsHethongDC.resx">
       <DependentUpon>gsHethongDC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\gsOverview.resx">
+    <EmbeddedResource Include="Views\Monitoring\gsOverview.resx">
       <DependentUpon>gsOverview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ucGiamSatDC.resx">
+    <EmbeddedResource Include="Views\Monitoring\mMainContent.resx">
+      <DependentUpon>mMainContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Setting\sConfigMain.resx">
+      <DependentUpon>sConfigMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monitoring\ucGiamSatDC.resx">
       <DependentUpon>ucGiamSatDC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

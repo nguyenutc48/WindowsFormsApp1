@@ -353,7 +353,7 @@ namespace WindowsFormsApp1.Views
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox9.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox9.Image = global::WindowsFormsApp1.Properties.Resources.back;
             this.pictureBox9.Location = new System.Drawing.Point(0, 0);
@@ -365,7 +365,7 @@ namespace WindowsFormsApp1.Views
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox8.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.home1;
             this.pictureBox8.Location = new System.Drawing.Point(1046, 0);
@@ -377,10 +377,10 @@ namespace WindowsFormsApp1.Views
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Coral;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
