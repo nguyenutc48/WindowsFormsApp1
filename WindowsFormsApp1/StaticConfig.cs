@@ -14,12 +14,12 @@ namespace WindowsFormsApp1
             pnl_Content.Top = btn.Top;
             pnl_Content.Height = btn.Height;
         }
-        public static void transferData(Control control, Panel pnl_Content)
+        public static void LoadView(Control control, Panel pnl_Content)
         {
             if (!pnl_Content.Controls.Contains(control))
             {
-                pnl_Content.Controls.Add(control);
                 control.Dock = DockStyle.Fill;
+                pnl_Content.Controls.Add(control);
                 control.Visible = false;
             }
         }
@@ -28,6 +28,27 @@ namespace WindowsFormsApp1
             c.Dock = DockStyle.Fill;
             pnl_Content.Controls.Clear();
             pnl_Content.Controls.Add(c);
+        }
+        public static void ShowView(Control control, Panel panel)
+        {
+            foreach (Control item in panel.Controls)
+            {
+                item.Visible = false;
+            }
+            if (!panel.Controls.Contains(control))
+            {
+                panel.Controls.Add(control);
+                control.Dock = DockStyle.Fill;
+                control.BringToFront();
+                control.Focus();
+                control.Visible = true;
+            }
+            else
+            {
+                control.BringToFront();
+                control.Visible = true;
+            }
+            //this.Refresh();
         }
     }
 }

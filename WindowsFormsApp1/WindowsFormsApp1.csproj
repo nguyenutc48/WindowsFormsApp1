@@ -101,6 +101,12 @@
     <Compile Include="Views\Monitoring\ucGiamSatDC.Designer.cs">
       <DependentUpon>ucGiamSatDC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\VirtuaData\vMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\VirtuaData\vMain.Designer.cs">
+      <DependentUpon>vMain.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +135,11 @@
     <EmbeddedResource Include="Views\Monitoring\ucGiamSatDC.resx">
       <DependentUpon>ucGiamSatDC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\VirtuaData\vMain.resx">
+      <DependentUpon>vMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Files\configamthanh.xlsx" />
+    <None Include="Files\configdongco1.xlsx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,6 +161,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="7303672.ico" />
+    <Content Include="ReferenFiles\AdvancedHMIControls.dll" />
+    <Content Include="ReferenFiles\MfgControl.AdvancedHMI.Controls.dll" />
+    <Content Include="ReferenFiles\SMMAS.Common.dll" />
     <None Include="Resources\home.png" />
     <None Include="Resources\home.jpg" />
     <None Include="Resources\forward.png" />

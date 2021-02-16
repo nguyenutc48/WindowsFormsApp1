@@ -10,11 +10,23 @@ using System.Windows.Forms;
 using WindowsFormsApp1.Views;
 using WindowsFormsApp1.Views.Monitoring;
 using WindowsFormsApp1.Views.Setting;
+using WindowsFormsApp1.Views.VirtuaData;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        private static Form1 _instance;
+        public static Form1 Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new Form1();
+                return _instance;
+            }
+        }
+        List<UserControl> userControls = new List<UserControl>();
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -48,6 +60,10 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            StaticConfig.LoadView(mMainContent.Instance,pnl_mainContent);
+            StaticConfig.LoadView(sConfigMain.Instance, pnl_mainContent);
+            StaticConfig.LoadView(vMain.Instance, pnl_mainContent);
+
             btnClick_Menu(null, null);
         }
 
@@ -63,27 +79,22 @@ namespace WindowsFormsApp1
             {
                 case "btnGiamSat":
                     btnGiamSat.BackColor = Color.Yellow;
-                    StaticConfig.moveSidePanel(this, pnl_mainContent);
-                    mMainContent mMain = new mMainContent();
-                    StaticConfig.AddControlsToPanel(mMain, pnl_mainContent);
+                    StaticConfig.ShowView(mMainContent.Instance, pnl_mainContent);
                     break;
                 case "btnCaiDat":
                     btnCaiDat.BackColor = Color.Yellow;
-                    StaticConfig.moveSidePanel(this, pnl_mainContent);
-                    sConfigMain sConfig = new sConfigMain();
-                    StaticConfig.AddControlsToPanel(sConfig, pnl_mainContent);
+                    StaticConfig.ShowView(sConfigMain.Instance, pnl_mainContent);
                     break;
                 case "btnGiaLap":
                     btnGiaLap.BackColor = Color.Yellow;
+                    StaticConfig.ShowView(vMain.Instance, pnl_mainContent);
                     break;
                 case "btnTaiLieu":
                     btnTaiLieu.BackColor = Color.Yellow;
                     break;
                 default:
                     btnGiamSat.BackColor = Color.Yellow;
-                    StaticConfig.moveSidePanel(this, pnl_mainContent);
-                    mMainContent mdMain = new mMainContent();
-                    StaticConfig.AddControlsToPanel(mdMain, pnl_mainContent);
+                    StaticConfig.ShowView(mMainContent.Instance, pnl_mainContent);
                     break;
             }
         }
