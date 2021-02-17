@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Models;
 using WindowsFormsApp1.Views;
 using WindowsFormsApp1.Views.Monitoring;
 using WindowsFormsApp1.Views.Setting;
@@ -24,6 +25,62 @@ namespace WindowsFormsApp1
                 if (_instance == null)
                     _instance = new Form1();
                 return _instance;
+            }
+        }
+        private static List<AmThanhModel> _amThanhModels;
+        public static List<AmThanhModel> AmThanhModel
+        {
+            get
+            {
+                if (_amThanhModels == null)
+                    _amThanhModels = new List<AmThanhModel>();
+                return _amThanhModels;
+            }
+            set
+            {
+                _amThanhModels = value;
+            }
+        }
+        private static List<DongCoConfigModel> _dongco1Address;
+        public static List<DongCoConfigModel> DongCo1Adress
+        {
+            get
+            {
+                if (_dongco1Address == null)
+                    _dongco1Address = new List<DongCoConfigModel>();
+                return _dongco1Address;
+            }
+            set
+            {
+                _dongco1Address = value;
+            }
+        }
+        private static List<DongCoConfigModel> _dongco2Address;
+        public static List<DongCoConfigModel> DongCo2Adress
+        {
+            get
+            {
+                if (_dongco2Address == null)
+                    _dongco2Address = new List<DongCoConfigModel>();
+                return _dongco2Address;
+            }
+            set
+            {
+                _dongco2Address = value;
+            }
+        }
+        private static List<DongCoConfigModel> _dongco3Address;
+        public static List<DongCoConfigModel> DongCo3Adress
+        {
+            get
+            {
+                if (_dongco3Address == null)
+                    _dongco3Address = new List<DongCoConfigModel>();
+                return _dongco3Address;
+            }
+            set
+            {
+                _dongco3Address = value;
             }
         }
         List<UserControl> userControls = new List<UserControl>();

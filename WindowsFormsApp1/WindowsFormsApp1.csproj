@@ -12,6 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,6 +45,15 @@
       <HintPath>..\..\..\..\..\..\AHMI\MfgControl.AdvancedHMI.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NFILEHELPER, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFileHelper.1.0.2\lib\net45\NFILEHELPER.dll</HintPath>
+    </Reference>
+    <Reference Include="PLCMitsuCom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPLCMitsuCom.1.0.11\lib\net45\PLCMitsuCom.dll</HintPath>
+    </Reference>
+    <Reference Include="PLC_MITSU, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPLCMitsuConfig.1.1.1\lib\net45\PLC_MITSU.dll</HintPath>
+    </Reference>
     <Reference Include="SMMAS.Common">
       <HintPath>D:\08. PLC Program\HMI\MonitoringMTU\MonitoringMTU\dlls\SMMAS.Common.dll</HintPath>
     </Reference>
@@ -68,6 +79,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\AmThanhModel.cs" />
+    <Compile Include="Models\DongCoConfigModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticConfig.cs" />
@@ -140,6 +153,7 @@
     </EmbeddedResource>
     <None Include="Files\configamthanh.xlsx" />
     <None Include="Files\configdongco1.xlsx" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -174,4 +188,11 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\NPLCMitsuCom.1.0.11\build\NPLCMitsuCom.targets" Condition="Exists('..\packages\NPLCMitsuCom.1.0.11\build\NPLCMitsuCom.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NPLCMitsuCom.1.0.11\build\NPLCMitsuCom.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NPLCMitsuCom.1.0.11\build\NPLCMitsuCom.targets'))" />
+  </Target>
 </Project>

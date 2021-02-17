@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Models;
 
 namespace WindowsFormsApp1.Views.Setting
 {
@@ -30,6 +32,10 @@ namespace WindowsFormsApp1.Views.Setting
         public sConfigMain()
         {
             InitializeComponent();
+            lblAmthanhPath.Text = "";
+            lblDongco1Path.Text = "";
+            lblDongco2Path.Text = "";
+            lblDongco3Path.Text = "";
         }
 
         private void btnClickChonfileConfig(object sender, EventArgs e)
@@ -65,11 +71,127 @@ namespace WindowsFormsApp1.Views.Setting
             }
         }
 
-        private void btnClickLuuConfig(object sender, EventArgs e)
+        private async void btnClickLuuConfig(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-            player.SoundLocation = "Sound.wav";
-            player.Play();
+            //System.Media.SoundPlayer myPlayer = new System.Media.SoundPlayer();
+            //myPlayer.SoundLocation = "D:\\HMI C#\\sample.wav";
+            //myPlayer.Play();
+            var btn = sender as Button;
+            string btnName = btn.Name;
+            switch (btnName)
+            {
+                case "btnLuuAmthanh":
+                    if (!string.IsNullOrEmpty(lblAmthanhPath.Text))
+                    {
+                        string[,] readData;
+                        if(File.Exists(amthanhPath))
+                        {
+                            await Task.Factory.StartNew(() =>
+                            {
+                                NFILEHELPER.ExcelHelper.Read(amthanhPath, out readData);
+                                List<AmThanhModel> ListAmThanh = new List<AmThanhModel>();
+                                for (int i = 1; i < readData.GetLength(0); i++)
+                                {
+                                    AmThanhModel amThanhModel = new AmThanhModel();
+                                    amThanhModel.Index = Convert.ToInt16(readData[i, 0]);
+                                    amThanhModel.TocdoTien = readData[i, 1]==null? "" : readData[i, 1].ToString();
+                                    amThanhModel.TocdoLui = readData[i, 2]==null? "": readData[i, 2].ToString();
+                                    amThanhModel.TenFile = readData[i, 3]==null?"": readData[i, 3].ToString();
+                                    ListAmThanh.Add(amThanhModel);
+                                }
+                                Form1.AmThanhModel = ListAmThanh;
+                            });
+                            MessageBox.Show("Lưu file âm thanh thành công");
+
+                        }
+                    }
+                    break;
+                case "btnLuuDC1":
+                    if (!string.IsNullOrEmpty(lblDongco1Path.Text))
+                    {
+                        string[,] readData;
+                        if (File.Exists(dongco1Path))
+                        {
+                            await Task.Factory.StartNew(() =>
+                            {
+                                NFILEHELPER.ExcelHelper.Read(dongco1Path, out readData);
+                                List<DongCoConfigModel> TempList = new List<DongCoConfigModel>();
+                                for (int i = 1; i < readData.GetLength(0); i++)
+                                {
+                                    DongCoConfigModel dongco = new DongCoConfigModel();
+                                    dongco.SizeAddress = Convert.ToInt16(readData[i, 2]);
+                                    dongco.PLCAddress = readData[i, 0] == null ? "" : readData[i, 0].ToString();
+                                    dongco.TypeAddress = readData[i, 1] == null ? "" : readData[i, 1].ToString();
+                                    dongco.SpeedLevel = readData[i, 3] == null ? "" : readData[i, 3].ToString();
+                                    dongco.ParameterName = readData[i, 4] == null ? "" : readData[i, 4].ToString();
+                                    dongco.ParameterValue = readData[i, 5] == null ? "" : readData[i, 5].ToString();
+                                    TempList.Add(dongco);
+                                }
+                                Form1.DongCo1Adress = TempList;
+                            });
+                            MessageBox.Show("Lưu file cài đặt thông số cho động cơ 1 thành công");
+
+                        }
+                    }
+                    break;
+                case "btnLuuDC2":
+                    if (!string.IsNullOrEmpty(lblDongco2Path.Text))
+                    {
+                        string[,] readData;
+                        if (File.Exists(dongco2Path))
+                        {
+                            await Task.Factory.StartNew(() =>
+                            {
+                                NFILEHELPER.ExcelHelper.Read(dongco2Path, out readData);
+                                List<DongCoConfigModel> TempList = new List<DongCoConfigModel>();
+                                for (int i = 1; i < readData.GetLength(0); i++)
+                                {
+                                    DongCoConfigModel dongco = new DongCoConfigModel();
+                                    dongco.SizeAddress = Convert.ToInt16(readData[i, 2]);
+                                    dongco.PLCAddress = readData[i, 0] == null ? "" : readData[i, 0].ToString();
+                                    dongco.TypeAddress = readData[i, 1] == null ? "" : readData[i, 1].ToString();
+                                    dongco.SpeedLevel = readData[i, 3] == null ? "" : readData[i, 3].ToString();
+                                    dongco.ParameterName = readData[i, 4] == null ? "" : readData[i, 4].ToString();
+                                    dongco.ParameterValue = readData[i, 5] == null ? "" : readData[i, 5].ToString();
+                                    TempList.Add(dongco);
+                                }
+                                Form1.DongCo2Adress = TempList;
+                            });
+                            MessageBox.Show("Lưu file cài đặt thông số cho động cơ 2 thành công");
+                        }    
+                    }
+                    break;
+                case "btnLuuDC3":
+                    if (!string.IsNullOrEmpty(lblDongco3Path.Text))
+                    {
+                        string[,] readData;
+                        if (File.Exists(dongco3Path))
+                        {
+                            await Task.Factory.StartNew(() =>
+                            {
+                                NFILEHELPER.ExcelHelper.Read(dongco3Path, out readData);
+                                List<DongCoConfigModel> TempList = new List<DongCoConfigModel>();
+                                for (int i = 1; i < readData.GetLength(0); i++)
+                                {
+                                    DongCoConfigModel dongco = new DongCoConfigModel();
+                                    dongco.SizeAddress = Convert.ToInt16(readData[i, 2]);
+                                    dongco.PLCAddress = readData[i, 0] == null ? "" : readData[i, 0].ToString();
+                                    dongco.TypeAddress = readData[i, 1] == null ? "" : readData[i, 1].ToString();
+                                    dongco.SpeedLevel = readData[i, 3] == null ? "" : readData[i, 3].ToString();
+                                    dongco.ParameterName = readData[i, 4] == null ? "" : readData[i, 4].ToString();
+                                    dongco.ParameterValue = readData[i, 5] == null ? "" : readData[i, 5].ToString();
+                                    TempList.Add(dongco);
+                                }
+                                Form1.DongCo3Adress = TempList;
+                            });
+                            MessageBox.Show("Lưu file cài đặt thông số cho động cơ 3 thành công");
+
+                        }
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
