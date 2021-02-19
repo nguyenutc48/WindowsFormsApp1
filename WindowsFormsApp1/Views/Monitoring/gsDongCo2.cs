@@ -12,6 +12,16 @@ namespace WindowsFormsApp1.Views.Monitoring
 {
     public partial class gsDongCo2 : UserControl
     {
+        private static gsDongCo2 _instance;
+        public static gsDongCo2 Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new gsDongCo2();
+                return _instance;
+            }
+        }
         public gsDongCo2()
         {
             InitializeComponent();

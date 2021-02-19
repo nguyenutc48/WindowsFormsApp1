@@ -161,6 +161,16 @@ namespace WindowsFormsApp1.Views.Setting
                                         else
                                             dongco.ParameterValue =  "0";
                                     }
+                                    else
+                                    {
+                                        if (readData[i, 6] != null)
+                                        {
+                                            var temp = readData[i, 6].ToString().Trim();
+                                            dongco.ParameterValue = temp.ToString();
+                                        }
+                                        else
+                                            dongco.ParameterValue = "0";
+                                    }
                                     
                                     TempList.Add(dongco);
                                 }
@@ -168,17 +178,22 @@ namespace WindowsFormsApp1.Views.Setting
                                 {
                                     if (addr.TypeAddress == "Integer")
                                     {
-                                        Form1.PLC.setInt32Device(addr.PLCAddress, Convert.ToInt32(addr.ParameterValue));
+                                        var temp = Convert.ToInt32(addr.ParameterValue);
+                                        if (temp<32767)
+                                            PLCCom.setDevice(addr.PLCAddress, temp);
+                                        else
+                                            PLCCom.setInt32Device(addr.PLCAddress, temp);
                                     }
                                     else
                                     {
-                                        Form1.PLC.setDoubleDevice(addr.PLCAddress, Convert.ToDouble(addr.ParameterValue));
+                                        var temp = Convert.ToDouble(addr.ParameterValue);
+                                        PLCCom.setDoubleDevice(addr.PLCAddress, temp);
                                     }
                                 }
 
                                 Form1.DongCoAdress.AddRange(TempList);
                             });
-                            btnLuuDC2.Enabled = true;
+                            btnLuuDC1.Enabled = true;
                             MessageBox.Show("Lưu file cài đặt thông số cho động cơ 1 thành công");
 
                         }
@@ -216,17 +231,31 @@ namespace WindowsFormsApp1.Views.Setting
                                         else
                                             dongco.ParameterValue = "0";
                                     }
+                                    else
+                                    {
+                                        if (readData[i, 6] != null)
+                                        {
+                                            var temp = readData[i, 6].ToString().Trim();
+                                            dongco.ParameterValue = temp.ToString();
+                                        }
+                                        else
+                                            dongco.ParameterValue = "0";
+                                    }
                                     TempList.Add(dongco);
                                 }
                                 foreach (var addr in TempList)
                                 {
                                     if (addr.TypeAddress == "Integer")
                                     {
-                                        Form1.PLC.setInt32Device(addr.PLCAddress, Convert.ToInt32(addr.ParameterValue));
+                                        var temp = Convert.ToInt32(addr.ParameterValue);
+                                        if (temp < 32767)
+                                            PLCCom.setDevice(addr.PLCAddress, temp);
+                                        else
+                                            PLCCom.setInt32Device(addr.PLCAddress, temp);
                                     }
                                     else
                                     {
-                                        Form1.PLC.setDoubleDevice(addr.PLCAddress, Convert.ToDouble(addr.ParameterValue));
+                                        PLCCom.setDoubleDevice(addr.PLCAddress, Convert.ToDouble(addr.ParameterValue));
                                     }
                                 }
                                 Form1.DongCoAdress.AddRange(TempList);
@@ -268,6 +297,16 @@ namespace WindowsFormsApp1.Views.Setting
                                         else
                                             dongco.ParameterValue = "0";
                                     }
+                                    else
+                                    {
+                                        if (readData[i, 6] != null)
+                                        {
+                                            var temp = readData[i, 6].ToString().Trim();
+                                            dongco.ParameterValue = temp.ToString();
+                                        }
+                                        else
+                                            dongco.ParameterValue = "0";
+                                    }
 
                                     TempList.Add(dongco);
                                 }
@@ -275,11 +314,15 @@ namespace WindowsFormsApp1.Views.Setting
                                 {
                                     if (addr.TypeAddress == "Integer")
                                     {
-                                        Form1.PLC.setInt32Device(addr.PLCAddress, Convert.ToInt32(addr.ParameterValue));
+                                        var temp = Convert.ToInt32(addr.ParameterValue);
+                                        if (temp < 32767)
+                                            PLCCom.setDevice(addr.PLCAddress, temp);
+                                        else
+                                            PLCCom.setInt32Device(addr.PLCAddress, temp);
                                     }
                                     else
                                     {
-                                        Form1.PLC.setDoubleDevice(addr.PLCAddress, Convert.ToDouble(addr.ParameterValue));
+                                        PLCCom.setDoubleDevice(addr.PLCAddress, Convert.ToDouble(addr.ParameterValue));
                                     }
                                 }
                                 Form1.DongCoAdress.AddRange(TempList);
@@ -306,16 +349,16 @@ namespace WindowsFormsApp1.Views.Setting
             await Task.Factory.StartNew(()=> {
                 if (Form1.plcConnected == false)
                 {
-                    var result = Form1.PLC.Open(PLC_MITSU_CONFIG.PLC_UNIT_TYPE.UNIT_FXCPU);
+                    var result = PLCCom.Open(Convert.ToInt16(numericUpDown1.Value));
                     if (result == 0)
                     {
                         Form1.plcConnected = true;
-                        MessageBox.Show("Kết nối thành công!");
+                        MessageBox.Show("Kết nối thành công!:");
                     }
                     else
                     {
                         Form1.plcConnected = false;
-                        MessageBox.Show("Kết nối không thành công!");
+                        MessageBox.Show("Kết nối không thành công! ");
                     }
                 }
             });
@@ -332,7 +375,7 @@ namespace WindowsFormsApp1.Views.Setting
             await Task.Factory.StartNew(() => {
                 if (Form1.plcConnected == true)
                 {
-                    var result = Form1.PLC.Close();
+                    var result = PLCCom.Close();
                     if (result == 0)
                     {
                         Form1.plcConnected = false;

@@ -12,27 +12,12 @@ using WindowsFormsApp1.Views;
 using WindowsFormsApp1.Views.Monitoring;
 using WindowsFormsApp1.Views.Setting;
 using WindowsFormsApp1.Views.VirtuaData;
-using PLCMitsuCom;
-using PLC_MITSU_CONFIG;
+
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        private static PLCMitsu _plc;
-        public static PLCMitsu PLC
-        {
-            get
-            {
-                if (_plc == null)
-                    _plc = new PLCMitsu();
-                return _plc;
-            }
-            set
-            {
-                _plc = value;
-            }
-        }
         private static bool _plcconnected = false;
         public static bool plcConnected { get { return _plcconnected; } set { _plcconnected = value; } }
         private static Form1 _instance;

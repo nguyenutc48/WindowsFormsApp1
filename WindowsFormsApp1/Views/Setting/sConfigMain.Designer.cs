@@ -54,18 +54,17 @@ namespace WindowsFormsApp1.Views.Setting
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cmbConnectType = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnConnect = new System.Windows.Forms.Button();
             this.btnDisconnect = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.lbltrangthai = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.pnlHeader.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -364,11 +363,9 @@ namespace WindowsFormsApp1.Views.Setting
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox2.Controls.Add(this.numericUpDown1);
             this.groupBox2.Controls.Add(this.btnDisconnect);
             this.groupBox2.Controls.Add(this.btnConnect);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.cmbConnectType);
-            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.lbltrangthai);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label6);
@@ -381,49 +378,15 @@ namespace WindowsFormsApp1.Views.Setting
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "PLC Connect Setting";
             // 
-            // cmbConnectType
+            // btnDisconnect
             // 
-            this.cmbConnectType.FormattingEnabled = true;
-            this.cmbConnectType.Items.AddRange(new object[] {
-            "USB"});
-            this.cmbConnectType.Location = new System.Drawing.Point(181, 141);
-            this.cmbConnectType.Name = "cmbConnectType";
-            this.cmbConnectType.Size = new System.Drawing.Size(121, 30);
-            this.cmbConnectType.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(38, 139);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 33);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Loại kết nối";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "USB"});
-            this.comboBox1.Location = new System.Drawing.Point(181, 192);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 30);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 190);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 33);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Loại PLC";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDisconnect.Location = new System.Drawing.Point(299, 270);
+            this.btnDisconnect.Name = "btnDisconnect";
+            this.btnDisconnect.Size = new System.Drawing.Size(124, 43);
+            this.btnDisconnect.TabIndex = 2;
+            this.btnDisconnect.Text = "Disconnect";
+            this.btnDisconnect.UseVisualStyleBackColor = true;
+            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
             // 
             // btnConnect
             // 
@@ -435,15 +398,16 @@ namespace WindowsFormsApp1.Views.Setting
             this.btnConnect.UseVisualStyleBackColor = true;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
-            // btnDisconnect
+            // lbltrangthai
             // 
-            this.btnDisconnect.Location = new System.Drawing.Point(299, 270);
-            this.btnDisconnect.Name = "btnDisconnect";
-            this.btnDisconnect.Size = new System.Drawing.Size(124, 43);
-            this.btnDisconnect.TabIndex = 2;
-            this.btnDisconnect.Text = "Disconnect";
-            this.btnDisconnect.UseVisualStyleBackColor = true;
-            this.btnDisconnect.Click += new System.EventHandler(this.btnDisconnect_Click);
+            this.lbltrangthai.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbltrangthai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbltrangthai.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltrangthai.Location = new System.Drawing.Point(216, 47);
+            this.lbltrangthai.Name = "lbltrangthai";
+            this.lbltrangthai.Size = new System.Drawing.Size(322, 33);
+            this.lbltrangthai.TabIndex = 0;
+            this.lbltrangthai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -457,21 +421,30 @@ namespace WindowsFormsApp1.Views.Setting
             this.label12.Text = "Trạng thái kết nối:";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbltrangthai
+            // label6
             // 
-            this.lbltrangthai.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.lbltrangthai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbltrangthai.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltrangthai.Location = new System.Drawing.Point(216, 47);
-            this.lbltrangthai.Name = "lbltrangthai";
-            this.lbltrangthai.Size = new System.Drawing.Size(322, 33);
-            this.lbltrangthai.TabIndex = 0;
-            this.lbltrangthai.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(117, 144);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(121, 33);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Trạm kết nối:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(279, 147);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(105, 29);
+            this.numericUpDown1.TabIndex = 4;
+            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // sConfigMain
             // 
@@ -485,6 +458,7 @@ namespace WindowsFormsApp1.Views.Setting
             this.pnlHeader.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -517,12 +491,10 @@ namespace WindowsFormsApp1.Views.Setting
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnDisconnect;
         private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox cmbConnectType;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbltrangthai;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
