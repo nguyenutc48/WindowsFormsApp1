@@ -26,5 +26,26 @@ namespace WindowsFormsApp1.Views
         {
             InitializeComponent();
         }
+
+        // Xem chi tiet 3 dong co
+        private void btnClickChiTietDongCo(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncauhinhhethong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnhethongdc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnbangdienchinh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

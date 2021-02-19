@@ -41,6 +41,9 @@
     <Reference Include="AdvancedHMIControls">
       <HintPath>..\..\..\..\..\..\AHMI\AdvancedHMIControls.dll</HintPath>
     </Reference>
+    <Reference Include="AGauge, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AGauge_V2.2.0.2\lib\AGauge.dll</HintPath>
+    </Reference>
     <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\WMPLib.1.0.0\lib\AxInterop.WMPLib.dll</HintPath>
     </Reference>
@@ -91,6 +94,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaticConfig.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Monitoring\gsHethongDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +149,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Monitoring\gsHethongDC.resx">
       <DependentUpon>gsHethongDC.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,4 +214,9 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\NPLCMitsuCom.1.0.11\build\NPLCMitsuCom.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NPLCMitsuCom.1.0.11\build\NPLCMitsuCom.targets'))" />
   </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_BuildVersioningStyle="YearStamp.MonthStamp.DayStamp.Increment" BuildVersion_StartDate="2000/1/1" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

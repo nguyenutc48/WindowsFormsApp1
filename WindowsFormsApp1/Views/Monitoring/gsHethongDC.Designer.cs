@@ -30,12 +30,12 @@ namespace WindowsFormsApp1.Views
         private void InitializeComponent()
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ucGiamSatDC1 = new WindowsFormsApp1.Views.ucGiamSatDC();
             this.ucGiamSatDC2 = new WindowsFormsApp1.Views.ucGiamSatDC();
             this.ucGiamSatDC3 = new WindowsFormsApp1.Views.ucGiamSatDC();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -53,6 +53,30 @@ namespace WindowsFormsApp1.Views
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1088, 40);
             this.pnlHeader.TabIndex = 78;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox9.Image = global::WindowsFormsApp1.Properties.Resources.back;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(30, 38);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Coral;
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.home1;
+            this.pictureBox8.Location = new System.Drawing.Point(1046, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(40, 38);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
             // 
             // label1
             // 
@@ -88,30 +112,6 @@ namespace WindowsFormsApp1.Views
             this.ucGiamSatDC3.Name = "ucGiamSatDC3";
             this.ucGiamSatDC3.Size = new System.Drawing.Size(528, 277);
             this.ucGiamSatDC3.TabIndex = 79;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox9.Image = global::WindowsFormsApp1.Properties.Resources.back;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 38);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Coral;
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox8.Image = global::WindowsFormsApp1.Properties.Resources.home1;
-            this.pictureBox8.Location = new System.Drawing.Point(1046, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(40, 38);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
             // 
             // gsHethongDC
             // 
