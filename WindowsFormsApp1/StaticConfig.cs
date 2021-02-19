@@ -50,5 +50,11 @@ namespace WindowsFormsApp1
             }
             //this.Refresh();
         }
+        public static IEnumerable<Control> GetAllControl(Control c)
+        {
+            return c.Controls.Cast<Control>().SelectMany(item =>
+                GetAllControl(item)).Concat(c.Controls.Cast<Control>()).Where(control =>
+                control.Name != string.Empty);
+        }
     }
 }

@@ -12,11 +12,29 @@ using WindowsFormsApp1.Views;
 using WindowsFormsApp1.Views.Monitoring;
 using WindowsFormsApp1.Views.Setting;
 using WindowsFormsApp1.Views.VirtuaData;
+using PLCMitsuCom;
+using PLC_MITSU_CONFIG;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        private static PLCMitsu _plc;
+        public static PLCMitsu PLC
+        {
+            get
+            {
+                if (_plc == null)
+                    _plc = new PLCMitsu();
+                return _plc;
+            }
+            set
+            {
+                _plc = value;
+            }
+        }
+        private static bool _plcconnected = false;
+        public static bool plcConnected { get { return _plcconnected; } set { _plcconnected = value; } }
         private static Form1 _instance;
         public static Form1 Instance
         {
@@ -41,49 +59,23 @@ namespace WindowsFormsApp1
                 _amThanhModels = value;
             }
         }
-        private static List<DongCoConfigModel> _dongco1Address;
-        public static List<DongCoConfigModel> DongCo1Adress
+        private static List<DongCoConfigModel> _dongcoAddress;
+        public static List<DongCoConfigModel> DongCoAdress
         {
             get
             {
-                if (_dongco1Address == null)
-                    _dongco1Address = new List<DongCoConfigModel>();
-                return _dongco1Address;
+                if (_dongcoAddress == null)
+                    _dongcoAddress = new List<DongCoConfigModel>();
+                return _dongcoAddress;
             }
             set
             {
-                _dongco1Address = value;
+                _dongcoAddress = value;
             }
         }
-        private static List<DongCoConfigModel> _dongco2Address;
-        public static List<DongCoConfigModel> DongCo2Adress
-        {
-            get
-            {
-                if (_dongco2Address == null)
-                    _dongco2Address = new List<DongCoConfigModel>();
-                return _dongco2Address;
-            }
-            set
-            {
-                _dongco2Address = value;
-            }
-        }
-        private static List<DongCoConfigModel> _dongco3Address;
-        public static List<DongCoConfigModel> DongCo3Adress
-        {
-            get
-            {
-                if (_dongco3Address == null)
-                    _dongco3Address = new List<DongCoConfigModel>();
-                return _dongco3Address;
-            }
-            set
-            {
-                _dongco3Address = value;
-            }
-        }
+        
         List<UserControl> userControls = new List<UserControl>();
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -122,6 +114,14 @@ namespace WindowsFormsApp1
             StaticConfig.LoadView(vMain.Instance, pnl_mainContent);
 
             btnClick_Menu(null, null);
+            //var result = PLC.Open(PLC_UNIT_TYPE.UNIT_FXCPU);
+            //if(result == 0)
+            //{
+            //    _plcconnected = true;
+            //    timer1.Enabled = true;
+            //    timer1.Start();
+            //}
+            var a = StaticConfig.GetAllControl(mMainContent.Instance);
         }
 
         private void btnClick_Menu(object sender, EventArgs e)
@@ -156,5 +156,10 @@ namespace WindowsFormsApp1
             }
         }
 
+        // Timer update data
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

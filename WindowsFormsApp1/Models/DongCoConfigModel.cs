@@ -8,6 +8,7 @@ namespace WindowsFormsApp1.Models
 {
     public class DongCoConfigModel
     {
+        public int Index { get; set; }
         public string ParameterName { get; set; }
         public string PLCAddress { get; set; }
         public int SizeAddress { get; set; }

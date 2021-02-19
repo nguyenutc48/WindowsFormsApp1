@@ -33,10 +33,10 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.pnlBodyData = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.gauge5 = new MfgControl.AdvancedHMI.Controls.Gauge();
+            this.gauge3 = new MfgControl.AdvancedHMI.Controls.Gauge();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.gauge4 = new MfgControl.AdvancedHMI.Controls.Gauge();
+            this.gauge2 = new MfgControl.AdvancedHMI.Controls.Gauge();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gauge1 = new MfgControl.AdvancedHMI.Controls.Gauge();
@@ -95,7 +95,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.gauge5);
+            this.panel4.Controls.Add(this.gauge3);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(5, 413);
@@ -104,19 +104,19 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel4.Size = new System.Drawing.Size(177, 206);
             this.panel4.TabIndex = 2;
             // 
-            // gauge5
+            // gauge3
             // 
-            this.gauge5.AllowDragging = false;
-            this.gauge5.BackColor = System.Drawing.Color.Transparent;
-            this.gauge5.Location = new System.Drawing.Point(9, 30);
-            this.gauge5.Margin = new System.Windows.Forms.Padding(0);
-            this.gauge5.Maximum = 2100;
-            this.gauge5.Minimum = 0;
-            this.gauge5.Name = "gauge5";
-            this.gauge5.Size = new System.Drawing.Size(159, 159);
-            this.gauge5.TabIndex = 0;
-            this.gauge5.Value = 0D;
-            this.gauge5.ValueScaleFactor = new decimal(new int[] {
+            this.gauge3.AllowDragging = false;
+            this.gauge3.BackColor = System.Drawing.Color.Transparent;
+            this.gauge3.Location = new System.Drawing.Point(9, 30);
+            this.gauge3.Margin = new System.Windows.Forms.Padding(0);
+            this.gauge3.Maximum = 2100;
+            this.gauge3.Minimum = 0;
+            this.gauge3.Name = "gauge3";
+            this.gauge3.Size = new System.Drawing.Size(159, 159);
+            this.gauge3.TabIndex = 0;
+            this.gauge3.Value = 0D;
+            this.gauge3.ValueScaleFactor = new decimal(new int[] {
             1,
             0,
             0,
@@ -137,7 +137,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.gauge4);
+            this.panel3.Controls.Add(this.gauge2);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 207);
@@ -146,19 +146,19 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel3.Size = new System.Drawing.Size(177, 204);
             this.panel3.TabIndex = 1;
             // 
-            // gauge4
+            // gauge2
             // 
-            this.gauge4.AllowDragging = false;
-            this.gauge4.BackColor = System.Drawing.Color.Transparent;
-            this.gauge4.Location = new System.Drawing.Point(9, 30);
-            this.gauge4.Margin = new System.Windows.Forms.Padding(0);
-            this.gauge4.Maximum = 2100;
-            this.gauge4.Minimum = 0;
-            this.gauge4.Name = "gauge4";
-            this.gauge4.Size = new System.Drawing.Size(159, 159);
-            this.gauge4.TabIndex = 0;
-            this.gauge4.Value = 0D;
-            this.gauge4.ValueScaleFactor = new decimal(new int[] {
+            this.gauge2.AllowDragging = false;
+            this.gauge2.BackColor = System.Drawing.Color.Transparent;
+            this.gauge2.Location = new System.Drawing.Point(9, 30);
+            this.gauge2.Margin = new System.Windows.Forms.Padding(0);
+            this.gauge2.Maximum = 2100;
+            this.gauge2.Minimum = 0;
+            this.gauge2.Name = "gauge2";
+            this.gauge2.Size = new System.Drawing.Size(159, 159);
+            this.gauge2.TabIndex = 0;
+            this.gauge2.Value = 0D;
+            this.gauge2.ValueScaleFactor = new decimal(new int[] {
             1,
             0,
             0,
@@ -240,10 +240,10 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Panel pnlBodyData;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Panel panel4;
-        private MfgControl.AdvancedHMI.Controls.Gauge gauge5;
+        private MfgControl.AdvancedHMI.Controls.Gauge gauge3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
-        private MfgControl.AdvancedHMI.Controls.Gauge gauge4;
+        private MfgControl.AdvancedHMI.Controls.Gauge gauge2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private MfgControl.AdvancedHMI.Controls.Gauge gauge1;
