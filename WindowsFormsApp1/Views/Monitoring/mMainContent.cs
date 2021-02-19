@@ -12,6 +12,7 @@ namespace WindowsFormsApp1.Views.Monitoring
 {
     public partial class mMainContent : UserControl
     {
+
         private static mMainContent _instance;
         public static mMainContent Instance
         {
@@ -25,9 +26,6 @@ namespace WindowsFormsApp1.Views.Monitoring
         public mMainContent()
         {
             InitializeComponent();
-            StaticConfig.moveSidePanel(this, pnlBodyData);
-            gsOverview gsOverview = new gsOverview();
-            StaticConfig.AddControlsToPanel(gsOverview, pnlBodyData);
         }
     }
 }

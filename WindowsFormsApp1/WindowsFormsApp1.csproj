@@ -100,6 +100,24 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Monitoring\gsDongCo1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsDongCo1.Designer.cs">
+      <DependentUpon>gsDongCo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsDongCo2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsDongCo2.Designer.cs">
+      <DependentUpon>gsDongCo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsDongCo3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsDongCo3.Designer.cs">
+      <DependentUpon>gsDongCo3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Monitoring\gsHethongDC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -152,6 +170,15 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monitoring\gsDongCo1.resx">
+      <DependentUpon>gsDongCo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monitoring\gsDongCo2.resx">
+      <DependentUpon>gsDongCo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monitoring\gsDongCo3.resx">
+      <DependentUpon>gsDongCo3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Monitoring\gsHethongDC.resx">
       <DependentUpon>gsHethongDC.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,7 +198,9 @@
       <DependentUpon>vMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Files\configamthanh.xlsx" />
-    <None Include="Files\configdongco1.xlsx" />
+    <None Include="Files\data_dongco_1.xlsx" />
+    <None Include="Files\data_dongco_2.xlsx" />
+    <None Include="Files\data_dongco_3.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -197,6 +226,10 @@
     <Content Include="ReferenFiles\AdvancedHMIControls.dll" />
     <Content Include="ReferenFiles\MfgControl.AdvancedHMI.Controls.dll" />
     <Content Include="ReferenFiles\SMMAS.Common.dll" />
+    <None Include="Resources\dc2.png" />
+    <None Include="Resources\dc1.png" />
+    <None Include="Resources\3.PNG" />
+    <None Include="Resources\2.PNG" />
     <None Include="Resources\home.png" />
     <None Include="Resources\home.jpg" />
     <None Include="Resources\forward.png" />
