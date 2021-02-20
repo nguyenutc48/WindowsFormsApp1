@@ -9,6 +9,7 @@ namespace WindowsFormsApp1.Models
 {
     public class PageControlModel
     {
+        public int Index { get; set; }
         public Control PageControl { get; set; }
         public string Title { get; set; }
     }

@@ -179,14 +179,16 @@ namespace WindowsFormsApp1.Views.Setting
                                     if (addr.TypeAddress == "Integer")
                                     {
                                         var temp = Convert.ToInt32(addr.ParameterValue);
-                                        if (temp<32767)
-                                            PLCCom.setDevice(addr.PLCAddress, temp);
-                                        else
-                                            PLCCom.setInt32Device(addr.PLCAddress, temp);
+                                        //if (temp<32767)
+                                        //    PLCCom.setDevice(addr.PLCAddress, temp);
+                                        //else
+                                        //    PLCCom.setInt32Device(addr.PLCAddress, temp);
+                                        PLCCom.setInt32Device(addr.PLCAddress, temp);
                                     }
                                     else
                                     {
-                                        var temp = Convert.ToDouble(addr.ParameterValue);
+                                        var temp = double.Parse(addr.ParameterValue, System.Globalization.CultureInfo.InvariantCulture);
+                                        //var temp = Convert.ToDouble(addr.ParameterValue.Replace('.',','));
                                         PLCCom.setDoubleDevice(addr.PLCAddress, temp);
                                     }
                                 }
@@ -248,14 +250,18 @@ namespace WindowsFormsApp1.Views.Setting
                                     if (addr.TypeAddress == "Integer")
                                     {
                                         var temp = Convert.ToInt32(addr.ParameterValue);
-                                        if (temp < 32767)
-                                            PLCCom.setDevice(addr.PLCAddress, temp);
-                                        else
-                                            PLCCom.setInt32Device(addr.PLCAddress, temp);
+                                        //if (temp < 32767)
+                                        //    PLCCom.setDevice(addr.PLCAddress, temp);
+                                        //else
+                                        //    PLCCom.setInt32Device(addr.PLCAddress, temp);
+                                        PLCCom.setDevice(addr.PLCAddress, temp);
+
                                     }
                                     else
                                     {
-                                        PLCCom.setDoubleDevice(addr.PLCAddress, Convert.ToDouble(addr.ParameterValue));
+                                        var temp = double.Parse(addr.ParameterValue, System.Globalization.CultureInfo.InvariantCulture);
+                                        //var temp = Convert.ToDouble(addr.ParameterValue.Replace('.',','));
+                                        PLCCom.setDoubleDevice(addr.PLCAddress, temp);
                                     }
                                 }
                                 Form1.DongCoAdress.AddRange(TempList);
@@ -315,14 +321,18 @@ namespace WindowsFormsApp1.Views.Setting
                                     if (addr.TypeAddress == "Integer")
                                     {
                                         var temp = Convert.ToInt32(addr.ParameterValue);
-                                        if (temp < 32767)
-                                            PLCCom.setDevice(addr.PLCAddress, temp);
-                                        else
-                                            PLCCom.setInt32Device(addr.PLCAddress, temp);
+                                        //if (temp < 32767)
+                                        //    PLCCom.setDevice(addr.PLCAddress, temp);
+                                        //else
+                                        //    PLCCom.setInt32Device(addr.PLCAddress, temp);
+                                        PLCCom.setDevice(addr.PLCAddress, temp);
+
                                     }
                                     else
                                     {
-                                        PLCCom.setDoubleDevice(addr.PLCAddress, Convert.ToDouble(addr.ParameterValue));
+                                        var temp = double.Parse(addr.ParameterValue, System.Globalization.CultureInfo.InvariantCulture);
+                                        //var temp = Convert.ToDouble(addr.ParameterValue.Replace('.',','));
+                                        PLCCom.setDoubleDevice(addr.PLCAddress, temp);
                                     }
                                 }
                                 Form1.DongCoAdress.AddRange(TempList);
@@ -403,6 +413,19 @@ namespace WindowsFormsApp1.Views.Setting
                 //btnLuuDC2.Enabled = true;
                 //btnLuuDC3.Enabled = true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int data = Convert.ToInt32(textBox1.Text);
+            PLCCom.plc.WriteDeviceRandom("D2000", 32, ref data);
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int data = Convert.ToInt32(textBox1.Text);
+            PLCCom.setInt32Device("D2000", data);
         }
     }
 }

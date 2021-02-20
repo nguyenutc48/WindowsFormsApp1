@@ -31,6 +31,20 @@ namespace WindowsFormsApp1.Views
         // Xem chi tiet 3 dong co
         private void btnClickChiTietDongCo(object sender, EventArgs e)
         {
+            var btn = sender as Button;
+            string btnName = btn.Name;
+            switch (btnName)
+            {
+                case "btndc1":
+                    mMainContent.Instance.NextPage(PAGE.DONG_CO_1);
+                    break;
+                case "btndc2":
+                    mMainContent.Instance.NextPage(PAGE.DONG_CO_2);
+                    break;
+                case "btndc3":
+                    mMainContent.Instance.NextPage(PAGE.DONG_CO_3);
+                    break;
+            }
 
         }
 
@@ -41,8 +55,7 @@ namespace WindowsFormsApp1.Views
 
         private void btnhethongdc_Click(object sender, EventArgs e)
         {
-            mMainContent.Instance.NextPage(gsHethongDC.Instance, "HỆ THỐNG ĐỘNG CƠ");
-            mMainContent.PageStore.Add(gsHethongDC.Instance);
+            mMainContent.Instance.NextPage(PAGE.HE_THONG_DONG_CO);
         }
 
         private void btnbangdienchinh_Click(object sender, EventArgs e)

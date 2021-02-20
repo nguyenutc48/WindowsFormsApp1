@@ -43,6 +43,7 @@ namespace WindowsFormsApp2
             //The Open method is executed.
             var iReturnCode = lpcom_ReferencesUtlType.Open();
             MessageBox.Show(iReturnCode.ToString());
+            timer1.Start();
 
         }
 
@@ -50,30 +51,21 @@ namespace WindowsFormsApp2
         {
             lpcom_ReferencesProgType = new ActProgTypeLib.ActProgTypeClass();
             lpcom_ReferencesUtlType = new ActUtlTypeLib.ActUtlTypeClass();
-            // Create EventHandler(ActUtlType)
-            lpcom_ReferencesUtlType.OnDeviceStatus +=
-                new ActUtlTypeLib._IActUtlTypeEvents_OnDeviceStatusEventHandler(ActUtlType1_OnDeviceStatus);
-            /**************************************************************************/
+            
         }
-        private void ActUtlType1_OnDeviceStatus(String szDevice, int iData, int iReturnCode)
+
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            System.String[] arrData;	        //Array for 'Data'
-            //Assign the array for the read data.
-            arrData = new System.String[txt_Data.Lines.Length + 1];
+            int data = Convert.ToInt32(textBox1.Text);
+            lpcom_ReferencesUtlType.WriteDeviceRandom("D2000", 32, ref data);
+        }
 
-            //Copy the read data to the 'arrData'.
-            Array.Copy(txt_Data.Lines, arrData, txt_Data.Lines.Length);
-
-            //Add the content of new event to arrData.
-            arrData[txt_Data.Lines.Length]
-            = String.Format("OnDeviceStatus event by ActUtlType [{0}={1}]", szDevice, iData);
-
-            //The new 'Data' is displayed.
-            txt_Data.Lines = arrData;
-
-            //The return code of the method is displayed by the hexadecimal.
-            txt_ReturnCode.Text = String.Format("0x{0:x8}", iReturnCode);
-
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int data = 0;
+            lpcom_ReferencesUtlType.ReadDeviceRandom("D2000", 32, out data);
+            textBox2.Text = data.ToString();
         }
     }
 }

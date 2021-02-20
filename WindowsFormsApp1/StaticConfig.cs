@@ -7,6 +7,14 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    public static class PAGE
+    {
+        public const int HOME = 0;
+        public const int HE_THONG_DONG_CO = 1;
+        public const int DONG_CO_1 = 2;
+        public const int DONG_CO_2 = 3;
+        public const int DONG_CO_3 = 4;
+    }
     public class StaticConfig
     {
         public static void moveSidePanel(Control btn, Panel pnl_Content)

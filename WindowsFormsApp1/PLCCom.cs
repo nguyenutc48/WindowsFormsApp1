@@ -267,6 +267,19 @@ namespace WindowsFormsApp1
                 return -1;
         }
 
+        public static int getInt32(string name)
+        {
+            short[] data = new short[2];
+            plc.ReadDeviceBlock2(name, 2, out data[0]);
+            return ShortToInt(data[0], data[1]);
+        }
+
+        public static void setInt32(string name, int data)
+        {
+            int temp = Convert.ToInt32(data);
+            plc.WriteDeviceRandom(name, 32, temp);
+        }
+
         /// <summary>
         /// set value int32 to plc
         /// </summary>
@@ -337,7 +350,7 @@ namespace WindowsFormsApp1
 
         private static Int32 convertPLC2Int32(int i_num1, int i_num2)
         {
-            int result = unchecked((int)(((uint)i_num1 << 16) | i_num2));
+            //int result = unchecked((int)(((uint)i_num1 << 16) | i_num2));
             var int_bytes1 = BitConverter.GetBytes(i_num1);
             var int_bytes2 = BitConverter.GetBytes(i_num2);
             Buffer.BlockCopy(int_bytes2, 0, int_bytes1, 2, 2);
@@ -358,6 +371,13 @@ namespace WindowsFormsApp1
         {
             string temp = name.Substring(1);
             return Convert.ToInt32(temp);
+        }
+
+        private static int ShortToInt(short low, short hight)
+        {
+            byte[] bytesLow = BitConverter.GetBytes(low);
+            byte[] bytesHight = BitConverter.GetBytes(hight);
+            return BitConverter.ToInt32(new byte[] { bytesLow[0], bytesLow[1], bytesHight[0], bytesHight[1] }, 0);
         }
     }
 }
