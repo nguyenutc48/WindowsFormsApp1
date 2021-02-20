@@ -402,30 +402,19 @@ namespace WindowsFormsApp1.Views.Setting
             if (Form1.plcConnected == false)
             {
                 lbltrangthai.Text = "Đang không kết nối với PLC";
-                //btnLuuDC1.Enabled = false;
-                //btnLuuDC2.Enabled = false;
-                //btnLuuDC3.Enabled = false;
+                btnLuuDC1.Enabled = false;
+                btnLuuDC2.Enabled = false;
+                btnLuuDC3.Enabled = false;
             }
             else
             {
                 lbltrangthai.Text = "Đã kết nối với PLC";
-                //btnLuuDC1.Enabled = true;
-                //btnLuuDC2.Enabled = true;
-                //btnLuuDC3.Enabled = true;
+                btnLuuDC1.Enabled = true;
+                btnLuuDC2.Enabled = true;
+                btnLuuDC3.Enabled = true;
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int data = Convert.ToInt32(textBox1.Text);
-            PLCCom.plc.WriteDeviceRandom("D2000", 32, ref data);
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int data = Convert.ToInt32(textBox1.Text);
-            PLCCom.setInt32Device("D2000", data);
-        }
     }
 }
