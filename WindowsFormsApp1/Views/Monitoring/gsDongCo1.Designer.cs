@@ -245,7 +245,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 23);
             this.label3.TabIndex = 3;
-            this.label3.Text = "ĐỘNG CƠ";
+            this.label3.Text = "ĐỘNG CƠ 1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
