@@ -99,6 +99,12 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Monitoring\gsDiagram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsDiagram.Designer.cs">
+      <DependentUpon>gsDiagram.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Monitoring\gsDongCo1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +134,12 @@
     </Compile>
     <Compile Include="Views\Monitoring\gsOverview.Designer.cs">
       <DependentUpon>gsOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsTongQuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsTongQuan.Designer.cs">
+      <DependentUpon>gsTongQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Monitoring\mMainContent.cs">
       <SubType>UserControl</SubType>
@@ -169,6 +181,9 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monitoring\gsDiagram.resx">
+      <DependentUpon>gsDiagram.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Monitoring\gsDongCo1.resx">
       <DependentUpon>gsDongCo1.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Monitoring\gsOverview.resx">
       <DependentUpon>gsOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monitoring\gsTongQuan.resx">
+      <DependentUpon>gsTongQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Monitoring\mMainContent.resx">
       <DependentUpon>mMainContent.cs</DependentUpon>
@@ -225,6 +243,8 @@
     <Content Include="ReferenFiles\AdvancedHMIControls.dll" />
     <Content Include="ReferenFiles\MfgControl.AdvancedHMI.Controls.dll" />
     <Content Include="ReferenFiles\SMMAS.Common.dll" />
+    <None Include="Resources\so do.PNG" />
+    <None Include="Resources\may phat dien.png" />
     <None Include="Resources\dc2.png" />
     <None Include="Resources\dc1.png" />
     <None Include="Resources\3.PNG" />

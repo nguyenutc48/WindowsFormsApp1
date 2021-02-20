@@ -35,6 +35,8 @@ namespace WindowsFormsApp1.Views.Monitoring
             PageStoreLoad.Add(new PageControlModel() { Index = PAGE.DONG_CO_1, PageControl = gsDongCo1.Instance, Title = "ĐỘNG CƠ 1" });
             PageStoreLoad.Add(new PageControlModel() { Index = PAGE.DONG_CO_2, PageControl = gsDongCo2.Instance, Title = "ĐỘNG CƠ 2" });
             PageStoreLoad.Add(new PageControlModel() { Index = PAGE.DONG_CO_3, PageControl = gsDongCo3.Instance, Title = "ĐỘNG CƠ 3" });
+            PageStoreLoad.Add(new PageControlModel() { Index = PAGE.DIAGRAM, PageControl = gsDiagram.Instance, Title = "SƠ ĐỒ KẾT NỐI" });
+            PageStoreLoad.Add(new PageControlModel() { Index = PAGE.TONGQUAT, PageControl = gsTongQuan.Instance, Title = "MÁY PHÁT ĐIỆN" });
 
             foreach (var item in PageStoreLoad)
             {

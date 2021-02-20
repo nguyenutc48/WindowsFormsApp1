@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Views.Monitoring;
 
 namespace WindowsFormsApp1.Views
 {
@@ -25,6 +26,23 @@ namespace WindowsFormsApp1.Views
         public gsHethongDC()
         {
             InitializeComponent();
+        }
+
+        private void btnDC1_Click(object sender, EventArgs e)
+        {
+            mMainContent.Instance.NextPage(PAGE.DONG_CO_1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            mMainContent.Instance.NextPage(PAGE.DONG_CO_2);
+
+        }
+
+        private void btnDC3_Click(object sender, EventArgs e)
+        {
+            mMainContent.Instance.NextPage(PAGE.DONG_CO_3);
+
         }
     }
 }

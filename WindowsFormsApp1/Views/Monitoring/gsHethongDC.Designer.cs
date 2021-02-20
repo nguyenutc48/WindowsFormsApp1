@@ -105,6 +105,7 @@ namespace WindowsFormsApp1.Views
             this.btnDC3.TabIndex = 0;
             this.btnDC3.Text = "ĐỘNG CƠ 3";
             this.btnDC3.UseVisualStyleBackColor = true;
+            this.btnDC3.Click += new System.EventHandler(this.btnDC3_Click);
             // 
             // btnDC1
             // 
@@ -115,6 +116,7 @@ namespace WindowsFormsApp1.Views
             this.btnDC1.TabIndex = 0;
             this.btnDC1.Text = "ĐỘNG CƠ 1";
             this.btnDC1.UseVisualStyleBackColor = true;
+            this.btnDC1.Click += new System.EventHandler(this.btnDC1_Click);
             // 
             // button1
             // 
@@ -125,6 +127,7 @@ namespace WindowsFormsApp1.Views
             this.button1.TabIndex = 0;
             this.button1.Text = "ĐỘNG CƠ 2";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 

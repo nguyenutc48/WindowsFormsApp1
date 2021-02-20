@@ -14,6 +14,8 @@ namespace WindowsFormsApp1
         public const int DONG_CO_1 = 2;
         public const int DONG_CO_2 = 3;
         public const int DONG_CO_3 = 4;
+        public const int DIAGRAM = 5;
+        public const int TONGQUAT = 6;
     }
     public class StaticConfig
     {

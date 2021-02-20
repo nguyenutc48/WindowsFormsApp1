@@ -50,6 +50,7 @@ namespace WindowsFormsApp1.Views
 
         private void btncauhinhhethong_Click(object sender, EventArgs e)
         {
+            mMainContent.Instance.NextPage(PAGE.DIAGRAM);
 
         }
 
@@ -60,6 +61,7 @@ namespace WindowsFormsApp1.Views
 
         private void btnbangdienchinh_Click(object sender, EventArgs e)
         {
+            mMainContent.Instance.NextPage(PAGE.TONGQUAT);
 
         }
     }
