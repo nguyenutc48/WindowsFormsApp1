@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Models;
@@ -19,6 +20,15 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        bool scanRunning = false;
+
+        WMPLib.WindowsMediaPlayer wplayer1 = new WMPLib.WindowsMediaPlayer();
+        WMPLib.WindowsMediaPlayer wplayer2 = new WMPLib.WindowsMediaPlayer();
+        WMPLib.WindowsMediaPlayer wplayer3 = new WMPLib.WindowsMediaPlayer();
+        int soundIndex1_Old = 0;
+        int soundIndex2_Old = 0;
+        int soundIndex3_Old = 0;
+
         private static bool _plcconnected = false;
         public static bool plcConnected { get { return _plcconnected; } set { _plcconnected = value; } }
         private static bool _loadConfigFinsh = false;
@@ -34,18 +44,18 @@ namespace WindowsFormsApp1
                 return _instance;
             }
         }
-        private static List<AmThanhModel> _amThanhModels;
-        public static List<AmThanhModel> AmThanhModel
+        private static List<AmThanhModel> _amThanhConfigs;
+        public static List<AmThanhModel> AmThanhConfigs
         {
             get
             {
-                if (_amThanhModels == null)
-                    _amThanhModels = new List<AmThanhModel>();
-                return _amThanhModels;
+                if (_amThanhConfigs == null)
+                    _amThanhConfigs = new List<AmThanhModel>();
+                return _amThanhConfigs;
             }
             set
             {
-                _amThanhModels = value;
+                _amThanhConfigs = value;
             }
         }
         private static List<DongCoConfigModel> _dongcoAddress;
@@ -127,14 +137,28 @@ namespace WindowsFormsApp1
                 var motor1Config = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControlAddressDC1.xlsx");
                 var motor2Config = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControlAddressDC2.xlsx");
                 var motor3Config = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControlAddressDC3.xlsx");
+                var amthanhPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "AmthanhConfig.xlsx");
 
                 string[,] motor1ConfigData;
                 string[,] motor2ConfigData;
                 string[,] motor3ConfigData;
+                string[,] amthanhConfigData;
 
                 NFILEHELPER.ExcelHelper.Read(motor1Config, out motor1ConfigData);
                 NFILEHELPER.ExcelHelper.Read(motor2Config, out motor2ConfigData);
                 NFILEHELPER.ExcelHelper.Read(motor3Config, out motor3ConfigData);
+                NFILEHELPER.ExcelHelper.Read(amthanhPath, out amthanhConfigData);
+                var pathSound = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Sound");
+                if (!Directory.Exists(pathSound))
+                    Directory.CreateDirectory(pathSound);
+                for (int i = 1; i < amthanhConfigData.GetLength(0); i++)
+                {
+                    AmThanhModel amThanhModel = new AmThanhModel();
+                    amThanhModel.Index = Convert.ToInt16(amthanhConfigData[i, 0]);
+                    amThanhModel.Tocdo = amthanhConfigData[i, 1] == null ? "" : amthanhConfigData[i, 1].ToString();
+                    amThanhModel.TenFile = amthanhConfigData[i, 2] == null ? "" : Path.Combine(pathSound, amthanhConfigData[i, 2].ToString());
+                    AmThanhConfigs.Add(amThanhModel);
+                }
                 for (int i = 1; i < motor1ConfigData.GetLength(0); i++)
                 {
                     ControlAddressModel dongco = new ControlAddressModel();
@@ -173,7 +197,7 @@ namespace WindowsFormsApp1
             loadConfigFinsh = true;
 
 
-
+            timer1.Start();
         }
 
         private void btnClick_Menu(object sender, EventArgs e)
@@ -210,9 +234,69 @@ namespace WindowsFormsApp1
         }
 
         // Timer update data
-        private void timer1_Tick(object sender, EventArgs e)
+        private async void timer1_Tick(object sender, EventArgs e)
         {
+            if (scanRunning == true)
+                return;
+            scanRunning = true;
+            await Task.Factory.StartNew(() =>
+            {
+                if (loadConfigFinsh)
+                {
+                    if (plcConnected)
+                    {
+                        int soundIndex1 = PLCCom.getDevice("D358"); //May 1
+                        int soundIndex2 = PLCCom.getDevice("D360"); //May 2
+                        int soundIndex3 = PLCCom.getDevice("D362"); //May 3
+                        if (soundIndex1 != soundIndex1_Old)
+                        {
+                            wplayer1.controls.pause();
+                            soundIndex1_Old = soundIndex1;
+                            var soundSelected = AmThanhConfigs.Where(a => a.Index == soundIndex1).FirstOrDefault();
+                            if (soundSelected != null)
+                            {
+                                //wplayer1.controls.pause();
+                                //Thread.Sleep(1000);
+                                wplayer1.settings.setMode("loop", true);
+                                wplayer1.URL = soundSelected.TenFile;
+                                wplayer1.controls.play();
+                            }
 
+                        }
+                        if (soundIndex2 != soundIndex2_Old)
+                        {
+                            wplayer2.controls.pause();
+                            soundIndex2_Old = soundIndex2;
+                            var soundSelected = AmThanhConfigs.Where(a => a.Index == soundIndex2).FirstOrDefault();
+                            if (soundSelected != null)
+                            {
+                                //wplayer2.controls.pause();
+                                //Thread.Sleep(1000);
+                                wplayer2.settings.setMode("loop", true);
+                                wplayer2.URL = soundSelected.TenFile;
+                                wplayer2.controls.play();
+                            }
+
+                        }
+                        if (soundIndex3 != soundIndex3_Old)
+                        {
+                            wplayer3.controls.pause();
+                            soundIndex3_Old = soundIndex3;
+                            var soundSelected = AmThanhConfigs.Where(a => a.Index == soundIndex3).FirstOrDefault();
+                            if (soundSelected != null)
+                            {
+                                //wplayer3.controls.pause();
+                                //Thread.Sleep(1000);
+                                wplayer3.settings.setMode("loop", true);
+                                wplayer3.URL = soundSelected.TenFile;
+                                wplayer3.controls.play();
+                            }
+
+                        }
+                    }
+                }
+            });
+            scanRunning = false;
         }
     }
 }

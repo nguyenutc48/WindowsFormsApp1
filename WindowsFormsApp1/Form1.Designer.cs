@@ -32,6 +32,9 @@ namespace WindowsFormsApp1
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tbp_mainContent = new System.Windows.Forms.TableLayoutPanel();
+            this.bannerMain = new System.Windows.Forms.Panel();
+            this.btnMiniApp = new EnhancedGlassButton.GlassButton();
+            this.btnCloseApp = new EnhancedGlassButton.GlassButton();
             this.label1 = new System.Windows.Forms.Label();
             this.tbp_mainMenu = new System.Windows.Forms.TableLayoutPanel();
             this.btnTaiLieu = new EnhancedGlassButton.GlassButton();
@@ -40,12 +43,9 @@ namespace WindowsFormsApp1
             this.btnGiamSat = new EnhancedGlassButton.GlassButton();
             this.pnl_mainContent = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bannerMain = new System.Windows.Forms.Panel();
-            this.btnMiniApp = new EnhancedGlassButton.GlassButton();
-            this.btnCloseApp = new EnhancedGlassButton.GlassButton();
             this.tbp_mainContent.SuspendLayout();
-            this.tbp_mainMenu.SuspendLayout();
             this.bannerMain.SuspendLayout();
+            this.tbp_mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbp_mainContent
@@ -67,6 +67,54 @@ namespace WindowsFormsApp1
             this.tbp_mainContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.59896F));
             this.tbp_mainContent.Size = new System.Drawing.Size(1280, 768);
             this.tbp_mainContent.TabIndex = 0;
+            // 
+            // bannerMain
+            // 
+            this.bannerMain.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logo;
+            this.bannerMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bannerMain.Controls.Add(this.btnMiniApp);
+            this.bannerMain.Controls.Add(this.btnCloseApp);
+            this.bannerMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bannerMain.Location = new System.Drawing.Point(0, 0);
+            this.bannerMain.Margin = new System.Windows.Forms.Padding(0);
+            this.bannerMain.Name = "bannerMain";
+            this.bannerMain.Size = new System.Drawing.Size(1280, 78);
+            this.bannerMain.TabIndex = 1;
+            this.bannerMain.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bannerMain_MouseDown);
+            // 
+            // btnMiniApp
+            // 
+            this.btnMiniApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMiniApp.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnMiniApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMiniApp.ForeColor = System.Drawing.Color.Yellow;
+            this.btnMiniApp.GlowColor = System.Drawing.Color.Lime;
+            this.btnMiniApp.InnerBorderColor = System.Drawing.Color.Transparent;
+            this.btnMiniApp.Location = new System.Drawing.Point(1190, 3);
+            this.btnMiniApp.Name = "btnMiniApp";
+            this.btnMiniApp.OuterBorderColor = System.Drawing.Color.Transparent;
+            this.btnMiniApp.ShowFocusBorder = true;
+            this.btnMiniApp.Size = new System.Drawing.Size(41, 34);
+            this.btnMiniApp.TabIndex = 1;
+            this.btnMiniApp.Text = "-";
+            this.btnMiniApp.Click += new System.EventHandler(this.btnMiniApp_Click);
+            // 
+            // btnCloseApp
+            // 
+            this.btnCloseApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseApp.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnCloseApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCloseApp.ForeColor = System.Drawing.Color.Red;
+            this.btnCloseApp.GlowColor = System.Drawing.Color.Lime;
+            this.btnCloseApp.InnerBorderColor = System.Drawing.Color.Transparent;
+            this.btnCloseApp.Location = new System.Drawing.Point(1237, 3);
+            this.btnCloseApp.Name = "btnCloseApp";
+            this.btnCloseApp.OuterBorderColor = System.Drawing.Color.Transparent;
+            this.btnCloseApp.ShowFocusBorder = true;
+            this.btnCloseApp.Size = new System.Drawing.Size(41, 34);
+            this.btnCloseApp.TabIndex = 2;
+            this.btnCloseApp.Text = "X";
+            this.btnCloseApp.Click += new System.EventHandler(this.btnCloseApp_Click);
             // 
             // label1
             // 
@@ -182,55 +230,8 @@ namespace WindowsFormsApp1
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // bannerMain
-            // 
-            this.bannerMain.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.logo;
-            this.bannerMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bannerMain.Controls.Add(this.btnMiniApp);
-            this.bannerMain.Controls.Add(this.btnCloseApp);
-            this.bannerMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bannerMain.Location = new System.Drawing.Point(0, 0);
-            this.bannerMain.Margin = new System.Windows.Forms.Padding(0);
-            this.bannerMain.Name = "bannerMain";
-            this.bannerMain.Size = new System.Drawing.Size(1280, 78);
-            this.bannerMain.TabIndex = 1;
-            this.bannerMain.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bannerMain_MouseDown);
-            // 
-            // btnMiniApp
-            // 
-            this.btnMiniApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMiniApp.BackColor = System.Drawing.Color.DarkGreen;
-            this.btnMiniApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMiniApp.ForeColor = System.Drawing.Color.Yellow;
-            this.btnMiniApp.GlowColor = System.Drawing.Color.Lime;
-            this.btnMiniApp.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnMiniApp.Location = new System.Drawing.Point(1190, 3);
-            this.btnMiniApp.Name = "btnMiniApp";
-            this.btnMiniApp.OuterBorderColor = System.Drawing.Color.Transparent;
-            this.btnMiniApp.ShowFocusBorder = true;
-            this.btnMiniApp.Size = new System.Drawing.Size(41, 34);
-            this.btnMiniApp.TabIndex = 1;
-            this.btnMiniApp.Text = "-";
-            this.btnMiniApp.Click += new System.EventHandler(this.btnMiniApp_Click);
-            // 
-            // btnCloseApp
-            // 
-            this.btnCloseApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseApp.BackColor = System.Drawing.Color.OrangeRed;
-            this.btnCloseApp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCloseApp.ForeColor = System.Drawing.Color.Red;
-            this.btnCloseApp.GlowColor = System.Drawing.Color.Lime;
-            this.btnCloseApp.InnerBorderColor = System.Drawing.Color.Transparent;
-            this.btnCloseApp.Location = new System.Drawing.Point(1237, 3);
-            this.btnCloseApp.Name = "btnCloseApp";
-            this.btnCloseApp.OuterBorderColor = System.Drawing.Color.Transparent;
-            this.btnCloseApp.ShowFocusBorder = true;
-            this.btnCloseApp.Size = new System.Drawing.Size(41, 34);
-            this.btnCloseApp.TabIndex = 2;
-            this.btnCloseApp.Text = "X";
-            this.btnCloseApp.Click += new System.EventHandler(this.btnCloseApp_Click);
             // 
             // Form1
             // 
@@ -245,8 +246,8 @@ namespace WindowsFormsApp1
             this.Text = "PHẦN MỀM GIÁM SÁT ĐỘNG CƠ MTU";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tbp_mainContent.ResumeLayout(false);
-            this.tbp_mainMenu.ResumeLayout(false);
             this.bannerMain.ResumeLayout(false);
+            this.tbp_mainMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

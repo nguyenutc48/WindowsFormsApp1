@@ -70,6 +70,17 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label53 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.plc_dc1_lbl_chedo = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_dauHopso = new System.Windows.Forms.Label();
+            this.plc_dc3_lb_apluc_daudkHopso = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khixaB = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khixaA = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khiTangap = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khinap = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_ncLammat = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_dauboitron = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_nlRail = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -87,8 +98,25 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label1 = new System.Windows.Forms.Label();
             this.plc_dc3_lbl_vitri_chanvit = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.plc_dc3_pnl_lamp_right = new System.Windows.Forms.Panel();
+            this.plc_dc3_pnl_lamp_lihop = new System.Windows.Forms.Panel();
+            this.plc_dc3_pnl_lamp_left = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.plc_dc1_lbl_nhietdo_ecu = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_dienap_ecu = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_thoigian_hoatdong = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_nl_sauphin = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_nhienlieuRail = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_khinap = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_homtruc = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_boitron = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_luong_nhien_lieu = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_spd_tangap2 = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_spd_tangap1 = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_tocdo = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -96,40 +124,13 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.plc_dc3_pnl_lamp_right = new System.Windows.Forms.Panel();
-            this.plc_dc3_pnl_lamp_lihop = new System.Windows.Forms.Panel();
-            this.plc_dc3_pnl_lamp_left = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_luong_nhien_lieu = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_spd_tangap2 = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_spd_tangap1 = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_spd_dongco = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_apluc_nl_sauphin = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_apluc_nhienlieuRail = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_apluc_khinap = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_apluc_homtruc = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_apluc_boitron = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_nhietdo_ecu = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_dienap_ecu = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_thoigian_hoatdong = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_khixaB = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_khixaA = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_khiTangap = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_khinap = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_ncLammat = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_dauboitron = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_nlRail = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhietdo_dauHopso = new System.Windows.Forms.Label();
-            this.plc_dc3_lb_apluc_daudkHopso = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_chedo = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.plc_dc3_btn_dieukhien = new EnhancedGlassButton.GlassButton();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label20
@@ -159,22 +160,24 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc3_btn_khoi_dong.BackColor = System.Drawing.Color.DarkBlue;
             this.plc_dc3_btn_khoi_dong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plc_dc3_btn_khoi_dong.GlowColor = System.Drawing.Color.Red;
-            this.plc_dc3_btn_khoi_dong.Location = new System.Drawing.Point(74, 516);
+            this.plc_dc3_btn_khoi_dong.Location = new System.Drawing.Point(184, 516);
             this.plc_dc3_btn_khoi_dong.Name = "plc_dc3_btn_khoi_dong";
             this.plc_dc3_btn_khoi_dong.Size = new System.Drawing.Size(114, 45);
             this.plc_dc3_btn_khoi_dong.TabIndex = 15;
             this.plc_dc3_btn_khoi_dong.Text = "KHỞI ĐỘNG";
+            this.plc_dc3_btn_khoi_dong.Click += new System.EventHandler(this.plc_dc3_btn_khoi_dong_Click);
             // 
             // plc_dc3_btn_dung
             // 
             this.plc_dc3_btn_dung.BackColor = System.Drawing.Color.DarkBlue;
             this.plc_dc3_btn_dung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plc_dc3_btn_dung.GlowColor = System.Drawing.Color.Red;
-            this.plc_dc3_btn_dung.Location = new System.Drawing.Point(286, 516);
+            this.plc_dc3_btn_dung.Location = new System.Drawing.Point(341, 516);
             this.plc_dc3_btn_dung.Name = "plc_dc3_btn_dung";
             this.plc_dc3_btn_dung.Size = new System.Drawing.Size(114, 45);
             this.plc_dc3_btn_dung.TabIndex = 16;
             this.plc_dc3_btn_dung.Text = "DỪNG";
+            this.plc_dc3_btn_dung.Click += new System.EventHandler(this.plc_dc3_btn_dung_Click);
             // 
             // label32
             // 
@@ -608,6 +611,127 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel3.Size = new System.Drawing.Size(490, 582);
             this.panel3.TabIndex = 1;
             // 
+            // plc_dc1_lbl_chedo
+            // 
+            this.plc_dc1_lbl_chedo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_chedo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_chedo.Location = new System.Drawing.Point(290, 485);
+            this.plc_dc1_lbl_chedo.Name = "plc_dc1_lbl_chedo";
+            this.plc_dc1_lbl_chedo.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc1_lbl_chedo.TabIndex = 28;
+            this.plc_dc1_lbl_chedo.Text = "Tải chờ";
+            this.plc_dc1_lbl_chedo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc3_lbl_nhietdo_dauHopso
+            // 
+            this.plc_dc3_lbl_nhietdo_dauHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_dauHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_dauHopso.Location = new System.Drawing.Point(290, 402);
+            this.plc_dc3_lbl_nhietdo_dauHopso.Name = "plc_dc3_lbl_nhietdo_dauHopso";
+            this.plc_dc3_lbl_nhietdo_dauHopso.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_dauHopso.TabIndex = 26;
+            this.plc_dc3_lbl_nhietdo_dauHopso.Text = "0";
+            this.plc_dc3_lbl_nhietdo_dauHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lb_apluc_daudkHopso
+            // 
+            this.plc_dc3_lb_apluc_daudkHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lb_apluc_daudkHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lb_apluc_daudkHopso.Location = new System.Drawing.Point(290, 367);
+            this.plc_dc3_lb_apluc_daudkHopso.Name = "plc_dc3_lb_apluc_daudkHopso";
+            this.plc_dc3_lb_apluc_daudkHopso.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lb_apluc_daudkHopso.TabIndex = 27;
+            this.plc_dc3_lb_apluc_daudkHopso.Text = "0";
+            this.plc_dc3_lb_apluc_daudkHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khixaB
+            // 
+            this.plc_dc3_lbl_nhietdo_khixaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khixaB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khixaB.Location = new System.Drawing.Point(290, 276);
+            this.plc_dc3_lbl_nhietdo_khixaB.Name = "plc_dc3_lbl_nhietdo_khixaB";
+            this.plc_dc3_lbl_nhietdo_khixaB.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khixaB.TabIndex = 18;
+            this.plc_dc3_lbl_nhietdo_khixaB.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khixaB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khinapTruocVL
+            // 
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Location = new System.Drawing.Point(290, 171);
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Name = "plc_dc3_lbl_nhietdo_khinapTruocVL";
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.TabIndex = 19;
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khixaA
+            // 
+            this.plc_dc3_lbl_nhietdo_khixaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khixaA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khixaA.Location = new System.Drawing.Point(290, 241);
+            this.plc_dc3_lbl_nhietdo_khixaA.Name = "plc_dc3_lbl_nhietdo_khixaA";
+            this.plc_dc3_lbl_nhietdo_khixaA.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khixaA.TabIndex = 20;
+            this.plc_dc3_lbl_nhietdo_khixaA.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khixaA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khiTangap
+            // 
+            this.plc_dc3_lbl_nhietdo_khiTangap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khiTangap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khiTangap.Location = new System.Drawing.Point(290, 136);
+            this.plc_dc3_lbl_nhietdo_khiTangap.Name = "plc_dc3_lbl_nhietdo_khiTangap";
+            this.plc_dc3_lbl_nhietdo_khiTangap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khiTangap.TabIndex = 21;
+            this.plc_dc3_lbl_nhietdo_khiTangap.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khiTangap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khinap
+            // 
+            this.plc_dc3_lbl_nhietdo_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khinap.Location = new System.Drawing.Point(290, 206);
+            this.plc_dc3_lbl_nhietdo_khinap.Name = "plc_dc3_lbl_nhietdo_khinap";
+            this.plc_dc3_lbl_nhietdo_khinap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khinap.TabIndex = 22;
+            this.plc_dc3_lbl_nhietdo_khinap.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_ncLammat
+            // 
+            this.plc_dc3_lbl_nhietdo_ncLammat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_ncLammat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_ncLammat.Location = new System.Drawing.Point(290, 101);
+            this.plc_dc3_lbl_nhietdo_ncLammat.Name = "plc_dc3_lbl_nhietdo_ncLammat";
+            this.plc_dc3_lbl_nhietdo_ncLammat.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_ncLammat.TabIndex = 23;
+            this.plc_dc3_lbl_nhietdo_ncLammat.Text = "0";
+            this.plc_dc3_lbl_nhietdo_ncLammat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_dauboitron
+            // 
+            this.plc_dc3_lbl_nhietdo_dauboitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_dauboitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_dauboitron.Location = new System.Drawing.Point(290, 31);
+            this.plc_dc3_lbl_nhietdo_dauboitron.Name = "plc_dc3_lbl_nhietdo_dauboitron";
+            this.plc_dc3_lbl_nhietdo_dauboitron.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_dauboitron.TabIndex = 24;
+            this.plc_dc3_lbl_nhietdo_dauboitron.Text = "0";
+            this.plc_dc3_lbl_nhietdo_dauboitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_nlRail
+            // 
+            this.plc_dc3_lbl_nhietdo_nlRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_nlRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_nlRail.Location = new System.Drawing.Point(290, 66);
+            this.plc_dc3_lbl_nhietdo_nlRail.Name = "plc_dc3_lbl_nhietdo_nlRail";
+            this.plc_dc3_lbl_nhietdo_nlRail.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_nlRail.TabIndex = 25;
+            this.plc_dc3_lbl_nhietdo_nlRail.Text = "0";
+            this.plc_dc3_lbl_nhietdo_nlRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // label29
             // 
             this.label29.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -805,6 +929,41 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel2.Size = new System.Drawing.Size(99, 582);
             this.panel2.TabIndex = 1;
             // 
+            // plc_dc3_pnl_lamp_right
+            // 
+            this.plc_dc3_pnl_lamp_right.BackColor = System.Drawing.Color.LightGray;
+            this.plc_dc3_pnl_lamp_right.Location = new System.Drawing.Point(71, 164);
+            this.plc_dc3_pnl_lamp_right.Name = "plc_dc3_pnl_lamp_right";
+            this.plc_dc3_pnl_lamp_right.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc3_pnl_lamp_right.TabIndex = 7;
+            // 
+            // plc_dc3_pnl_lamp_lihop
+            // 
+            this.plc_dc3_pnl_lamp_lihop.BackColor = System.Drawing.Color.LightGray;
+            this.plc_dc3_pnl_lamp_lihop.Location = new System.Drawing.Point(25, 86);
+            this.plc_dc3_pnl_lamp_lihop.Name = "plc_dc3_pnl_lamp_lihop";
+            this.plc_dc3_pnl_lamp_lihop.Size = new System.Drawing.Size(52, 22);
+            this.plc_dc3_pnl_lamp_lihop.TabIndex = 8;
+            // 
+            // plc_dc3_pnl_lamp_left
+            // 
+            this.plc_dc3_pnl_lamp_left.BackColor = System.Drawing.Color.LightGray;
+            this.plc_dc3_pnl_lamp_left.Location = new System.Drawing.Point(3, 164);
+            this.plc_dc3_pnl_lamp_left.Name = "plc_dc3_pnl_lamp_left";
+            this.plc_dc3_pnl_lamp_left.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc3_pnl_lamp_left.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc1;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -831,7 +990,8 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel1.Controls.Add(this.plc_dc3_lbl_luong_nhien_lieu);
             this.panel1.Controls.Add(this.plc_dc3_lbl_spd_tangap2);
             this.panel1.Controls.Add(this.plc_dc3_lbl_spd_tangap1);
-            this.panel1.Controls.Add(this.plc_dc3_lbl_spd_dongco);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_tocdo);
+            this.panel1.Controls.Add(this.plc_dc3_btn_dieukhien);
             this.panel1.Controls.Add(this.plc_dc3_btn_khoi_dong);
             this.panel1.Controls.Add(this.plc_dc3_btn_dung);
             this.panel1.Controls.Add(this.label32);
@@ -869,6 +1029,149 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(492, 582);
             this.panel1.TabIndex = 0;
+            // 
+            // plc_dc1_lbl_nhietdo_ecu
+            // 
+            this.plc_dc1_lbl_nhietdo_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_nhietdo_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_nhietdo_ecu.Location = new System.Drawing.Point(261, 435);
+            this.plc_dc1_lbl_nhietdo_ecu.Name = "plc_dc1_lbl_nhietdo_ecu";
+            this.plc_dc1_lbl_nhietdo_ecu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc1_lbl_nhietdo_ecu.TabIndex = 27;
+            this.plc_dc1_lbl_nhietdo_ecu.Text = "0";
+            this.plc_dc1_lbl_nhietdo_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc1_lbl_dienap_ecu
+            // 
+            this.plc_dc1_lbl_dienap_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_dienap_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_dienap_ecu.Location = new System.Drawing.Point(261, 406);
+            this.plc_dc1_lbl_dienap_ecu.Name = "plc_dc1_lbl_dienap_ecu";
+            this.plc_dc1_lbl_dienap_ecu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc1_lbl_dienap_ecu.TabIndex = 28;
+            this.plc_dc1_lbl_dienap_ecu.Text = "0";
+            this.plc_dc1_lbl_dienap_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_thoigian_hoatdong
+            // 
+            this.plc_dc3_lbl_thoigian_hoatdong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_thoigian_hoatdong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_thoigian_hoatdong.Location = new System.Drawing.Point(261, 377);
+            this.plc_dc3_lbl_thoigian_hoatdong.Name = "plc_dc3_lbl_thoigian_hoatdong";
+            this.plc_dc3_lbl_thoigian_hoatdong.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_thoigian_hoatdong.TabIndex = 29;
+            this.plc_dc3_lbl_thoigian_hoatdong.Text = "0";
+            this.plc_dc3_lbl_thoigian_hoatdong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_nl_sauphin
+            // 
+            this.plc_dc3_lbl_apluc_nl_sauphin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_nl_sauphin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_nl_sauphin.Location = new System.Drawing.Point(261, 340);
+            this.plc_dc3_lbl_apluc_nl_sauphin.Name = "plc_dc3_lbl_apluc_nl_sauphin";
+            this.plc_dc3_lbl_apluc_nl_sauphin.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_nl_sauphin.TabIndex = 22;
+            this.plc_dc3_lbl_apluc_nl_sauphin.Text = "0";
+            this.plc_dc3_lbl_apluc_nl_sauphin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_nhienlieuRail
+            // 
+            this.plc_dc3_lbl_apluc_nhienlieuRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Location = new System.Drawing.Point(261, 306);
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Name = "plc_dc3_lbl_apluc_nhienlieuRail";
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_nhienlieuRail.TabIndex = 23;
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Text = "0";
+            this.plc_dc3_lbl_apluc_nhienlieuRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_khinap
+            // 
+            this.plc_dc3_lbl_apluc_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_khinap.Location = new System.Drawing.Point(261, 272);
+            this.plc_dc3_lbl_apluc_khinap.Name = "plc_dc3_lbl_apluc_khinap";
+            this.plc_dc3_lbl_apluc_khinap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_khinap.TabIndex = 24;
+            this.plc_dc3_lbl_apluc_khinap.Text = "0";
+            this.plc_dc3_lbl_apluc_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_homtruc
+            // 
+            this.plc_dc3_lbl_apluc_homtruc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_homtruc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_homtruc.Location = new System.Drawing.Point(261, 238);
+            this.plc_dc3_lbl_apluc_homtruc.Name = "plc_dc3_lbl_apluc_homtruc";
+            this.plc_dc3_lbl_apluc_homtruc.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_homtruc.TabIndex = 25;
+            this.plc_dc3_lbl_apluc_homtruc.Text = "0";
+            this.plc_dc3_lbl_apluc_homtruc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_boitron
+            // 
+            this.plc_dc3_lbl_apluc_boitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_boitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_boitron.Location = new System.Drawing.Point(261, 204);
+            this.plc_dc3_lbl_apluc_boitron.Name = "plc_dc3_lbl_apluc_boitron";
+            this.plc_dc3_lbl_apluc_boitron.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_boitron.TabIndex = 26;
+            this.plc_dc3_lbl_apluc_boitron.Text = "0";
+            this.plc_dc3_lbl_apluc_boitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label42
+            // 
+            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label42.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(261, 169);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(115, 23);
+            this.label42.TabIndex = 17;
+            this.label42.Text = "0";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_luong_nhien_lieu
+            // 
+            this.plc_dc3_lbl_luong_nhien_lieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_luong_nhien_lieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_luong_nhien_lieu.Location = new System.Drawing.Point(261, 134);
+            this.plc_dc3_lbl_luong_nhien_lieu.Name = "plc_dc3_lbl_luong_nhien_lieu";
+            this.plc_dc3_lbl_luong_nhien_lieu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_luong_nhien_lieu.TabIndex = 18;
+            this.plc_dc3_lbl_luong_nhien_lieu.Text = "0";
+            this.plc_dc3_lbl_luong_nhien_lieu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_spd_tangap2
+            // 
+            this.plc_dc3_lbl_spd_tangap2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_spd_tangap2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_spd_tangap2.Location = new System.Drawing.Point(261, 99);
+            this.plc_dc3_lbl_spd_tangap2.Name = "plc_dc3_lbl_spd_tangap2";
+            this.plc_dc3_lbl_spd_tangap2.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_spd_tangap2.TabIndex = 19;
+            this.plc_dc3_lbl_spd_tangap2.Text = "0";
+            this.plc_dc3_lbl_spd_tangap2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_spd_tangap1
+            // 
+            this.plc_dc3_lbl_spd_tangap1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_spd_tangap1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_spd_tangap1.Location = new System.Drawing.Point(261, 64);
+            this.plc_dc3_lbl_spd_tangap1.Name = "plc_dc3_lbl_spd_tangap1";
+            this.plc_dc3_lbl_spd_tangap1.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_spd_tangap1.TabIndex = 20;
+            this.plc_dc3_lbl_spd_tangap1.Text = "0";
+            this.plc_dc3_lbl_spd_tangap1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_tocdo
+            // 
+            this.plc_dc3_lbl_tocdo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_tocdo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_tocdo.Location = new System.Drawing.Point(261, 29);
+            this.plc_dc3_lbl_tocdo.Name = "plc_dc3_lbl_tocdo";
+            this.plc_dc3_lbl_tocdo.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_tocdo.TabIndex = 21;
+            this.plc_dc3_lbl_tocdo.Text = "0";
+            this.plc_dc3_lbl_tocdo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label55
             // 
@@ -956,308 +1259,22 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1093, 586);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // plc_dc3_pnl_lamp_right
-            // 
-            this.plc_dc3_pnl_lamp_right.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.plc_dc3_pnl_lamp_right.Location = new System.Drawing.Point(71, 164);
-            this.plc_dc3_pnl_lamp_right.Name = "plc_dc3_pnl_lamp_right";
-            this.plc_dc3_pnl_lamp_right.Size = new System.Drawing.Size(23, 37);
-            this.plc_dc3_pnl_lamp_right.TabIndex = 7;
-            // 
-            // plc_dc3_pnl_lamp_lihop
-            // 
-            this.plc_dc3_pnl_lamp_lihop.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.plc_dc3_pnl_lamp_lihop.Location = new System.Drawing.Point(25, 86);
-            this.plc_dc3_pnl_lamp_lihop.Name = "plc_dc3_pnl_lamp_lihop";
-            this.plc_dc3_pnl_lamp_lihop.Size = new System.Drawing.Size(52, 22);
-            this.plc_dc3_pnl_lamp_lihop.TabIndex = 8;
-            // 
-            // plc_dc3_pnl_lamp_left
-            // 
-            this.plc_dc3_pnl_lamp_left.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.plc_dc3_pnl_lamp_left.Location = new System.Drawing.Point(3, 164);
-            this.plc_dc3_pnl_lamp_left.Name = "plc_dc3_pnl_lamp_left";
-            this.plc_dc3_pnl_lamp_left.Size = new System.Drawing.Size(23, 37);
-            this.plc_dc3_pnl_lamp_left.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc1;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label42
-            // 
-            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label42.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(261, 169);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(115, 23);
-            this.label42.TabIndex = 17;
-            this.label42.Text = "0";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_luong_nhien_lieu
-            // 
-            this.plc_dc3_lbl_luong_nhien_lieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_luong_nhien_lieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_luong_nhien_lieu.Location = new System.Drawing.Point(261, 134);
-            this.plc_dc3_lbl_luong_nhien_lieu.Name = "plc_dc3_lbl_luong_nhien_lieu";
-            this.plc_dc3_lbl_luong_nhien_lieu.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_luong_nhien_lieu.TabIndex = 18;
-            this.plc_dc3_lbl_luong_nhien_lieu.Text = "0";
-            this.plc_dc3_lbl_luong_nhien_lieu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_spd_tangap2
-            // 
-            this.plc_dc3_lbl_spd_tangap2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_spd_tangap2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_spd_tangap2.Location = new System.Drawing.Point(261, 99);
-            this.plc_dc3_lbl_spd_tangap2.Name = "plc_dc3_lbl_spd_tangap2";
-            this.plc_dc3_lbl_spd_tangap2.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_spd_tangap2.TabIndex = 19;
-            this.plc_dc3_lbl_spd_tangap2.Text = "0";
-            this.plc_dc3_lbl_spd_tangap2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_spd_tangap1
-            // 
-            this.plc_dc3_lbl_spd_tangap1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_spd_tangap1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_spd_tangap1.Location = new System.Drawing.Point(261, 64);
-            this.plc_dc3_lbl_spd_tangap1.Name = "plc_dc3_lbl_spd_tangap1";
-            this.plc_dc3_lbl_spd_tangap1.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_spd_tangap1.TabIndex = 20;
-            this.plc_dc3_lbl_spd_tangap1.Text = "0";
-            this.plc_dc3_lbl_spd_tangap1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_spd_dongco
-            // 
-            this.plc_dc3_lbl_spd_dongco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_spd_dongco.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_spd_dongco.Location = new System.Drawing.Point(261, 29);
-            this.plc_dc3_lbl_spd_dongco.Name = "plc_dc3_lbl_spd_dongco";
-            this.plc_dc3_lbl_spd_dongco.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_spd_dongco.TabIndex = 21;
-            this.plc_dc3_lbl_spd_dongco.Text = "0";
-            this.plc_dc3_lbl_spd_dongco.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_apluc_nl_sauphin
-            // 
-            this.plc_dc3_lbl_apluc_nl_sauphin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_apluc_nl_sauphin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_apluc_nl_sauphin.Location = new System.Drawing.Point(261, 340);
-            this.plc_dc3_lbl_apluc_nl_sauphin.Name = "plc_dc3_lbl_apluc_nl_sauphin";
-            this.plc_dc3_lbl_apluc_nl_sauphin.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_apluc_nl_sauphin.TabIndex = 22;
-            this.plc_dc3_lbl_apluc_nl_sauphin.Text = "0";
-            this.plc_dc3_lbl_apluc_nl_sauphin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_apluc_nhienlieuRail
-            // 
-            this.plc_dc3_lbl_apluc_nhienlieuRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_apluc_nhienlieuRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_apluc_nhienlieuRail.Location = new System.Drawing.Point(261, 306);
-            this.plc_dc3_lbl_apluc_nhienlieuRail.Name = "plc_dc3_lbl_apluc_nhienlieuRail";
-            this.plc_dc3_lbl_apluc_nhienlieuRail.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_apluc_nhienlieuRail.TabIndex = 23;
-            this.plc_dc3_lbl_apluc_nhienlieuRail.Text = "0";
-            this.plc_dc3_lbl_apluc_nhienlieuRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_apluc_khinap
-            // 
-            this.plc_dc3_lbl_apluc_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_apluc_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_apluc_khinap.Location = new System.Drawing.Point(261, 272);
-            this.plc_dc3_lbl_apluc_khinap.Name = "plc_dc3_lbl_apluc_khinap";
-            this.plc_dc3_lbl_apluc_khinap.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_apluc_khinap.TabIndex = 24;
-            this.plc_dc3_lbl_apluc_khinap.Text = "0";
-            this.plc_dc3_lbl_apluc_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_apluc_homtruc
-            // 
-            this.plc_dc3_lbl_apluc_homtruc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_apluc_homtruc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_apluc_homtruc.Location = new System.Drawing.Point(261, 238);
-            this.plc_dc3_lbl_apluc_homtruc.Name = "plc_dc3_lbl_apluc_homtruc";
-            this.plc_dc3_lbl_apluc_homtruc.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_apluc_homtruc.TabIndex = 25;
-            this.plc_dc3_lbl_apluc_homtruc.Text = "0";
-            this.plc_dc3_lbl_apluc_homtruc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_apluc_boitron
-            // 
-            this.plc_dc3_lbl_apluc_boitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_apluc_boitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_apluc_boitron.Location = new System.Drawing.Point(261, 204);
-            this.plc_dc3_lbl_apluc_boitron.Name = "plc_dc3_lbl_apluc_boitron";
-            this.plc_dc3_lbl_apluc_boitron.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_apluc_boitron.TabIndex = 26;
-            this.plc_dc3_lbl_apluc_boitron.Text = "0";
-            this.plc_dc3_lbl_apluc_boitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc1_lbl_nhietdo_ecu
-            // 
-            this.plc_dc1_lbl_nhietdo_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_nhietdo_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_nhietdo_ecu.Location = new System.Drawing.Point(261, 435);
-            this.plc_dc1_lbl_nhietdo_ecu.Name = "plc_dc1_lbl_nhietdo_ecu";
-            this.plc_dc1_lbl_nhietdo_ecu.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc1_lbl_nhietdo_ecu.TabIndex = 27;
-            this.plc_dc1_lbl_nhietdo_ecu.Text = "0";
-            this.plc_dc1_lbl_nhietdo_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc1_lbl_dienap_ecu
-            // 
-            this.plc_dc1_lbl_dienap_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_dienap_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_dienap_ecu.Location = new System.Drawing.Point(261, 406);
-            this.plc_dc1_lbl_dienap_ecu.Name = "plc_dc1_lbl_dienap_ecu";
-            this.plc_dc1_lbl_dienap_ecu.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc1_lbl_dienap_ecu.TabIndex = 28;
-            this.plc_dc1_lbl_dienap_ecu.Text = "0";
-            this.plc_dc1_lbl_dienap_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_thoigian_hoatdong
-            // 
-            this.plc_dc3_lbl_thoigian_hoatdong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_thoigian_hoatdong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_thoigian_hoatdong.Location = new System.Drawing.Point(261, 377);
-            this.plc_dc3_lbl_thoigian_hoatdong.Name = "plc_dc3_lbl_thoigian_hoatdong";
-            this.plc_dc3_lbl_thoigian_hoatdong.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_thoigian_hoatdong.TabIndex = 29;
-            this.plc_dc3_lbl_thoigian_hoatdong.Text = "0";
-            this.plc_dc3_lbl_thoigian_hoatdong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_khixaB
-            // 
-            this.plc_dc3_lbl_nhietdo_khixaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_khixaB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_khixaB.Location = new System.Drawing.Point(290, 276);
-            this.plc_dc3_lbl_nhietdo_khixaB.Name = "plc_dc3_lbl_nhietdo_khixaB";
-            this.plc_dc3_lbl_nhietdo_khixaB.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_khixaB.TabIndex = 18;
-            this.plc_dc3_lbl_nhietdo_khixaB.Text = "0";
-            this.plc_dc3_lbl_nhietdo_khixaB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_khinapTruocVL
-            // 
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Location = new System.Drawing.Point(290, 171);
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Name = "plc_dc3_lbl_nhietdo_khinapTruocVL";
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.TabIndex = 19;
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Text = "0";
-            this.plc_dc3_lbl_nhietdo_khinapTruocVL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_khixaA
-            // 
-            this.plc_dc3_lbl_nhietdo_khixaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_khixaA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_khixaA.Location = new System.Drawing.Point(290, 241);
-            this.plc_dc3_lbl_nhietdo_khixaA.Name = "plc_dc3_lbl_nhietdo_khixaA";
-            this.plc_dc3_lbl_nhietdo_khixaA.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_khixaA.TabIndex = 20;
-            this.plc_dc3_lbl_nhietdo_khixaA.Text = "0";
-            this.plc_dc3_lbl_nhietdo_khixaA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_khiTangap
-            // 
-            this.plc_dc3_lbl_nhietdo_khiTangap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_khiTangap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_khiTangap.Location = new System.Drawing.Point(290, 136);
-            this.plc_dc3_lbl_nhietdo_khiTangap.Name = "plc_dc3_lbl_nhietdo_khiTangap";
-            this.plc_dc3_lbl_nhietdo_khiTangap.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_khiTangap.TabIndex = 21;
-            this.plc_dc3_lbl_nhietdo_khiTangap.Text = "0";
-            this.plc_dc3_lbl_nhietdo_khiTangap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_khinap
-            // 
-            this.plc_dc3_lbl_nhietdo_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_khinap.Location = new System.Drawing.Point(290, 206);
-            this.plc_dc3_lbl_nhietdo_khinap.Name = "plc_dc3_lbl_nhietdo_khinap";
-            this.plc_dc3_lbl_nhietdo_khinap.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_khinap.TabIndex = 22;
-            this.plc_dc3_lbl_nhietdo_khinap.Text = "0";
-            this.plc_dc3_lbl_nhietdo_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_ncLammat
-            // 
-            this.plc_dc3_lbl_nhietdo_ncLammat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_ncLammat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_ncLammat.Location = new System.Drawing.Point(290, 101);
-            this.plc_dc3_lbl_nhietdo_ncLammat.Name = "plc_dc3_lbl_nhietdo_ncLammat";
-            this.plc_dc3_lbl_nhietdo_ncLammat.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_ncLammat.TabIndex = 23;
-            this.plc_dc3_lbl_nhietdo_ncLammat.Text = "0";
-            this.plc_dc3_lbl_nhietdo_ncLammat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_dauboitron
-            // 
-            this.plc_dc3_lbl_nhietdo_dauboitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_dauboitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_dauboitron.Location = new System.Drawing.Point(290, 31);
-            this.plc_dc3_lbl_nhietdo_dauboitron.Name = "plc_dc3_lbl_nhietdo_dauboitron";
-            this.plc_dc3_lbl_nhietdo_dauboitron.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_dauboitron.TabIndex = 24;
-            this.plc_dc3_lbl_nhietdo_dauboitron.Text = "0";
-            this.plc_dc3_lbl_nhietdo_dauboitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_nlRail
-            // 
-            this.plc_dc3_lbl_nhietdo_nlRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_nlRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_nlRail.Location = new System.Drawing.Point(290, 66);
-            this.plc_dc3_lbl_nhietdo_nlRail.Name = "plc_dc3_lbl_nhietdo_nlRail";
-            this.plc_dc3_lbl_nhietdo_nlRail.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_nlRail.TabIndex = 25;
-            this.plc_dc3_lbl_nhietdo_nlRail.Text = "0";
-            this.plc_dc3_lbl_nhietdo_nlRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lbl_nhietdo_dauHopso
-            // 
-            this.plc_dc3_lbl_nhietdo_dauHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhietdo_dauHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhietdo_dauHopso.Location = new System.Drawing.Point(290, 402);
-            this.plc_dc3_lbl_nhietdo_dauHopso.Name = "plc_dc3_lbl_nhietdo_dauHopso";
-            this.plc_dc3_lbl_nhietdo_dauHopso.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lbl_nhietdo_dauHopso.TabIndex = 26;
-            this.plc_dc3_lbl_nhietdo_dauHopso.Text = "0";
-            this.plc_dc3_lbl_nhietdo_dauHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc3_lb_apluc_daudkHopso
-            // 
-            this.plc_dc3_lb_apluc_daudkHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lb_apluc_daudkHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lb_apluc_daudkHopso.Location = new System.Drawing.Point(290, 367);
-            this.plc_dc3_lb_apluc_daudkHopso.Name = "plc_dc3_lb_apluc_daudkHopso";
-            this.plc_dc3_lb_apluc_daudkHopso.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc3_lb_apluc_daudkHopso.TabIndex = 27;
-            this.plc_dc3_lb_apluc_daudkHopso.Text = "0";
-            this.plc_dc3_lb_apluc_daudkHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // plc_dc1_lbl_chedo
-            // 
-            this.plc_dc1_lbl_chedo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_chedo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_chedo.Location = new System.Drawing.Point(290, 485);
-            this.plc_dc1_lbl_chedo.Name = "plc_dc1_lbl_chedo";
-            this.plc_dc1_lbl_chedo.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc1_lbl_chedo.TabIndex = 28;
-            this.plc_dc1_lbl_chedo.Text = "Tải chờ";
-            this.plc_dc1_lbl_chedo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // timer1
             // 
+            this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // plc_dc3_btn_dieukhien
+            // 
+            this.plc_dc3_btn_dieukhien.BackColor = System.Drawing.Color.DarkBlue;
+            this.plc_dc3_btn_dieukhien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_btn_dieukhien.GlowColor = System.Drawing.Color.Red;
+            this.plc_dc3_btn_dieukhien.Location = new System.Drawing.Point(27, 516);
+            this.plc_dc3_btn_dieukhien.Name = "plc_dc3_btn_dieukhien";
+            this.plc_dc3_btn_dieukhien.Size = new System.Drawing.Size(114, 45);
+            this.plc_dc3_btn_dieukhien.TabIndex = 15;
+            this.plc_dc3_btn_dieukhien.Text = "ĐIỀU KHIỂN";
+            this.plc_dc3_btn_dieukhien.Click += new System.EventHandler(this.plc_dc3_btn_dieukhien_Click);
             // 
             // gsDongCo3
             // 
@@ -1269,10 +1286,10 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1353,7 +1370,7 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Label plc_dc3_lbl_luong_nhien_lieu;
         private System.Windows.Forms.Label plc_dc3_lbl_spd_tangap2;
         private System.Windows.Forms.Label plc_dc3_lbl_spd_tangap1;
-        private System.Windows.Forms.Label plc_dc3_lbl_spd_dongco;
+        private System.Windows.Forms.Label plc_dc3_lbl_tocdo;
         private System.Windows.Forms.Label plc_dc3_lbl_apluc_nl_sauphin;
         private System.Windows.Forms.Label plc_dc3_lbl_apluc_nhienlieuRail;
         private System.Windows.Forms.Label plc_dc3_lbl_apluc_khinap;
@@ -1374,5 +1391,6 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Label plc_dc3_lb_apluc_daudkHopso;
         private System.Windows.Forms.Label plc_dc1_lbl_chedo;
         private System.Windows.Forms.Timer timer1;
+        private EnhancedGlassButton.GlassButton plc_dc3_btn_dieukhien;
     }
 }

@@ -59,6 +59,9 @@ namespace WindowsFormsApp1.Views
             this.label15 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.plc_dc2_lbl_chedo = new System.Windows.Forms.Label();
@@ -67,10 +70,10 @@ namespace WindowsFormsApp1.Views
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.plc_dc2_lbl_TxakhiveB = new System.Windows.Forms.Label();
-            this.plc_dc2_lbl_TxakhiveA = new System.Windows.Forms.Label();
-            this.plc_dc2_lbl_apluckhi = new System.Windows.Forms.Label();
-            this.plc_dc2_lbl_nhienlieu = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_khixaB = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_khixaA = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_apluc_khinap = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_luong_nhien_lieu = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.plc_dc2_sld_TxakhiveB = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
             this.plc_dc2_sld_TxakhiveA = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
@@ -91,10 +94,10 @@ namespace WindowsFormsApp1.Views
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_TxakhiveB = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_TxakhiveA = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_apluckhi = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_nhienlieu = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_nhietdo_khixaB = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_nhietdo_khixaA = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_apluc_khinap = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_luong_nhien_lieu = new System.Windows.Forms.Label();
             this.plc_dc1_sld_TxakhiveB = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
             this.plc_dc1_sld_TxakhiveA = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
             this.plc_dc1_sld_apluckhi = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
@@ -116,10 +119,10 @@ namespace WindowsFormsApp1.Views
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_TxakhiveB = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_TxakhiveA = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_apluckhi = new System.Windows.Forms.Label();
-            this.plc_dc3_lbl_nhienlieu = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khixaB = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khixaA = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_khinap = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_luong_nhien_lieu = new System.Windows.Forms.Label();
             this.plc_dc3_sld_TxakhiveB = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
             this.plc_dc3_sld_TxakhiveA = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
             this.plc_dc3_sld_apluckhi = new MfgControl.AdvancedHMI.Controls.VerticalSlider2();
@@ -135,11 +138,11 @@ namespace WindowsFormsApp1.Views
             this.plc_dc3_lbl_chedo = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -149,9 +152,6 @@ namespace WindowsFormsApp1.Views
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -463,6 +463,36 @@ namespace WindowsFormsApp1.Views
             this.label1.Text = "ĐỘNG CƠ 2";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
+            this.pictureBox2.Location = new System.Drawing.Point(143, 65);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 349);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.dc1;
+            this.pictureBox3.Location = new System.Drawing.Point(73, 186);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(65, 228);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 65);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 349);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // label16
             // 
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -570,57 +600,57 @@ namespace WindowsFormsApp1.Views
             this.label22.Text = "Bar";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc2_lbl_TxakhiveB
+            // plc_dc2_lbl_nhietdo_khixaB
             // 
-            this.plc_dc2_lbl_TxakhiveB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc2_lbl_TxakhiveB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc2_lbl_TxakhiveB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc2_lbl_TxakhiveB.Location = new System.Drawing.Point(337, 169);
-            this.plc_dc2_lbl_TxakhiveB.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc2_lbl_TxakhiveB.Name = "plc_dc2_lbl_TxakhiveB";
-            this.plc_dc2_lbl_TxakhiveB.Size = new System.Drawing.Size(86, 28);
-            this.plc_dc2_lbl_TxakhiveB.TabIndex = 14;
-            this.plc_dc2_lbl_TxakhiveB.Text = "0";
-            this.plc_dc2_lbl_TxakhiveB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc2_lbl_nhietdo_khixaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_khixaB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc2_lbl_nhietdo_khixaB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_khixaB.Location = new System.Drawing.Point(337, 169);
+            this.plc_dc2_lbl_nhietdo_khixaB.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc2_lbl_nhietdo_khixaB.Name = "plc_dc2_lbl_nhietdo_khixaB";
+            this.plc_dc2_lbl_nhietdo_khixaB.Size = new System.Drawing.Size(86, 28);
+            this.plc_dc2_lbl_nhietdo_khixaB.TabIndex = 14;
+            this.plc_dc2_lbl_nhietdo_khixaB.Text = "0";
+            this.plc_dc2_lbl_nhietdo_khixaB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc2_lbl_TxakhiveA
+            // plc_dc2_lbl_nhietdo_khixaA
             // 
-            this.plc_dc2_lbl_TxakhiveA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc2_lbl_TxakhiveA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc2_lbl_TxakhiveA.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc2_lbl_TxakhiveA.Location = new System.Drawing.Point(253, 169);
-            this.plc_dc2_lbl_TxakhiveA.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc2_lbl_TxakhiveA.Name = "plc_dc2_lbl_TxakhiveA";
-            this.plc_dc2_lbl_TxakhiveA.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc2_lbl_TxakhiveA.TabIndex = 13;
-            this.plc_dc2_lbl_TxakhiveA.Text = "0";
-            this.plc_dc2_lbl_TxakhiveA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc2_lbl_nhietdo_khixaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_khixaA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc2_lbl_nhietdo_khixaA.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_khixaA.Location = new System.Drawing.Point(253, 169);
+            this.plc_dc2_lbl_nhietdo_khixaA.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc2_lbl_nhietdo_khixaA.Name = "plc_dc2_lbl_nhietdo_khixaA";
+            this.plc_dc2_lbl_nhietdo_khixaA.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc2_lbl_nhietdo_khixaA.TabIndex = 13;
+            this.plc_dc2_lbl_nhietdo_khixaA.Text = "0";
+            this.plc_dc2_lbl_nhietdo_khixaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc2_lbl_apluckhi
+            // plc_dc2_lbl_apluc_khinap
             // 
-            this.plc_dc2_lbl_apluckhi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc2_lbl_apluckhi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc2_lbl_apluckhi.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc2_lbl_apluckhi.Location = new System.Drawing.Point(169, 169);
-            this.plc_dc2_lbl_apluckhi.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc2_lbl_apluckhi.Name = "plc_dc2_lbl_apluckhi";
-            this.plc_dc2_lbl_apluckhi.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc2_lbl_apluckhi.TabIndex = 12;
-            this.plc_dc2_lbl_apluckhi.Text = "0";
-            this.plc_dc2_lbl_apluckhi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc2_lbl_apluc_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_apluc_khinap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc2_lbl_apluc_khinap.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_apluc_khinap.Location = new System.Drawing.Point(169, 169);
+            this.plc_dc2_lbl_apluc_khinap.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc2_lbl_apluc_khinap.Name = "plc_dc2_lbl_apluc_khinap";
+            this.plc_dc2_lbl_apluc_khinap.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc2_lbl_apluc_khinap.TabIndex = 12;
+            this.plc_dc2_lbl_apluc_khinap.Text = "0";
+            this.plc_dc2_lbl_apluc_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc2_lbl_nhienlieu
+            // plc_dc2_lbl_luong_nhien_lieu
             // 
-            this.plc_dc2_lbl_nhienlieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc2_lbl_nhienlieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc2_lbl_nhienlieu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc2_lbl_nhienlieu.Location = new System.Drawing.Point(85, 169);
-            this.plc_dc2_lbl_nhienlieu.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc2_lbl_nhienlieu.Name = "plc_dc2_lbl_nhienlieu";
-            this.plc_dc2_lbl_nhienlieu.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc2_lbl_nhienlieu.TabIndex = 11;
-            this.plc_dc2_lbl_nhienlieu.Text = "0";
-            this.plc_dc2_lbl_nhienlieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc2_lbl_luong_nhien_lieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_luong_nhien_lieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc2_lbl_luong_nhien_lieu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_luong_nhien_lieu.Location = new System.Drawing.Point(85, 169);
+            this.plc_dc2_lbl_luong_nhien_lieu.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc2_lbl_luong_nhien_lieu.Name = "plc_dc2_lbl_luong_nhien_lieu";
+            this.plc_dc2_lbl_luong_nhien_lieu.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc2_lbl_luong_nhien_lieu.TabIndex = 11;
+            this.plc_dc2_lbl_luong_nhien_lieu.Text = "0";
+            this.plc_dc2_lbl_luong_nhien_lieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
@@ -635,10 +665,10 @@ namespace WindowsFormsApp1.Views
             this.tableLayoutPanel2.Controls.Add(this.label20, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label21, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.label22, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_TxakhiveB, 4, 2);
-            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_TxakhiveA, 3, 2);
-            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_apluckhi, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_nhienlieu, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_nhietdo_khixaB, 4, 2);
+            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_nhietdo_khixaA, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_apluc_khinap, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.plc_dc2_lbl_luong_nhien_lieu, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.plc_dc2_sld_TxakhiveB, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.plc_dc2_sld_TxakhiveA, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.plc_dc2_sld_apluckhi, 2, 1);
@@ -669,7 +699,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc2_sld_TxakhiveB.BorderWidth = 1;
             this.plc_dc2_sld_TxakhiveB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc2_sld_TxakhiveB.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc2_sld_TxakhiveB.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc2_sld_TxakhiveB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_sld_TxakhiveB.ForeColor = System.Drawing.Color.Black;
             this.plc_dc2_sld_TxakhiveB.Location = new System.Drawing.Point(337, 49);
             this.plc_dc2_sld_TxakhiveB.MajorDivisions = 2;
             this.plc_dc2_sld_TxakhiveB.Margin = new System.Windows.Forms.Padding(1);
@@ -696,7 +727,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc2_sld_TxakhiveA.BorderWidth = 1;
             this.plc_dc2_sld_TxakhiveA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc2_sld_TxakhiveA.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc2_sld_TxakhiveA.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc2_sld_TxakhiveA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_sld_TxakhiveA.ForeColor = System.Drawing.Color.Black;
             this.plc_dc2_sld_TxakhiveA.Location = new System.Drawing.Point(253, 49);
             this.plc_dc2_sld_TxakhiveA.MajorDivisions = 2;
             this.plc_dc2_sld_TxakhiveA.Margin = new System.Windows.Forms.Padding(1);
@@ -723,7 +755,7 @@ namespace WindowsFormsApp1.Views
             this.plc_dc2_sld_apluckhi.BorderWidth = 1;
             this.plc_dc2_sld_apluckhi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc2_sld_apluckhi.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc2_sld_apluckhi.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc2_sld_apluckhi.ForeColor = System.Drawing.Color.Black;
             this.plc_dc2_sld_apluckhi.Location = new System.Drawing.Point(169, 49);
             this.plc_dc2_sld_apluckhi.MajorDivisions = 2;
             this.plc_dc2_sld_apluckhi.Margin = new System.Windows.Forms.Padding(1);
@@ -750,7 +782,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc2_sld_nhienlieu.BorderWidth = 1;
             this.plc_dc2_sld_nhienlieu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc2_sld_nhienlieu.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc2_sld_nhienlieu.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc2_sld_nhienlieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_sld_nhienlieu.ForeColor = System.Drawing.Color.Black;
             this.plc_dc2_sld_nhienlieu.Location = new System.Drawing.Point(85, 49);
             this.plc_dc2_sld_nhienlieu.MajorDivisions = 2;
             this.plc_dc2_sld_nhienlieu.Margin = new System.Windows.Forms.Padding(1);
@@ -855,7 +888,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc2_sld_tocdo.BorderWidth = 1;
             this.plc_dc2_sld_tocdo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc2_sld_tocdo.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc2_sld_tocdo.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc2_sld_tocdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_sld_tocdo.ForeColor = System.Drawing.Color.Black;
             this.plc_dc2_sld_tocdo.Location = new System.Drawing.Point(1, 49);
             this.plc_dc2_sld_tocdo.MajorDivisions = 2;
             this.plc_dc2_sld_tocdo.Margin = new System.Windows.Forms.Padding(1);
@@ -920,10 +954,10 @@ namespace WindowsFormsApp1.Views
             this.tableLayoutPanel5.Controls.Add(this.label35, 0, 3);
             this.tableLayoutPanel5.Controls.Add(this.label36, 0, 3);
             this.tableLayoutPanel5.Controls.Add(this.label37, 0, 3);
-            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_TxakhiveB, 4, 2);
-            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_TxakhiveA, 3, 2);
-            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_apluckhi, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_nhienlieu, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_nhietdo_khixaB, 4, 2);
+            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_nhietdo_khixaA, 3, 2);
+            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_apluc_khinap, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.plc_dc1_lbl_luong_nhien_lieu, 1, 2);
             this.tableLayoutPanel5.Controls.Add(this.plc_dc1_sld_TxakhiveB, 4, 1);
             this.tableLayoutPanel5.Controls.Add(this.plc_dc1_sld_TxakhiveA, 3, 1);
             this.tableLayoutPanel5.Controls.Add(this.plc_dc1_sld_apluckhi, 2, 1);
@@ -1012,57 +1046,57 @@ namespace WindowsFormsApp1.Views
             this.label37.Text = "Bar";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc1_lbl_TxakhiveB
+            // plc_dc1_lbl_nhietdo_khixaB
             // 
-            this.plc_dc1_lbl_TxakhiveB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_TxakhiveB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc1_lbl_TxakhiveB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_TxakhiveB.Location = new System.Drawing.Point(337, 169);
-            this.plc_dc1_lbl_TxakhiveB.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc1_lbl_TxakhiveB.Name = "plc_dc1_lbl_TxakhiveB";
-            this.plc_dc1_lbl_TxakhiveB.Size = new System.Drawing.Size(86, 28);
-            this.plc_dc1_lbl_TxakhiveB.TabIndex = 14;
-            this.plc_dc1_lbl_TxakhiveB.Text = "0";
-            this.plc_dc1_lbl_TxakhiveB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc1_lbl_nhietdo_khixaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_nhietdo_khixaB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc1_lbl_nhietdo_khixaB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_nhietdo_khixaB.Location = new System.Drawing.Point(337, 169);
+            this.plc_dc1_lbl_nhietdo_khixaB.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc1_lbl_nhietdo_khixaB.Name = "plc_dc1_lbl_nhietdo_khixaB";
+            this.plc_dc1_lbl_nhietdo_khixaB.Size = new System.Drawing.Size(86, 28);
+            this.plc_dc1_lbl_nhietdo_khixaB.TabIndex = 14;
+            this.plc_dc1_lbl_nhietdo_khixaB.Text = "0";
+            this.plc_dc1_lbl_nhietdo_khixaB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc1_lbl_TxakhiveA
+            // plc_dc1_lbl_nhietdo_khixaA
             // 
-            this.plc_dc1_lbl_TxakhiveA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_TxakhiveA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc1_lbl_TxakhiveA.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_TxakhiveA.Location = new System.Drawing.Point(253, 169);
-            this.plc_dc1_lbl_TxakhiveA.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc1_lbl_TxakhiveA.Name = "plc_dc1_lbl_TxakhiveA";
-            this.plc_dc1_lbl_TxakhiveA.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc1_lbl_TxakhiveA.TabIndex = 13;
-            this.plc_dc1_lbl_TxakhiveA.Text = "0";
-            this.plc_dc1_lbl_TxakhiveA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc1_lbl_nhietdo_khixaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_nhietdo_khixaA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc1_lbl_nhietdo_khixaA.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_nhietdo_khixaA.Location = new System.Drawing.Point(253, 169);
+            this.plc_dc1_lbl_nhietdo_khixaA.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc1_lbl_nhietdo_khixaA.Name = "plc_dc1_lbl_nhietdo_khixaA";
+            this.plc_dc1_lbl_nhietdo_khixaA.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc1_lbl_nhietdo_khixaA.TabIndex = 13;
+            this.plc_dc1_lbl_nhietdo_khixaA.Text = "0";
+            this.plc_dc1_lbl_nhietdo_khixaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc1_lbl_apluckhi
+            // plc_dc1_lbl_apluc_khinap
             // 
-            this.plc_dc1_lbl_apluckhi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_apluckhi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc1_lbl_apluckhi.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_apluckhi.Location = new System.Drawing.Point(169, 169);
-            this.plc_dc1_lbl_apluckhi.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc1_lbl_apluckhi.Name = "plc_dc1_lbl_apluckhi";
-            this.plc_dc1_lbl_apluckhi.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc1_lbl_apluckhi.TabIndex = 12;
-            this.plc_dc1_lbl_apluckhi.Text = "0";
-            this.plc_dc1_lbl_apluckhi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc1_lbl_apluc_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_apluc_khinap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc1_lbl_apluc_khinap.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_apluc_khinap.Location = new System.Drawing.Point(169, 169);
+            this.plc_dc1_lbl_apluc_khinap.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc1_lbl_apluc_khinap.Name = "plc_dc1_lbl_apluc_khinap";
+            this.plc_dc1_lbl_apluc_khinap.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc1_lbl_apluc_khinap.TabIndex = 12;
+            this.plc_dc1_lbl_apluc_khinap.Text = "0";
+            this.plc_dc1_lbl_apluc_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc1_lbl_nhienlieu
+            // plc_dc1_lbl_luong_nhien_lieu
             // 
-            this.plc_dc1_lbl_nhienlieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_nhienlieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc1_lbl_nhienlieu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_nhienlieu.Location = new System.Drawing.Point(85, 169);
-            this.plc_dc1_lbl_nhienlieu.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc1_lbl_nhienlieu.Name = "plc_dc1_lbl_nhienlieu";
-            this.plc_dc1_lbl_nhienlieu.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc1_lbl_nhienlieu.TabIndex = 11;
-            this.plc_dc1_lbl_nhienlieu.Text = "0";
-            this.plc_dc1_lbl_nhienlieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc1_lbl_luong_nhien_lieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_luong_nhien_lieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc1_lbl_luong_nhien_lieu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_luong_nhien_lieu.Location = new System.Drawing.Point(85, 169);
+            this.plc_dc1_lbl_luong_nhien_lieu.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc1_lbl_luong_nhien_lieu.Name = "plc_dc1_lbl_luong_nhien_lieu";
+            this.plc_dc1_lbl_luong_nhien_lieu.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc1_lbl_luong_nhien_lieu.TabIndex = 11;
+            this.plc_dc1_lbl_luong_nhien_lieu.Text = "0";
+            this.plc_dc1_lbl_luong_nhien_lieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // plc_dc1_sld_TxakhiveB
             // 
@@ -1071,7 +1105,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc1_sld_TxakhiveB.BorderWidth = 1;
             this.plc_dc1_sld_TxakhiveB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc1_sld_TxakhiveB.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc1_sld_TxakhiveB.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc1_sld_TxakhiveB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_sld_TxakhiveB.ForeColor = System.Drawing.Color.Black;
             this.plc_dc1_sld_TxakhiveB.Location = new System.Drawing.Point(337, 49);
             this.plc_dc1_sld_TxakhiveB.MajorDivisions = 2;
             this.plc_dc1_sld_TxakhiveB.Margin = new System.Windows.Forms.Padding(1);
@@ -1098,7 +1133,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc1_sld_TxakhiveA.BorderWidth = 1;
             this.plc_dc1_sld_TxakhiveA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc1_sld_TxakhiveA.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc1_sld_TxakhiveA.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc1_sld_TxakhiveA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_sld_TxakhiveA.ForeColor = System.Drawing.Color.Black;
             this.plc_dc1_sld_TxakhiveA.Location = new System.Drawing.Point(253, 49);
             this.plc_dc1_sld_TxakhiveA.MajorDivisions = 2;
             this.plc_dc1_sld_TxakhiveA.Margin = new System.Windows.Forms.Padding(1);
@@ -1125,7 +1161,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc1_sld_apluckhi.BorderWidth = 1;
             this.plc_dc1_sld_apluckhi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc1_sld_apluckhi.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc1_sld_apluckhi.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc1_sld_apluckhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_sld_apluckhi.ForeColor = System.Drawing.Color.Black;
             this.plc_dc1_sld_apluckhi.Location = new System.Drawing.Point(169, 49);
             this.plc_dc1_sld_apluckhi.MajorDivisions = 2;
             this.plc_dc1_sld_apluckhi.Margin = new System.Windows.Forms.Padding(1);
@@ -1152,7 +1189,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc1_sld_nhienlieu.BorderWidth = 1;
             this.plc_dc1_sld_nhienlieu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc1_sld_nhienlieu.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc1_sld_nhienlieu.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc1_sld_nhienlieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_sld_nhienlieu.ForeColor = System.Drawing.Color.Black;
             this.plc_dc1_sld_nhienlieu.Location = new System.Drawing.Point(85, 49);
             this.plc_dc1_sld_nhienlieu.MajorDivisions = 2;
             this.plc_dc1_sld_nhienlieu.Margin = new System.Windows.Forms.Padding(1);
@@ -1257,7 +1295,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc1_sld_tocdo.BorderWidth = 1;
             this.plc_dc1_sld_tocdo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc1_sld_tocdo.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc1_sld_tocdo.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc1_sld_tocdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_sld_tocdo.ForeColor = System.Drawing.Color.Black;
             this.plc_dc1_sld_tocdo.Location = new System.Drawing.Point(1, 49);
             this.plc_dc1_sld_tocdo.MajorDivisions = 2;
             this.plc_dc1_sld_tocdo.Margin = new System.Windows.Forms.Padding(1);
@@ -1348,10 +1387,10 @@ namespace WindowsFormsApp1.Views
             this.tableLayoutPanel8.Controls.Add(this.label52, 0, 3);
             this.tableLayoutPanel8.Controls.Add(this.label53, 0, 3);
             this.tableLayoutPanel8.Controls.Add(this.label54, 0, 3);
-            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_TxakhiveB, 4, 2);
-            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_TxakhiveA, 3, 2);
-            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_apluckhi, 2, 2);
-            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_nhienlieu, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_nhietdo_khixaB, 4, 2);
+            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_nhietdo_khixaA, 3, 2);
+            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_apluc_khinap, 2, 2);
+            this.tableLayoutPanel8.Controls.Add(this.plc_dc3_lbl_luong_nhien_lieu, 1, 2);
             this.tableLayoutPanel8.Controls.Add(this.plc_dc3_sld_TxakhiveB, 4, 1);
             this.tableLayoutPanel8.Controls.Add(this.plc_dc3_sld_TxakhiveA, 3, 1);
             this.tableLayoutPanel8.Controls.Add(this.plc_dc3_sld_apluckhi, 2, 1);
@@ -1440,57 +1479,57 @@ namespace WindowsFormsApp1.Views
             this.label54.Text = "Bar";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc3_lbl_TxakhiveB
+            // plc_dc3_lbl_nhietdo_khixaB
             // 
-            this.plc_dc3_lbl_TxakhiveB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_TxakhiveB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc3_lbl_TxakhiveB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_TxakhiveB.Location = new System.Drawing.Point(337, 169);
-            this.plc_dc3_lbl_TxakhiveB.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc3_lbl_TxakhiveB.Name = "plc_dc3_lbl_TxakhiveB";
-            this.plc_dc3_lbl_TxakhiveB.Size = new System.Drawing.Size(86, 28);
-            this.plc_dc3_lbl_TxakhiveB.TabIndex = 14;
-            this.plc_dc3_lbl_TxakhiveB.Text = "0";
-            this.plc_dc3_lbl_TxakhiveB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc3_lbl_nhietdo_khixaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khixaB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc3_lbl_nhietdo_khixaB.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khixaB.Location = new System.Drawing.Point(337, 169);
+            this.plc_dc3_lbl_nhietdo_khixaB.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc3_lbl_nhietdo_khixaB.Name = "plc_dc3_lbl_nhietdo_khixaB";
+            this.plc_dc3_lbl_nhietdo_khixaB.Size = new System.Drawing.Size(86, 28);
+            this.plc_dc3_lbl_nhietdo_khixaB.TabIndex = 14;
+            this.plc_dc3_lbl_nhietdo_khixaB.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khixaB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc3_lbl_TxakhiveA
+            // plc_dc3_lbl_nhietdo_khixaA
             // 
-            this.plc_dc3_lbl_TxakhiveA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_TxakhiveA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc3_lbl_TxakhiveA.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_TxakhiveA.Location = new System.Drawing.Point(253, 169);
-            this.plc_dc3_lbl_TxakhiveA.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc3_lbl_TxakhiveA.Name = "plc_dc3_lbl_TxakhiveA";
-            this.plc_dc3_lbl_TxakhiveA.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc3_lbl_TxakhiveA.TabIndex = 13;
-            this.plc_dc3_lbl_TxakhiveA.Text = "0";
-            this.plc_dc3_lbl_TxakhiveA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc3_lbl_nhietdo_khixaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khixaA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc3_lbl_nhietdo_khixaA.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khixaA.Location = new System.Drawing.Point(253, 169);
+            this.plc_dc3_lbl_nhietdo_khixaA.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc3_lbl_nhietdo_khixaA.Name = "plc_dc3_lbl_nhietdo_khixaA";
+            this.plc_dc3_lbl_nhietdo_khixaA.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc3_lbl_nhietdo_khixaA.TabIndex = 13;
+            this.plc_dc3_lbl_nhietdo_khixaA.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khixaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc3_lbl_apluckhi
+            // plc_dc3_lbl_apluc_khinap
             // 
-            this.plc_dc3_lbl_apluckhi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_apluckhi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc3_lbl_apluckhi.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_apluckhi.Location = new System.Drawing.Point(169, 169);
-            this.plc_dc3_lbl_apluckhi.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc3_lbl_apluckhi.Name = "plc_dc3_lbl_apluckhi";
-            this.plc_dc3_lbl_apluckhi.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc3_lbl_apluckhi.TabIndex = 12;
-            this.plc_dc3_lbl_apluckhi.Text = "0";
-            this.plc_dc3_lbl_apluckhi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc3_lbl_apluc_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_khinap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc3_lbl_apluc_khinap.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_khinap.Location = new System.Drawing.Point(169, 169);
+            this.plc_dc3_lbl_apluc_khinap.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc3_lbl_apluc_khinap.Name = "plc_dc3_lbl_apluc_khinap";
+            this.plc_dc3_lbl_apluc_khinap.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc3_lbl_apluc_khinap.TabIndex = 12;
+            this.plc_dc3_lbl_apluc_khinap.Text = "0";
+            this.plc_dc3_lbl_apluc_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // plc_dc3_lbl_nhienlieu
+            // plc_dc3_lbl_luong_nhien_lieu
             // 
-            this.plc_dc3_lbl_nhienlieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc3_lbl_nhienlieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.plc_dc3_lbl_nhienlieu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc3_lbl_nhienlieu.Location = new System.Drawing.Point(85, 169);
-            this.plc_dc3_lbl_nhienlieu.Margin = new System.Windows.Forms.Padding(1);
-            this.plc_dc3_lbl_nhienlieu.Name = "plc_dc3_lbl_nhienlieu";
-            this.plc_dc3_lbl_nhienlieu.Size = new System.Drawing.Size(82, 28);
-            this.plc_dc3_lbl_nhienlieu.TabIndex = 11;
-            this.plc_dc3_lbl_nhienlieu.Text = "0";
-            this.plc_dc3_lbl_nhienlieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc3_lbl_luong_nhien_lieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_luong_nhien_lieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.plc_dc3_lbl_luong_nhien_lieu.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_luong_nhien_lieu.Location = new System.Drawing.Point(85, 169);
+            this.plc_dc3_lbl_luong_nhien_lieu.Margin = new System.Windows.Forms.Padding(1);
+            this.plc_dc3_lbl_luong_nhien_lieu.Name = "plc_dc3_lbl_luong_nhien_lieu";
+            this.plc_dc3_lbl_luong_nhien_lieu.Size = new System.Drawing.Size(82, 28);
+            this.plc_dc3_lbl_luong_nhien_lieu.TabIndex = 11;
+            this.plc_dc3_lbl_luong_nhien_lieu.Text = "0";
+            this.plc_dc3_lbl_luong_nhien_lieu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // plc_dc3_sld_TxakhiveB
             // 
@@ -1499,7 +1538,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc3_sld_TxakhiveB.BorderWidth = 1;
             this.plc_dc3_sld_TxakhiveB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc3_sld_TxakhiveB.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc3_sld_TxakhiveB.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc3_sld_TxakhiveB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_sld_TxakhiveB.ForeColor = System.Drawing.Color.Black;
             this.plc_dc3_sld_TxakhiveB.Location = new System.Drawing.Point(337, 49);
             this.plc_dc3_sld_TxakhiveB.MajorDivisions = 2;
             this.plc_dc3_sld_TxakhiveB.Margin = new System.Windows.Forms.Padding(1);
@@ -1526,7 +1566,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc3_sld_TxakhiveA.BorderWidth = 1;
             this.plc_dc3_sld_TxakhiveA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc3_sld_TxakhiveA.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc3_sld_TxakhiveA.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc3_sld_TxakhiveA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_sld_TxakhiveA.ForeColor = System.Drawing.Color.Black;
             this.plc_dc3_sld_TxakhiveA.Location = new System.Drawing.Point(253, 49);
             this.plc_dc3_sld_TxakhiveA.MajorDivisions = 2;
             this.plc_dc3_sld_TxakhiveA.Margin = new System.Windows.Forms.Padding(1);
@@ -1553,7 +1594,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc3_sld_apluckhi.BorderWidth = 1;
             this.plc_dc3_sld_apluckhi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc3_sld_apluckhi.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc3_sld_apluckhi.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc3_sld_apluckhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_sld_apluckhi.ForeColor = System.Drawing.Color.Black;
             this.plc_dc3_sld_apluckhi.Location = new System.Drawing.Point(169, 49);
             this.plc_dc3_sld_apluckhi.MajorDivisions = 2;
             this.plc_dc3_sld_apluckhi.Margin = new System.Windows.Forms.Padding(1);
@@ -1580,7 +1622,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc3_sld_nhienlieu.BorderWidth = 1;
             this.plc_dc3_sld_nhienlieu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc3_sld_nhienlieu.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc3_sld_nhienlieu.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc3_sld_nhienlieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_sld_nhienlieu.ForeColor = System.Drawing.Color.Black;
             this.plc_dc3_sld_nhienlieu.Location = new System.Drawing.Point(85, 49);
             this.plc_dc3_sld_nhienlieu.MajorDivisions = 2;
             this.plc_dc3_sld_nhienlieu.Margin = new System.Windows.Forms.Padding(1);
@@ -1685,7 +1728,8 @@ namespace WindowsFormsApp1.Views
             this.plc_dc3_sld_tocdo.BorderWidth = 1;
             this.plc_dc3_sld_tocdo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plc_dc3_sld_tocdo.FillColorInRange = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(128)))), ((int)(((byte)(16)))));
-            this.plc_dc3_sld_tocdo.ForeColor = System.Drawing.Color.OrangeRed;
+            this.plc_dc3_sld_tocdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_sld_tocdo.ForeColor = System.Drawing.Color.Black;
             this.plc_dc3_sld_tocdo.Location = new System.Drawing.Point(1, 49);
             this.plc_dc3_sld_tocdo.MajorDivisions = 2;
             this.plc_dc3_sld_tocdo.Margin = new System.Windows.Forms.Padding(1);
@@ -1752,36 +1796,6 @@ namespace WindowsFormsApp1.Views
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
-            this.pictureBox2.Location = new System.Drawing.Point(143, 65);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(65, 349);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.dc1;
-            this.pictureBox3.Location = new System.Drawing.Point(73, 186);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 228);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 349);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // gsHethongDC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1796,6 +1810,9 @@ namespace WindowsFormsApp1.Views
             this.Size = new System.Drawing.Size(1093, 586);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -1805,9 +1822,6 @@ namespace WindowsFormsApp1.Views
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1844,10 +1858,10 @@ namespace WindowsFormsApp1.Views
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label plc_dc2_lbl_TxakhiveB;
-        private System.Windows.Forms.Label plc_dc2_lbl_TxakhiveA;
-        private System.Windows.Forms.Label plc_dc2_lbl_apluckhi;
-        private System.Windows.Forms.Label plc_dc2_lbl_nhienlieu;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_khixaB;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_khixaA;
+        private System.Windows.Forms.Label plc_dc2_lbl_apluc_khinap;
+        private System.Windows.Forms.Label plc_dc2_lbl_luong_nhien_lieu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc2_sld_TxakhiveB;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc2_sld_TxakhiveA;
@@ -1868,10 +1882,10 @@ namespace WindowsFormsApp1.Views
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label plc_dc1_lbl_TxakhiveB;
-        private System.Windows.Forms.Label plc_dc1_lbl_TxakhiveA;
-        private System.Windows.Forms.Label plc_dc1_lbl_apluckhi;
-        private System.Windows.Forms.Label plc_dc1_lbl_nhienlieu;
+        private System.Windows.Forms.Label plc_dc1_lbl_nhietdo_khixaB;
+        private System.Windows.Forms.Label plc_dc1_lbl_nhietdo_khixaA;
+        private System.Windows.Forms.Label plc_dc1_lbl_apluc_khinap;
+        private System.Windows.Forms.Label plc_dc1_lbl_luong_nhien_lieu;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc1_sld_TxakhiveB;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc1_sld_TxakhiveA;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc1_sld_apluckhi;
@@ -1893,10 +1907,10 @@ namespace WindowsFormsApp1.Views
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label plc_dc3_lbl_TxakhiveB;
-        private System.Windows.Forms.Label plc_dc3_lbl_TxakhiveA;
-        private System.Windows.Forms.Label plc_dc3_lbl_apluckhi;
-        private System.Windows.Forms.Label plc_dc3_lbl_nhienlieu;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_khixaB;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_khixaA;
+        private System.Windows.Forms.Label plc_dc3_lbl_apluc_khinap;
+        private System.Windows.Forms.Label plc_dc3_lbl_luong_nhien_lieu;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc3_sld_TxakhiveB;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc3_sld_TxakhiveA;
         private MfgControl.AdvancedHMI.Controls.VerticalSlider2 plc_dc3_sld_apluckhi;

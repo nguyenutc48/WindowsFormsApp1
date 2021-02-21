@@ -67,5 +67,37 @@ namespace WindowsFormsApp2
             lpcom_ReferencesUtlType.ReadDeviceRandom("D2000", 32, out data);
             textBox2.Text = data.ToString();
         }
+
+        WMPLib.WindowsMediaPlayer wplayer1 = new WMPLib.WindowsMediaPlayer();
+        WMPLib.WindowsMediaPlayer wplayer2 = new WMPLib.WindowsMediaPlayer();
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //WMPLib.WindowsMediaPlayer wplayer1 = new WMPLib.WindowsMediaPlayer();
+            //wplayer1.URL = @"D:\\HMI C#\\sample1.wav";
+            //wplayer1.controls.play();
+            wplayer1.settings.setMode("loop", true);
+            wplayer1.URL = @"D:\\HMI C#\\sample1.wav";
+            wplayer1.controls.play();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            wplayer2.settings.setMode("loop", true);
+            wplayer2.URL = @"D:\\HMI C#\\sample1.wav";
+            wplayer2.controls.play();
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            wplayer1.controls.pause();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            wplayer2.controls.pause();
+        }
     }
 }

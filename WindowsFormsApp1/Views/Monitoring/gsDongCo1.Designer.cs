@@ -49,7 +49,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc1_lbl_spd_tangap2 = new System.Windows.Forms.Label();
             this.plc_dc1_lbl_apluc_boitron = new System.Windows.Forms.Label();
             this.plc_dc1_lbl_spd_tangap1 = new System.Windows.Forms.Label();
-            this.plc_dc1_lbl_spd_dongco = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_tocdo = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.labeo1 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -77,11 +77,15 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.plc_dc1_pnl_lamp_right = new System.Windows.Forms.Panel();
             this.plc_dc1_lbl_tocdo_chanvit = new System.Windows.Forms.Label();
+            this.plc_dc1_pnl_lamp_lihop = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.plc_dc1_pnl_lamp_left = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.plc_dc1_lbl_vitri_chanvit = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label38 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -120,16 +124,13 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label26 = new System.Windows.Forms.Label();
             this.plc_dc1_lbl_nhietdo_dauboitron = new System.Windows.Forms.Label();
             this.plc_dc1_lbl_nhietdo_nlRail = new System.Windows.Forms.Label();
-            this.plc_dc1_pnl_lamp_right = new System.Windows.Forms.Panel();
-            this.plc_dc1_pnl_lamp_lihop = new System.Windows.Forms.Panel();
-            this.plc_dc1_pnl_lamp_left = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.plc_dc1_btn_dieukhien = new EnhancedGlassButton.GlassButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -153,6 +154,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.plc_dc1_btn_dieukhien);
             this.panel1.Controls.Add(this.plc_dc1_btn_khoi_dong);
             this.panel1.Controls.Add(this.plc_dc1_btn_dung);
             this.panel1.Controls.Add(this.label32);
@@ -170,7 +172,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel1.Controls.Add(this.plc_dc1_lbl_spd_tangap2);
             this.panel1.Controls.Add(this.plc_dc1_lbl_apluc_boitron);
             this.panel1.Controls.Add(this.plc_dc1_lbl_spd_tangap1);
-            this.panel1.Controls.Add(this.plc_dc1_lbl_spd_dongco);
+            this.panel1.Controls.Add(this.plc_dc1_lbl_tocdo);
             this.panel1.Controls.Add(this.label61);
             this.panel1.Controls.Add(this.labeo1);
             this.panel1.Controls.Add(this.label59);
@@ -209,22 +211,24 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc1_btn_khoi_dong.BackColor = System.Drawing.Color.DarkBlue;
             this.plc_dc1_btn_khoi_dong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plc_dc1_btn_khoi_dong.GlowColor = System.Drawing.Color.Red;
-            this.plc_dc1_btn_khoi_dong.Location = new System.Drawing.Point(74, 516);
+            this.plc_dc1_btn_khoi_dong.Location = new System.Drawing.Point(193, 504);
             this.plc_dc1_btn_khoi_dong.Name = "plc_dc1_btn_khoi_dong";
             this.plc_dc1_btn_khoi_dong.Size = new System.Drawing.Size(114, 45);
             this.plc_dc1_btn_khoi_dong.TabIndex = 15;
             this.plc_dc1_btn_khoi_dong.Text = "KHỞI ĐỘNG";
+            this.plc_dc1_btn_khoi_dong.Click += new System.EventHandler(this.plc_dc1_btn_khoi_dong_Click);
             // 
             // plc_dc1_btn_dung
             // 
             this.plc_dc1_btn_dung.BackColor = System.Drawing.Color.DarkBlue;
             this.plc_dc1_btn_dung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plc_dc1_btn_dung.GlowColor = System.Drawing.Color.Red;
-            this.plc_dc1_btn_dung.Location = new System.Drawing.Point(286, 516);
+            this.plc_dc1_btn_dung.Location = new System.Drawing.Point(359, 504);
             this.plc_dc1_btn_dung.Name = "plc_dc1_btn_dung";
             this.plc_dc1_btn_dung.Size = new System.Drawing.Size(114, 45);
             this.plc_dc1_btn_dung.TabIndex = 16;
             this.plc_dc1_btn_dung.Text = "DỪNG";
+            this.plc_dc1_btn_dung.Click += new System.EventHandler(this.plc_dc1_btn_dung_Click);
             // 
             // label32
             // 
@@ -392,16 +396,16 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc1_lbl_spd_tangap1.Text = "0";
             this.plc_dc1_lbl_spd_tangap1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // plc_dc1_lbl_spd_dongco
+            // plc_dc1_lbl_tocdo
             // 
-            this.plc_dc1_lbl_spd_dongco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.plc_dc1_lbl_spd_dongco.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc1_lbl_spd_dongco.Location = new System.Drawing.Point(261, 29);
-            this.plc_dc1_lbl_spd_dongco.Name = "plc_dc1_lbl_spd_dongco";
-            this.plc_dc1_lbl_spd_dongco.Size = new System.Drawing.Size(115, 23);
-            this.plc_dc1_lbl_spd_dongco.TabIndex = 3;
-            this.plc_dc1_lbl_spd_dongco.Text = "0";
-            this.plc_dc1_lbl_spd_dongco.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.plc_dc1_lbl_tocdo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_tocdo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_tocdo.Location = new System.Drawing.Point(261, 29);
+            this.plc_dc1_lbl_tocdo.Name = "plc_dc1_lbl_tocdo";
+            this.plc_dc1_lbl_tocdo.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc1_lbl_tocdo.TabIndex = 3;
+            this.plc_dc1_lbl_tocdo.Text = "0";
+            this.plc_dc1_lbl_tocdo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label61
             // 
@@ -708,6 +712,14 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel2.Size = new System.Drawing.Size(99, 582);
             this.panel2.TabIndex = 1;
             // 
+            // plc_dc1_pnl_lamp_right
+            // 
+            this.plc_dc1_pnl_lamp_right.BackColor = System.Drawing.Color.LightGray;
+            this.plc_dc1_pnl_lamp_right.Location = new System.Drawing.Point(71, 101);
+            this.plc_dc1_pnl_lamp_right.Name = "plc_dc1_pnl_lamp_right";
+            this.plc_dc1_pnl_lamp_right.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc1_pnl_lamp_right.TabIndex = 17;
+            // 
             // plc_dc1_lbl_tocdo_chanvit
             // 
             this.plc_dc1_lbl_tocdo_chanvit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -718,6 +730,14 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc1_lbl_tocdo_chanvit.TabIndex = 2;
             this.plc_dc1_lbl_tocdo_chanvit.Text = "+0";
             this.plc_dc1_lbl_tocdo_chanvit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc1_pnl_lamp_lihop
+            // 
+            this.plc_dc1_pnl_lamp_lihop.BackColor = System.Drawing.Color.LightGray;
+            this.plc_dc1_pnl_lamp_lihop.Location = new System.Drawing.Point(28, 157);
+            this.plc_dc1_pnl_lamp_lihop.Name = "plc_dc1_pnl_lamp_lihop";
+            this.plc_dc1_pnl_lamp_lihop.Size = new System.Drawing.Size(41, 16);
+            this.plc_dc1_pnl_lamp_lihop.TabIndex = 18;
             // 
             // label3
             // 
@@ -730,6 +750,14 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label3.TabIndex = 3;
             this.label3.Text = "ĐỘNG CƠ 1";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc1_pnl_lamp_left
+            // 
+            this.plc_dc1_pnl_lamp_left.BackColor = System.Drawing.Color.LightGray;
+            this.plc_dc1_pnl_lamp_left.Location = new System.Drawing.Point(3, 101);
+            this.plc_dc1_pnl_lamp_left.Name = "plc_dc1_pnl_lamp_left";
+            this.plc_dc1_pnl_lamp_left.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc1_pnl_lamp_left.TabIndex = 19;
             // 
             // label2
             // 
@@ -763,6 +791,17 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc1_lbl_vitri_chanvit.TabIndex = 3;
             this.plc_dc1_lbl_vitri_chanvit.Text = "Trung gian";
             this.plc_dc1_lbl_vitri_chanvit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -1220,44 +1259,22 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc1_lbl_nhietdo_nlRail.Text = "0";
             this.plc_dc1_lbl_nhietdo_nlRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // plc_dc1_pnl_lamp_right
-            // 
-            this.plc_dc1_pnl_lamp_right.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.plc_dc1_pnl_lamp_right.Location = new System.Drawing.Point(71, 101);
-            this.plc_dc1_pnl_lamp_right.Name = "plc_dc1_pnl_lamp_right";
-            this.plc_dc1_pnl_lamp_right.Size = new System.Drawing.Size(23, 37);
-            this.plc_dc1_pnl_lamp_right.TabIndex = 17;
-            // 
-            // plc_dc1_pnl_lamp_lihop
-            // 
-            this.plc_dc1_pnl_lamp_lihop.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.plc_dc1_pnl_lamp_lihop.Location = new System.Drawing.Point(28, 157);
-            this.plc_dc1_pnl_lamp_lihop.Name = "plc_dc1_pnl_lamp_lihop";
-            this.plc_dc1_pnl_lamp_lihop.Size = new System.Drawing.Size(41, 16);
-            this.plc_dc1_pnl_lamp_lihop.TabIndex = 18;
-            // 
-            // plc_dc1_pnl_lamp_left
-            // 
-            this.plc_dc1_pnl_lamp_left.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.plc_dc1_pnl_lamp_left.Location = new System.Drawing.Point(3, 101);
-            this.plc_dc1_pnl_lamp_left.Name = "plc_dc1_pnl_lamp_left";
-            this.plc_dc1_pnl_lamp_left.Size = new System.Drawing.Size(23, 37);
-            this.plc_dc1_pnl_lamp_left.TabIndex = 19;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // timer1
             // 
+            this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // plc_dc1_btn_dieukhien
+            // 
+            this.plc_dc1_btn_dieukhien.BackColor = System.Drawing.Color.DarkBlue;
+            this.plc_dc1_btn_dieukhien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_btn_dieukhien.GlowColor = System.Drawing.Color.Red;
+            this.plc_dc1_btn_dieukhien.Location = new System.Drawing.Point(27, 504);
+            this.plc_dc1_btn_dieukhien.Name = "plc_dc1_btn_dieukhien";
+            this.plc_dc1_btn_dieukhien.Size = new System.Drawing.Size(114, 45);
+            this.plc_dc1_btn_dieukhien.TabIndex = 15;
+            this.plc_dc1_btn_dieukhien.Text = "ĐIỀU KHIỂN";
+            this.plc_dc1_btn_dieukhien.Click += new System.EventHandler(this.plc_dc1_btn_dieukhien_Click);
             // 
             // gsDongCo1
             // 
@@ -1270,9 +1287,9 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1331,7 +1348,7 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Label plc_dc1_lbl_spd_tangap2;
         private System.Windows.Forms.Label plc_dc1_lbl_apluc_boitron;
         private System.Windows.Forms.Label plc_dc1_lbl_spd_tangap1;
-        private System.Windows.Forms.Label plc_dc1_lbl_spd_dongco;
+        private System.Windows.Forms.Label plc_dc1_lbl_tocdo;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
@@ -1374,5 +1391,6 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Panel plc_dc1_pnl_lamp_lihop;
         private System.Windows.Forms.Panel plc_dc1_pnl_lamp_left;
         private System.Windows.Forms.Timer timer1;
+        private EnhancedGlassButton.GlassButton plc_dc1_btn_dieukhien;
     }
 }

@@ -27,6 +27,8 @@ namespace WindowsFormsApp1.Views
         public gsOverview()
         {
             InitializeComponent();
+            DisableButton();
+            timer1.Start();
         }
 
         // Xem chi tiet 3 dong co
@@ -65,5 +67,29 @@ namespace WindowsFormsApp1.Views
             mMainContent.Instance.NextPage(PAGE.TONGQUAT);
         }
 
+        public void DisableButton()
+        {
+            btndc1.Enabled = false;
+            btndc2.Enabled = false;
+            btndc3.Enabled = false;
+            btnhethongdc.Enabled = false;
+        }
+
+        public void EnableButton()
+        {
+            btndc1.Enabled = true;
+            btndc2.Enabled = true;
+            btndc3.Enabled = true;
+            btnhethongdc.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Form1.loadConfigFinsh)
+            {
+                EnableButton();
+                timer1.Stop();
+            }
+        }
     }
 }

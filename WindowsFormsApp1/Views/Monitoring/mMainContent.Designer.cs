@@ -50,10 +50,10 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlBodyData = new System.Windows.Forms.Panel();
             this.pnl_header = new System.Windows.Forms.Panel();
-            this.lbl_title = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pic_home_click = new System.Windows.Forms.PictureBox();
             this.pic_back_click = new System.Windows.Forms.PictureBox();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -187,7 +187,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc3_gau_tocdo.ScaleNumbersStepScaleLines = 1;
             this.plc_dc3_gau_tocdo.Size = new System.Drawing.Size(203, 199);
             this.plc_dc3_gau_tocdo.TabIndex = 0;
-            this.plc_dc3_gau_tocdo.Value = 1000F;
+            this.plc_dc3_gau_tocdo.Value = 0F;
             // 
             // panel3
             // 
@@ -403,20 +403,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.pnl_header.Size = new System.Drawing.Size(1093, 34);
             this.pnl_header.TabIndex = 5;
             // 
-            // lbl_title
-            // 
-            this.lbl_title.BackColor = System.Drawing.Color.Gainsboro;
-            this.lbl_title.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_title.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_title.ForeColor = System.Drawing.Color.Black;
-            this.lbl_title.Location = new System.Drawing.Point(0, 0);
-            this.lbl_title.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(1093, 34);
-            this.lbl_title.TabIndex = 3;
-            this.lbl_title.Text = "TỔNG QUAN HỆ THỐNG";
-            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
@@ -455,6 +441,20 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.pic_back_click.TabIndex = 4;
             this.pic_back_click.TabStop = false;
             this.pic_back_click.Click += new System.EventHandler(this.pic_back_click_Click);
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.BackColor = System.Drawing.Color.Gainsboro;
+            this.lbl_title.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_title.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.Color.Black;
+            this.lbl_title.Location = new System.Drawing.Point(0, 0);
+            this.lbl_title.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(1093, 34);
+            this.lbl_title.TabIndex = 3;
+            this.lbl_title.Text = "TỔNG QUAN HỆ THỐNG";
+            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 

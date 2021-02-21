@@ -107,7 +107,10 @@ namespace WindowsFormsApp1.Views.Monitoring
                     break;
             }
             if (index != PAGE.HOME)
-                PageStore.Add(index);
+            {
+                if(!PageStore.Exists(p=>p==index))
+                    PageStore.Add(index);
+            }
             
             var ctrNeedShow = PageStoreLoad.Where(c => c.Index == index).FirstOrDefault();
             if (ctrNeedShow != null)
@@ -127,10 +130,9 @@ namespace WindowsFormsApp1.Views.Monitoring
 
         private void pic_back_click_Click(object sender, EventArgs e)
         {
-            
             var currentControl = PageStore[PageStore.Count - 2];
+            PageStore.RemoveAt(PageStore.Count - 1);
             NextPage(currentControl);
-            PageStore.RemoveAt(PageStore.Count-1);
             if (PageStore.Count == 1)
                 pic_back_click.Enabled = false;
             else
@@ -153,16 +155,21 @@ namespace WindowsFormsApp1.Views.Monitoring
         private void timer1_Tick(object sender, EventArgs e)
         {
             if(Form1.plcConnected == true)
-            {  
-                int spdDC1 = PLCCom.getDevice("D4");
-                int spdDC2 = PLCCom.getDevice("D54");
-                int spdDC3 = PLCCom.getDevice("D104");
-                plc_dc1_gau_tocdo.Value = spdDC1;
-                plc_dc2_gau_tocdo.Value = spdDC2;
-                plc_dc3_gau_tocdo.Value = spdDC3;
-                plc_dc1_lbl_tocdo.Text = spdDC1.ToString();
-                plc_dc2_lbl_tocdo.Text = spdDC2.ToString();
-                plc_dc3_lbl_tocdo.Text = spdDC3.ToString();
+            {
+                if (Form1.loadConfigFinsh)
+                {
+                    int spdDC1 = PLCCom.getDevice("D4");
+                    int spdDC2 = PLCCom.getDevice("D54");
+                    int spdDC3 = PLCCom.getDevice("D104");
+                    plc_dc1_gau_tocdo.Value = spdDC1;
+                    plc_dc2_gau_tocdo.Value = spdDC2;
+                    plc_dc3_gau_tocdo.Value = spdDC3;
+                    plc_dc1_lbl_tocdo.Text = spdDC1.ToString();
+                    plc_dc2_lbl_tocdo.Text = spdDC2.ToString();
+                    plc_dc3_lbl_tocdo.Text = spdDC3.ToString();
+
+                }
+
             }
         }
 

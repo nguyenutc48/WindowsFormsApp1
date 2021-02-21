@@ -36,11 +36,9 @@ namespace WindowsFormsApp1.Views.Setting
             this.btnLuuDC3 = new System.Windows.Forms.Button();
             this.btnLuuDC2 = new System.Windows.Forms.Button();
             this.btnLuuDC1 = new System.Windows.Forms.Button();
-            this.btnLuuAmthanh = new System.Windows.Forms.Button();
             this.btnChonfileDC3 = new System.Windows.Forms.Button();
             this.btnChonfileDC2 = new System.Windows.Forms.Button();
             this.btnChonfileDC1 = new System.Windows.Forms.Button();
-            this.btnChonfileAmthanh = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,9 +48,6 @@ namespace WindowsFormsApp1.Views.Setting
             this.label9 = new System.Windows.Forms.Label();
             this.lblDongco1Path = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblAmthanhPath = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.btnDisconnect = new System.Windows.Forms.Button();
@@ -98,11 +93,9 @@ namespace WindowsFormsApp1.Views.Setting
             this.groupBox1.Controls.Add(this.btnLuuDC3);
             this.groupBox1.Controls.Add(this.btnLuuDC2);
             this.groupBox1.Controls.Add(this.btnLuuDC1);
-            this.groupBox1.Controls.Add(this.btnLuuAmthanh);
             this.groupBox1.Controls.Add(this.btnChonfileDC3);
             this.groupBox1.Controls.Add(this.btnChonfileDC2);
             this.groupBox1.Controls.Add(this.btnChonfileDC1);
-            this.groupBox1.Controls.Add(this.btnChonfileAmthanh);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label3);
@@ -112,9 +105,6 @@ namespace WindowsFormsApp1.Views.Setting
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.lblDongco1Path);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.lblAmthanhPath);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(586, 62);
@@ -127,29 +117,31 @@ namespace WindowsFormsApp1.Views.Setting
             // btnLuuDC3
             // 
             this.btnLuuDC3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuDC3.Location = new System.Drawing.Point(558, 417);
+            this.btnLuuDC3.Location = new System.Drawing.Point(558, 340);
             this.btnLuuDC3.Name = "btnLuuDC3";
             this.btnLuuDC3.Size = new System.Drawing.Size(75, 33);
             this.btnLuuDC3.TabIndex = 3;
             this.btnLuuDC3.Text = "Lưu";
             this.btnLuuDC3.UseVisualStyleBackColor = true;
+            this.btnLuuDC3.Visible = false;
             this.btnLuuDC3.Click += new System.EventHandler(this.btnClickLuuConfig);
             // 
             // btnLuuDC2
             // 
             this.btnLuuDC2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuDC2.Location = new System.Drawing.Point(558, 306);
+            this.btnLuuDC2.Location = new System.Drawing.Point(558, 229);
             this.btnLuuDC2.Name = "btnLuuDC2";
             this.btnLuuDC2.Size = new System.Drawing.Size(75, 33);
             this.btnLuuDC2.TabIndex = 3;
             this.btnLuuDC2.Text = "Lưu";
             this.btnLuuDC2.UseVisualStyleBackColor = true;
+            this.btnLuuDC2.Visible = false;
             this.btnLuuDC2.Click += new System.EventHandler(this.btnClickLuuConfig);
             // 
             // btnLuuDC1
             // 
             this.btnLuuDC1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuDC1.Location = new System.Drawing.Point(558, 189);
+            this.btnLuuDC1.Location = new System.Drawing.Point(558, 112);
             this.btnLuuDC1.Name = "btnLuuDC1";
             this.btnLuuDC1.Size = new System.Drawing.Size(75, 33);
             this.btnLuuDC1.TabIndex = 3;
@@ -157,43 +149,34 @@ namespace WindowsFormsApp1.Views.Setting
             this.btnLuuDC1.UseVisualStyleBackColor = true;
             this.btnLuuDC1.Click += new System.EventHandler(this.btnClickLuuConfig);
             // 
-            // btnLuuAmthanh
-            // 
-            this.btnLuuAmthanh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuuAmthanh.Location = new System.Drawing.Point(558, 87);
-            this.btnLuuAmthanh.Name = "btnLuuAmthanh";
-            this.btnLuuAmthanh.Size = new System.Drawing.Size(75, 33);
-            this.btnLuuAmthanh.TabIndex = 3;
-            this.btnLuuAmthanh.Text = "Lưu";
-            this.btnLuuAmthanh.UseVisualStyleBackColor = true;
-            this.btnLuuAmthanh.Click += new System.EventHandler(this.btnClickLuuConfig);
-            // 
             // btnChonfileDC3
             // 
             this.btnChonfileDC3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChonfileDC3.Location = new System.Drawing.Point(477, 417);
+            this.btnChonfileDC3.Location = new System.Drawing.Point(477, 340);
             this.btnChonfileDC3.Name = "btnChonfileDC3";
             this.btnChonfileDC3.Size = new System.Drawing.Size(75, 33);
             this.btnChonfileDC3.TabIndex = 3;
             this.btnChonfileDC3.Text = "Chọn file";
             this.btnChonfileDC3.UseVisualStyleBackColor = true;
+            this.btnChonfileDC3.Visible = false;
             this.btnChonfileDC3.Click += new System.EventHandler(this.btnClickChonfileConfig);
             // 
             // btnChonfileDC2
             // 
             this.btnChonfileDC2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChonfileDC2.Location = new System.Drawing.Point(477, 306);
+            this.btnChonfileDC2.Location = new System.Drawing.Point(477, 229);
             this.btnChonfileDC2.Name = "btnChonfileDC2";
             this.btnChonfileDC2.Size = new System.Drawing.Size(75, 33);
             this.btnChonfileDC2.TabIndex = 3;
             this.btnChonfileDC2.Text = "Chọn file";
             this.btnChonfileDC2.UseVisualStyleBackColor = true;
+            this.btnChonfileDC2.Visible = false;
             this.btnChonfileDC2.Click += new System.EventHandler(this.btnClickChonfileConfig);
             // 
             // btnChonfileDC1
             // 
             this.btnChonfileDC1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChonfileDC1.Location = new System.Drawing.Point(477, 189);
+            this.btnChonfileDC1.Location = new System.Drawing.Point(477, 112);
             this.btnChonfileDC1.Name = "btnChonfileDC1";
             this.btnChonfileDC1.Size = new System.Drawing.Size(75, 33);
             this.btnChonfileDC1.TabIndex = 3;
@@ -201,29 +184,19 @@ namespace WindowsFormsApp1.Views.Setting
             this.btnChonfileDC1.UseVisualStyleBackColor = true;
             this.btnChonfileDC1.Click += new System.EventHandler(this.btnClickChonfileConfig);
             // 
-            // btnChonfileAmthanh
-            // 
-            this.btnChonfileAmthanh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChonfileAmthanh.Location = new System.Drawing.Point(477, 87);
-            this.btnChonfileAmthanh.Name = "btnChonfileAmthanh";
-            this.btnChonfileAmthanh.Size = new System.Drawing.Size(75, 33);
-            this.btnChonfileAmthanh.TabIndex = 3;
-            this.btnChonfileAmthanh.Text = "Chọn file";
-            this.btnChonfileAmthanh.UseVisualStyleBackColor = true;
-            this.btnChonfileAmthanh.Click += new System.EventHandler(this.btnClickChonfileConfig);
-            // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 377);
+            this.label8.Location = new System.Drawing.Point(17, 300);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(616, 25);
             this.label8.TabIndex = 0;
             this.label8.Text = "CÀI ĐẶT ĐỘNG CƠ 3";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.Visible = false;
             // 
             // label7
             // 
@@ -231,12 +204,13 @@ namespace WindowsFormsApp1.Views.Setting
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(17, 265);
+            this.label7.Location = new System.Drawing.Point(17, 188);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(616, 25);
             this.label7.TabIndex = 0;
             this.label7.Text = "CÀI ĐẶT ĐỘNG CƠ 2";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.Visible = false;
             // 
             // label3
             // 
@@ -244,23 +218,24 @@ namespace WindowsFormsApp1.Views.Setting
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 151);
+            this.label3.Location = new System.Drawing.Point(17, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(616, 25);
             this.label3.TabIndex = 0;
-            this.label3.Text = "CÀI ĐẶT ĐỘNG CƠ 1";
+            this.label3.Text = "LOAD FILE CONFIG DATA";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDongco3Path
             // 
             this.lblDongco3Path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDongco3Path.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDongco3Path.Location = new System.Drawing.Point(144, 417);
+            this.lblDongco3Path.Location = new System.Drawing.Point(144, 340);
             this.lblDongco3Path.Name = "lblDongco3Path";
             this.lblDongco3Path.Size = new System.Drawing.Size(327, 33);
             this.lblDongco3Path.TabIndex = 0;
             this.lblDongco3Path.Text = "config file.xlsx";
             this.lblDongco3Path.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDongco3Path.Visible = false;
             // 
             // label11
             // 
@@ -268,23 +243,25 @@ namespace WindowsFormsApp1.Views.Setting
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 417);
+            this.label11.Location = new System.Drawing.Point(17, 340);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(121, 33);
             this.label11.TabIndex = 0;
             this.label11.Text = "File config";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.Visible = false;
             // 
             // lblDongco2Path
             // 
             this.lblDongco2Path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDongco2Path.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDongco2Path.Location = new System.Drawing.Point(144, 306);
+            this.lblDongco2Path.Location = new System.Drawing.Point(144, 229);
             this.lblDongco2Path.Name = "lblDongco2Path";
             this.lblDongco2Path.Size = new System.Drawing.Size(327, 33);
             this.lblDongco2Path.TabIndex = 0;
             this.lblDongco2Path.Text = "config file.xlsx";
             this.lblDongco2Path.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDongco2Path.Visible = false;
             // 
             // label9
             // 
@@ -292,18 +269,19 @@ namespace WindowsFormsApp1.Views.Setting
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 306);
+            this.label9.Location = new System.Drawing.Point(17, 229);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(121, 33);
             this.label9.TabIndex = 0;
             this.label9.Text = "File config";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Visible = false;
             // 
             // lblDongco1Path
             // 
             this.lblDongco1Path.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDongco1Path.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDongco1Path.Location = new System.Drawing.Point(144, 189);
+            this.lblDongco1Path.Location = new System.Drawing.Point(144, 112);
             this.lblDongco1Path.Name = "lblDongco1Path";
             this.lblDongco1Path.Size = new System.Drawing.Size(327, 33);
             this.lblDongco1Path.TabIndex = 0;
@@ -316,49 +294,12 @@ namespace WindowsFormsApp1.Views.Setting
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 189);
+            this.label4.Location = new System.Drawing.Point(17, 112);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 33);
             this.label4.TabIndex = 0;
             this.label4.Text = "File config";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblAmthanhPath
-            // 
-            this.lblAmthanhPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAmthanhPath.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmthanhPath.Location = new System.Drawing.Point(144, 87);
-            this.lblAmthanhPath.Name = "lblAmthanhPath";
-            this.lblAmthanhPath.Size = new System.Drawing.Size(327, 33);
-            this.lblAmthanhPath.TabIndex = 0;
-            this.lblAmthanhPath.Text = "config file.xlsx";
-            this.lblAmthanhPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 87);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 33);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "File config";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(616, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "CÀI ĐẶT ÂM THANH";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
@@ -476,11 +417,9 @@ namespace WindowsFormsApp1.Views.Setting
         private System.Windows.Forms.Button btnLuuDC3;
         private System.Windows.Forms.Button btnLuuDC2;
         private System.Windows.Forms.Button btnLuuDC1;
-        private System.Windows.Forms.Button btnLuuAmthanh;
         private System.Windows.Forms.Button btnChonfileDC3;
         private System.Windows.Forms.Button btnChonfileDC2;
         private System.Windows.Forms.Button btnChonfileDC1;
-        private System.Windows.Forms.Button btnChonfileAmthanh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
@@ -490,9 +429,6 @@ namespace WindowsFormsApp1.Views.Setting
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblDongco1Path;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblAmthanhPath;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnDisconnect;
         private System.Windows.Forms.Button btnConnect;
