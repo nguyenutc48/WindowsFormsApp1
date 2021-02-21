@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
                 _dongcoAddress = value;
             }
         }
-        
+
         List<UserControl> userControls = new List<UserControl>();
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -99,13 +99,6 @@ namespace WindowsFormsApp1
             StaticConfig.LoadView(vMain.Instance, pnl_mainContent);
 
             btnClick_Menu(null, null);
-            //var result = PLC.Open(PLC_UNIT_TYPE.UNIT_FXCPU);
-            //if(result == 0)
-            //{
-            //    _plcconnected = true;
-            //    timer1.Enabled = true;
-            //    timer1.Start();
-            //}
             var a = StaticConfig.GetAllControl(mMainContent.Instance);
         }
 

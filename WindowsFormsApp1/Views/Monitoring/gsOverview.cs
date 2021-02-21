@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Models;
 using WindowsFormsApp1.Views.Monitoring;
 
 namespace WindowsFormsApp1.Views
@@ -62,7 +63,7 @@ namespace WindowsFormsApp1.Views
         private void btnbangdienchinh_Click(object sender, EventArgs e)
         {
             mMainContent.Instance.NextPage(PAGE.TONGQUAT);
-
         }
+
     }
 }

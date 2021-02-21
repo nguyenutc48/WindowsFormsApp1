@@ -29,53 +29,75 @@ namespace WindowsFormsApp1.Views.Monitoring
         /// </summary>
         private void InitializeComponent()
         {
-            this.label20 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.plc_dc2_btn_khoi_dong = new EnhancedGlassButton.GlassButton();
-            this.plc_dc2_btn_dung = new EnhancedGlassButton.GlassButton();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
             this.label38 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_dauHopso = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_khixaB = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.plc_dc1_pnl_lamp_left = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_vitri_chanvit = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.plc_dc1_pnl_lamp_right = new System.Windows.Forms.Panel();
+            this.plc_dc2_lbl_tocdo_chanvit = new System.Windows.Forms.Label();
+            this.plc_dc1_pnl_lamp_lihop = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.plc_dc2_lbl_chedo = new System.Windows.Forms.Label();
+            this.plc_dc2_lb_apluc_daudkHopso = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_khixaA = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_khiTangap = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.labeo = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_khinap = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_ncLammat = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_dauboitron = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_nlRail = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.plc_dc1_btn_khoi_dong = new EnhancedGlassButton.GlassButton();
+            this.plc_dc1_btn_dung = new EnhancedGlassButton.GlassButton();
+            this.label32 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
+            this.labeo2 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_nhietdo_ecu = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_apluc_nl_sauphin = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_dienap_ecu = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_apluc_nhienlieuRail = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_luong_nhien_lieu = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_thoigian_hoatdong = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_apluc_khinap = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_apluc_homtruc = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_spd_tangap2 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_apluc_boitron = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_spd_tangap1 = new System.Windows.Forms.Label();
+            this.plc_dc2_lbl_spd_dongco = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.labeo1 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -91,163 +113,24 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label10 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label55 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(23, 437);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(100, 19);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Nhiệt độ ECU:";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(31, 404);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(136, 19);
-            this.label37.TabIndex = 4;
-            this.label37.Text = "Nhiệt độ dầu hộp số:";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // plc_dc2_btn_khoi_dong
-            // 
-            this.plc_dc2_btn_khoi_dong.BackColor = System.Drawing.Color.DarkBlue;
-            this.plc_dc2_btn_khoi_dong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc2_btn_khoi_dong.GlowColor = System.Drawing.Color.Red;
-            this.plc_dc2_btn_khoi_dong.Location = new System.Drawing.Point(74, 516);
-            this.plc_dc2_btn_khoi_dong.Name = "plc_dc2_btn_khoi_dong";
-            this.plc_dc2_btn_khoi_dong.Size = new System.Drawing.Size(114, 45);
-            this.plc_dc2_btn_khoi_dong.TabIndex = 15;
-            this.plc_dc2_btn_khoi_dong.Text = "KHỞI ĐỘNG";
-            // 
-            // plc_dc2_btn_dung
-            // 
-            this.plc_dc2_btn_dung.BackColor = System.Drawing.Color.DarkBlue;
-            this.plc_dc2_btn_dung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plc_dc2_btn_dung.GlowColor = System.Drawing.Color.Red;
-            this.plc_dc2_btn_dung.Location = new System.Drawing.Point(286, 516);
-            this.plc_dc2_btn_dung.Name = "plc_dc2_btn_dung";
-            this.plc_dc2_btn_dung.Size = new System.Drawing.Size(114, 45);
-            this.plc_dc2_btn_dung.TabIndex = 16;
-            this.plc_dc2_btn_dung.Text = "DỪNG";
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(0, 467);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(496, 27);
-            this.label32.TabIndex = 5;
-            this.label32.Text = "ĐIỀU KHIỂN ĐỘNG CƠ";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label47.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(261, 340);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(115, 23);
-            this.label47.TabIndex = 3;
-            this.label47.Text = "0";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label46
-            // 
-            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label46.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(261, 306);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(115, 23);
-            this.label46.TabIndex = 3;
-            this.label46.Text = "0";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label70
-            // 
-            this.label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label70.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(290, 274);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(115, 23);
-            this.label70.TabIndex = 3;
-            this.label70.Text = "0";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label67
-            // 
-            this.label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label67.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(290, 169);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(115, 23);
-            this.label67.TabIndex = 3;
-            this.label67.Text = "0";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label49
-            // 
-            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label49.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(261, 406);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(115, 23);
-            this.label49.TabIndex = 3;
-            this.label49.Text = "0";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label41
-            // 
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label41.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(261, 134);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(115, 23);
-            this.label41.TabIndex = 3;
-            this.label41.Text = "0";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label38
             // 
@@ -259,49 +142,30 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label38.TabIndex = 17;
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label43
+            // label29
             // 
-            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(261, 204);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(115, 23);
-            this.label43.TabIndex = 3;
-            this.label43.Text = "0";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label29.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(0, 318);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(494, 27);
+            this.label29.TabIndex = 5;
+            this.label29.Text = "THÔNG SỐ HỘP SỐ";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label75
+            // label5
             // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(411, 66);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(43, 19);
-            this.label75.TabIndex = 4;
-            this.label75.Text = "Độ C";
-            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label45.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(261, 272);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(115, 23);
-            this.label45.TabIndex = 3;
-            this.label45.Text = "0";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label44
-            // 
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(261, 238);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(115, 23);
-            this.label44.TabIndex = 3;
-            this.label44.Text = "0";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(488, 27);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "THÔNG SỐ ĐỘNG CƠ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label78
             // 
@@ -314,6 +178,28 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label78.Text = "Độ C";
             this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(31, 101);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(151, 19);
+            this.label24.TabIndex = 4;
+            this.label24.Text = "Nhiệt độ nước làm mát:";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(31, 404);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(136, 19);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "Nhiệt độ dầu hộp số:";
+            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label77
             // 
             this.label77.AutoSize = true;
@@ -324,6 +210,17 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label77.TabIndex = 4;
             this.label77.Text = "Độ C";
             this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(31, 206);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(113, 19);
+            this.label28.TabIndex = 4;
+            this.label28.Text = "Nhiệt độ khí nạp:";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label76
             // 
@@ -336,38 +233,16 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label76.Text = "Độ C";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label48
+            // label21
             // 
-            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label48.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(261, 377);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(115, 23);
-            this.label48.TabIndex = 3;
-            this.label48.Text = "0";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label82
-            // 
-            this.label82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label82.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(290, 402);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(115, 23);
-            this.label82.TabIndex = 3;
-            this.label82.Text = "0";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label40
-            // 
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(261, 99);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(115, 23);
-            this.label40.TabIndex = 3;
-            this.label40.Text = "0";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(31, 31);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(142, 19);
+            this.label21.TabIndex = 4;
+            this.label21.Text = "Nhiệt độ dầu bôi trơn:";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label84
             // 
@@ -380,6 +255,50 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label84.Text = "Sẵn sàng";
             this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // plc_dc2_lbl_nhietdo_dauHopso
+            // 
+            this.plc_dc2_lbl_nhietdo_dauHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_dauHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_dauHopso.Location = new System.Drawing.Point(290, 402);
+            this.plc_dc2_lbl_nhietdo_dauHopso.Name = "plc_dc2_lbl_nhietdo_dauHopso";
+            this.plc_dc2_lbl_nhietdo_dauHopso.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_dauHopso.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_dauHopso.Text = "0";
+            this.plc_dc2_lbl_nhietdo_dauHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_nhietdo_khixaB
+            // 
+            this.plc_dc2_lbl_nhietdo_khixaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_khixaB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_khixaB.Location = new System.Drawing.Point(290, 274);
+            this.plc_dc2_lbl_nhietdo_khixaB.Name = "plc_dc2_lbl_nhietdo_khixaB";
+            this.plc_dc2_lbl_nhietdo_khixaB.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_khixaB.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_khixaB.Text = "0";
+            this.plc_dc2_lbl_nhietdo_khixaB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_nhietdo_khinapTruocVL
+            // 
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.Location = new System.Drawing.Point(290, 169);
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.Name = "plc_dc2_lbl_nhietdo_khinapTruocVL";
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.Text = "0";
+            this.plc_dc2_lbl_nhietdo_khinapTruocVL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(411, 66);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(43, 19);
+            this.label75.TabIndex = 4;
+            this.label75.Text = "Độ C";
+            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -391,38 +310,151 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label36.Text = "Áp lực dầu điều khiển hộp số:";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label83
+            // label22
             // 
-            this.label83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label83.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(290, 485);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(115, 23);
-            this.label83.TabIndex = 3;
-            this.label83.Text = "Tải chờ";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(31, 66);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(178, 19);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "Nhiệt độ nhiên liệu trên Rail:";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label81
+            // label3
             // 
-            this.label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label81.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.Location = new System.Drawing.Point(290, 367);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(115, 23);
-            this.label81.TabIndex = 3;
-            this.label81.Text = "0";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 23);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "ĐỘNG CƠ 2";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label69
+            // plc_dc1_pnl_lamp_left
             // 
-            this.label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label69.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(290, 239);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(115, 23);
-            this.label69.TabIndex = 3;
-            this.label69.Text = "0";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.plc_dc1_pnl_lamp_left.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.plc_dc1_pnl_lamp_left.Location = new System.Drawing.Point(3, 101);
+            this.plc_dc1_pnl_lamp_left.Name = "plc_dc1_pnl_lamp_left";
+            this.plc_dc1_pnl_lamp_left.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc1_pnl_lamp_left.TabIndex = 19;
+            // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(2, 454);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Vị trí trục";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(2, 516);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Tốc độ trục";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc2_lbl_vitri_chanvit
+            // 
+            this.plc_dc2_lbl_vitri_chanvit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_vitri_chanvit.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_vitri_chanvit.Location = new System.Drawing.Point(16, 483);
+            this.plc_dc2_lbl_vitri_chanvit.Name = "plc_dc2_lbl_vitri_chanvit";
+            this.plc_dc2_lbl_vitri_chanvit.Size = new System.Drawing.Size(64, 23);
+            this.plc_dc2_lbl_vitri_chanvit.TabIndex = 3;
+            this.plc_dc2_lbl_vitri_chanvit.Text = "Trung gian";
+            this.plc_dc2_lbl_vitri_chanvit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(31, 487);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(122, 19);
+            this.label35.TabIndex = 4;
+            this.label35.Text = "Chế độ điều khiển:";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc1_pnl_lamp_right
+            // 
+            this.plc_dc1_pnl_lamp_right.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.plc_dc1_pnl_lamp_right.Location = new System.Drawing.Point(71, 101);
+            this.plc_dc1_pnl_lamp_right.Name = "plc_dc1_pnl_lamp_right";
+            this.plc_dc1_pnl_lamp_right.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc1_pnl_lamp_right.TabIndex = 17;
+            // 
+            // plc_dc2_lbl_tocdo_chanvit
+            // 
+            this.plc_dc2_lbl_tocdo_chanvit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_tocdo_chanvit.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_tocdo_chanvit.Location = new System.Drawing.Point(16, 545);
+            this.plc_dc2_lbl_tocdo_chanvit.Name = "plc_dc2_lbl_tocdo_chanvit";
+            this.plc_dc2_lbl_tocdo_chanvit.Size = new System.Drawing.Size(64, 23);
+            this.plc_dc2_lbl_tocdo_chanvit.TabIndex = 2;
+            this.plc_dc2_lbl_tocdo_chanvit.Text = "+0";
+            this.plc_dc2_lbl_tocdo_chanvit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc1_pnl_lamp_lihop
+            // 
+            this.plc_dc1_pnl_lamp_lihop.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.plc_dc1_pnl_lamp_lihop.Location = new System.Drawing.Point(28, 157);
+            this.plc_dc1_pnl_lamp_lihop.Name = "plc_dc1_pnl_lamp_lihop";
+            this.plc_dc1_pnl_lamp_lihop.Size = new System.Drawing.Size(41, 16);
+            this.plc_dc1_pnl_lamp_lihop.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // plc_dc2_lbl_chedo
+            // 
+            this.plc_dc2_lbl_chedo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_chedo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_chedo.Location = new System.Drawing.Point(290, 485);
+            this.plc_dc2_lbl_chedo.Name = "plc_dc2_lbl_chedo";
+            this.plc_dc2_lbl_chedo.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_chedo.TabIndex = 3;
+            this.plc_dc2_lbl_chedo.Text = "Tải chờ";
+            this.plc_dc2_lbl_chedo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc2_lb_apluc_daudkHopso
+            // 
+            this.plc_dc2_lb_apluc_daudkHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lb_apluc_daudkHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lb_apluc_daudkHopso.Location = new System.Drawing.Point(290, 367);
+            this.plc_dc2_lb_apluc_daudkHopso.Name = "plc_dc2_lb_apluc_daudkHopso";
+            this.plc_dc2_lb_apluc_daudkHopso.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lb_apluc_daudkHopso.TabIndex = 3;
+            this.plc_dc2_lb_apluc_daudkHopso.Text = "0";
+            this.plc_dc2_lb_apluc_daudkHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_nhietdo_khixaA
+            // 
+            this.plc_dc2_lbl_nhietdo_khixaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_khixaA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_khixaA.Location = new System.Drawing.Point(290, 239);
+            this.plc_dc2_lbl_nhietdo_khixaA.Name = "plc_dc2_lbl_nhietdo_khixaA";
+            this.plc_dc2_lbl_nhietdo_khixaA.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_khixaA.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_khixaA.Text = "0";
+            this.plc_dc2_lbl_nhietdo_khixaA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label74
             // 
@@ -435,16 +467,16 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label74.Text = "Độ C";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label66
+            // plc_dc2_lbl_nhietdo_khiTangap
             // 
-            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label66.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(290, 134);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(115, 23);
-            this.label66.TabIndex = 3;
-            this.label66.Text = "0";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.plc_dc2_lbl_nhietdo_khiTangap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_khiTangap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_khiTangap.Location = new System.Drawing.Point(290, 134);
+            this.plc_dc2_lbl_nhietdo_khiTangap.Name = "plc_dc2_lbl_nhietdo_khiTangap";
+            this.plc_dc2_lbl_nhietdo_khiTangap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_khiTangap.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_khiTangap.Text = "0";
+            this.plc_dc2_lbl_nhietdo_khiTangap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label80
             // 
@@ -456,6 +488,17 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label80.TabIndex = 4;
             this.label80.Text = "Bar";
             this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(31, 171);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(253, 19);
+            this.label27.TabIndex = 4;
+            this.label27.Text = "Nhiệt độ khí nạp trước van tái lưu thông:";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label73
             // 
@@ -479,6 +522,17 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label79.Text = "Độ C";
             this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(31, 522);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(130, 19);
+            this.label34.TabIndex = 4;
+            this.label34.Text = "Sẵn sàng hoạt động:";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label72
             // 
             this.label72.AutoSize = true;
@@ -490,16 +544,38 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label72.Text = "Độ C";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label68
+            // label23
             // 
-            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label68.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(290, 204);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(115, 23);
-            this.label68.TabIndex = 3;
-            this.label68.Text = "0";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(31, 241);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(137, 19);
+            this.label23.TabIndex = 4;
+            this.label23.Text = "Nhiệt độ khí xả về A:";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labeo
+            // 
+            this.labeo.AutoSize = true;
+            this.labeo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeo.Location = new System.Drawing.Point(31, 276);
+            this.labeo.Name = "labeo";
+            this.labeo.Size = new System.Drawing.Size(137, 19);
+            this.labeo.TabIndex = 4;
+            this.labeo.Text = "Nhiệt độ khí xả về B:";
+            this.labeo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc2_lbl_nhietdo_khinap
+            // 
+            this.plc_dc2_lbl_nhietdo_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_khinap.Location = new System.Drawing.Point(290, 204);
+            this.plc_dc2_lbl_nhietdo_khinap.Name = "plc_dc2_lbl_nhietdo_khinap";
+            this.plc_dc2_lbl_nhietdo_khinap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_khinap.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_khinap.Text = "0";
+            this.plc_dc2_lbl_nhietdo_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label71
             // 
@@ -512,38 +588,137 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label71.Text = "Độ C";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label65
+            // plc_dc2_lbl_nhietdo_ncLammat
             // 
-            this.label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label65.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(290, 99);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(115, 23);
-            this.label65.TabIndex = 3;
-            this.label65.Text = "0";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.plc_dc2_lbl_nhietdo_ncLammat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_ncLammat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_ncLammat.Location = new System.Drawing.Point(290, 99);
+            this.plc_dc2_lbl_nhietdo_ncLammat.Name = "plc_dc2_lbl_nhietdo_ncLammat";
+            this.plc_dc2_lbl_nhietdo_ncLammat.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_ncLammat.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_ncLammat.Text = "0";
+            this.plc_dc2_lbl_nhietdo_ncLammat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label63
+            // label26
             // 
-            this.label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(290, 29);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(115, 23);
-            this.label63.TabIndex = 3;
-            this.label63.Text = "0";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(31, 136);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(161, 19);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Nhiệt độ khí nạp tăng áp:";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label64
+            // plc_dc2_lbl_nhietdo_dauboitron
             // 
-            this.label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(290, 64);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(115, 23);
-            this.label64.TabIndex = 3;
-            this.label64.Text = "0";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.plc_dc2_lbl_nhietdo_dauboitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_dauboitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_dauboitron.Location = new System.Drawing.Point(290, 29);
+            this.plc_dc2_lbl_nhietdo_dauboitron.Name = "plc_dc2_lbl_nhietdo_dauboitron";
+            this.plc_dc2_lbl_nhietdo_dauboitron.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_dauboitron.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_dauboitron.Text = "0";
+            this.plc_dc2_lbl_nhietdo_dauboitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_nhietdo_nlRail
+            // 
+            this.plc_dc2_lbl_nhietdo_nlRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_nlRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_nlRail.Location = new System.Drawing.Point(290, 64);
+            this.plc_dc2_lbl_nhietdo_nlRail.Name = "plc_dc2_lbl_nhietdo_nlRail";
+            this.plc_dc2_lbl_nhietdo_nlRail.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_nlRail.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_nlRail.Text = "0";
+            this.plc_dc2_lbl_nhietdo_nlRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.plc_dc1_btn_khoi_dong);
+            this.panel1.Controls.Add(this.plc_dc1_btn_dung);
+            this.panel1.Controls.Add(this.label32);
+            this.panel1.Controls.Add(this.label62);
+            this.panel1.Controls.Add(this.labeo2);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_nhietdo_ecu);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_apluc_nl_sauphin);
+            this.panel1.Controls.Add(this.label42);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_dienap_ecu);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_apluc_nhienlieuRail);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_luong_nhien_lieu);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_thoigian_hoatdong);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_apluc_khinap);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_apluc_homtruc);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_spd_tangap2);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_apluc_boitron);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_spd_tangap1);
+            this.panel1.Controls.Add(this.plc_dc2_lbl_spd_dongco);
+            this.panel1.Controls.Add(this.label61);
+            this.panel1.Controls.Add(this.labeo1);
+            this.panel1.Controls.Add(this.label59);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.label60);
+            this.panel1.Controls.Add(this.label18);
+            this.panel1.Controls.Add(this.label31);
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Controls.Add(this.label58);
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label57);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.label54);
+            this.panel1.Controls.Add(this.label56);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.label53);
+            this.panel1.Controls.Add(this.label55);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.label52);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label51);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(105, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(492, 582);
+            this.panel1.TabIndex = 0;
+            // 
+            // plc_dc1_btn_khoi_dong
+            // 
+            this.plc_dc1_btn_khoi_dong.BackColor = System.Drawing.Color.DarkBlue;
+            this.plc_dc1_btn_khoi_dong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_btn_khoi_dong.GlowColor = System.Drawing.Color.Red;
+            this.plc_dc1_btn_khoi_dong.Location = new System.Drawing.Point(74, 516);
+            this.plc_dc1_btn_khoi_dong.Name = "plc_dc1_btn_khoi_dong";
+            this.plc_dc1_btn_khoi_dong.Size = new System.Drawing.Size(114, 45);
+            this.plc_dc1_btn_khoi_dong.TabIndex = 15;
+            this.plc_dc1_btn_khoi_dong.Text = "KHỞI ĐỘNG";
+            // 
+            // plc_dc1_btn_dung
+            // 
+            this.plc_dc1_btn_dung.BackColor = System.Drawing.Color.DarkBlue;
+            this.plc_dc1_btn_dung.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_btn_dung.GlowColor = System.Drawing.Color.Red;
+            this.plc_dc1_btn_dung.Location = new System.Drawing.Point(286, 516);
+            this.plc_dc1_btn_dung.Name = "plc_dc1_btn_dung";
+            this.plc_dc1_btn_dung.Size = new System.Drawing.Size(114, 45);
+            this.plc_dc1_btn_dung.TabIndex = 16;
+            this.plc_dc1_btn_dung.Text = "DỪNG";
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(0, 467);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(496, 27);
+            this.label32.TabIndex = 5;
+            this.label32.Text = "ĐIỀU KHIỂN ĐỘNG CƠ";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label62
             // 
@@ -556,16 +731,38 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label62.Text = "Độ C";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label50
+            // labeo2
             // 
-            this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label50.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(261, 435);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(115, 23);
-            this.label50.TabIndex = 3;
-            this.label50.Text = "0";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labeo2.AutoSize = true;
+            this.labeo2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeo2.Location = new System.Drawing.Point(23, 437);
+            this.labeo2.Name = "labeo2";
+            this.labeo2.Size = new System.Drawing.Size(100, 19);
+            this.labeo2.TabIndex = 4;
+            this.labeo2.Text = "Nhiệt độ ECU:";
+            this.labeo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plc_dc2_lbl_nhietdo_ecu
+            // 
+            this.plc_dc2_lbl_nhietdo_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_nhietdo_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_nhietdo_ecu.Location = new System.Drawing.Point(261, 435);
+            this.plc_dc2_lbl_nhietdo_ecu.Name = "plc_dc2_lbl_nhietdo_ecu";
+            this.plc_dc2_lbl_nhietdo_ecu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_nhietdo_ecu.TabIndex = 3;
+            this.plc_dc2_lbl_nhietdo_ecu.Text = "0";
+            this.plc_dc2_lbl_nhietdo_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_apluc_nl_sauphin
+            // 
+            this.plc_dc2_lbl_apluc_nl_sauphin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_apluc_nl_sauphin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_apluc_nl_sauphin.Location = new System.Drawing.Point(261, 340);
+            this.plc_dc2_lbl_apluc_nl_sauphin.Name = "plc_dc2_lbl_apluc_nl_sauphin";
+            this.plc_dc2_lbl_apluc_nl_sauphin.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_apluc_nl_sauphin.TabIndex = 3;
+            this.plc_dc2_lbl_apluc_nl_sauphin.Text = "0";
+            this.plc_dc2_lbl_apluc_nl_sauphin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label42
             // 
@@ -578,27 +775,115 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label42.Text = "0";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label39
+            // plc_dc2_lbl_dienap_ecu
             // 
-            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(261, 64);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(115, 23);
-            this.label39.TabIndex = 3;
-            this.label39.Text = "0";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.plc_dc2_lbl_dienap_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_dienap_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_dienap_ecu.Location = new System.Drawing.Point(261, 406);
+            this.plc_dc2_lbl_dienap_ecu.Name = "plc_dc2_lbl_dienap_ecu";
+            this.plc_dc2_lbl_dienap_ecu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_dienap_ecu.TabIndex = 3;
+            this.plc_dc2_lbl_dienap_ecu.Text = "0";
+            this.plc_dc2_lbl_dienap_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label33
+            // plc_dc2_lbl_apluc_nhienlieuRail
             // 
-            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(261, 29);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(115, 23);
-            this.label33.TabIndex = 3;
-            this.label33.Text = "0";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.plc_dc2_lbl_apluc_nhienlieuRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_apluc_nhienlieuRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_apluc_nhienlieuRail.Location = new System.Drawing.Point(261, 306);
+            this.plc_dc2_lbl_apluc_nhienlieuRail.Name = "plc_dc2_lbl_apluc_nhienlieuRail";
+            this.plc_dc2_lbl_apluc_nhienlieuRail.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_apluc_nhienlieuRail.TabIndex = 3;
+            this.plc_dc2_lbl_apluc_nhienlieuRail.Text = "0";
+            this.plc_dc2_lbl_apluc_nhienlieuRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_luong_nhien_lieu
+            // 
+            this.plc_dc2_lbl_luong_nhien_lieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_luong_nhien_lieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_luong_nhien_lieu.Location = new System.Drawing.Point(261, 134);
+            this.plc_dc2_lbl_luong_nhien_lieu.Name = "plc_dc2_lbl_luong_nhien_lieu";
+            this.plc_dc2_lbl_luong_nhien_lieu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_luong_nhien_lieu.TabIndex = 3;
+            this.plc_dc2_lbl_luong_nhien_lieu.Text = "0";
+            this.plc_dc2_lbl_luong_nhien_lieu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_thoigian_hoatdong
+            // 
+            this.plc_dc2_lbl_thoigian_hoatdong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_thoigian_hoatdong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_thoigian_hoatdong.Location = new System.Drawing.Point(261, 377);
+            this.plc_dc2_lbl_thoigian_hoatdong.Name = "plc_dc2_lbl_thoigian_hoatdong";
+            this.plc_dc2_lbl_thoigian_hoatdong.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_thoigian_hoatdong.TabIndex = 3;
+            this.plc_dc2_lbl_thoigian_hoatdong.Text = "0";
+            this.plc_dc2_lbl_thoigian_hoatdong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_apluc_khinap
+            // 
+            this.plc_dc2_lbl_apluc_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_apluc_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_apluc_khinap.Location = new System.Drawing.Point(261, 272);
+            this.plc_dc2_lbl_apluc_khinap.Name = "plc_dc2_lbl_apluc_khinap";
+            this.plc_dc2_lbl_apluc_khinap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_apluc_khinap.TabIndex = 3;
+            this.plc_dc2_lbl_apluc_khinap.Text = "0";
+            this.plc_dc2_lbl_apluc_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_apluc_homtruc
+            // 
+            this.plc_dc2_lbl_apluc_homtruc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_apluc_homtruc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_apluc_homtruc.Location = new System.Drawing.Point(261, 238);
+            this.plc_dc2_lbl_apluc_homtruc.Name = "plc_dc2_lbl_apluc_homtruc";
+            this.plc_dc2_lbl_apluc_homtruc.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_apluc_homtruc.TabIndex = 3;
+            this.plc_dc2_lbl_apluc_homtruc.Text = "0";
+            this.plc_dc2_lbl_apluc_homtruc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_spd_tangap2
+            // 
+            this.plc_dc2_lbl_spd_tangap2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_spd_tangap2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_spd_tangap2.Location = new System.Drawing.Point(261, 99);
+            this.plc_dc2_lbl_spd_tangap2.Name = "plc_dc2_lbl_spd_tangap2";
+            this.plc_dc2_lbl_spd_tangap2.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_spd_tangap2.TabIndex = 3;
+            this.plc_dc2_lbl_spd_tangap2.Text = "0";
+            this.plc_dc2_lbl_spd_tangap2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_apluc_boitron
+            // 
+            this.plc_dc2_lbl_apluc_boitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_apluc_boitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_apluc_boitron.Location = new System.Drawing.Point(261, 204);
+            this.plc_dc2_lbl_apluc_boitron.Name = "plc_dc2_lbl_apluc_boitron";
+            this.plc_dc2_lbl_apluc_boitron.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_apluc_boitron.TabIndex = 3;
+            this.plc_dc2_lbl_apluc_boitron.Text = "0";
+            this.plc_dc2_lbl_apluc_boitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_spd_tangap1
+            // 
+            this.plc_dc2_lbl_spd_tangap1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_spd_tangap1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_spd_tangap1.Location = new System.Drawing.Point(261, 64);
+            this.plc_dc2_lbl_spd_tangap1.Name = "plc_dc2_lbl_spd_tangap1";
+            this.plc_dc2_lbl_spd_tangap1.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_spd_tangap1.TabIndex = 3;
+            this.plc_dc2_lbl_spd_tangap1.Text = "0";
+            this.plc_dc2_lbl_spd_tangap1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc2_lbl_spd_dongco
+            // 
+            this.plc_dc2_lbl_spd_dongco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc2_lbl_spd_dongco.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc2_lbl_spd_dongco.Location = new System.Drawing.Point(261, 29);
+            this.plc_dc2_lbl_spd_dongco.Name = "plc_dc2_lbl_spd_dongco";
+            this.plc_dc2_lbl_spd_dongco.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc2_lbl_spd_dongco.TabIndex = 3;
+            this.plc_dc2_lbl_spd_dongco.Text = "0";
+            this.plc_dc2_lbl_spd_dongco.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label61
             // 
@@ -611,16 +896,16 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label61.Text = "Volt";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label19
+            // labeo1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(23, 408);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(94, 19);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "Điện áp ECU:";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labeo1.AutoSize = true;
+            this.labeo1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeo1.Location = new System.Drawing.Point(23, 408);
+            this.labeo1.Name = "labeo1";
+            this.labeo1.Size = new System.Drawing.Size(94, 19);
+            this.labeo1.TabIndex = 4;
+            this.labeo1.Text = "Điện áp ECU:";
+            this.labeo1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label59
             // 
@@ -632,19 +917,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label59.TabIndex = 4;
             this.label59.Text = "Bar";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(494, 27);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "THÔNG SỐ ĐỘNG CƠ";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
             // 
@@ -809,330 +1081,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label53.Text = "Ng vòng/phút";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(382, 66);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(91, 19);
-            this.label52.TabIndex = 4;
-            this.label52.Text = "Ng vòng/phút";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label38);
-            this.panel3.Controls.Add(this.label29);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label78);
-            this.panel3.Controls.Add(this.label24);
-            this.panel3.Controls.Add(this.label37);
-            this.panel3.Controls.Add(this.label77);
-            this.panel3.Controls.Add(this.label28);
-            this.panel3.Controls.Add(this.label76);
-            this.panel3.Controls.Add(this.label21);
-            this.panel3.Controls.Add(this.label84);
-            this.panel3.Controls.Add(this.label82);
-            this.panel3.Controls.Add(this.label70);
-            this.panel3.Controls.Add(this.label67);
-            this.panel3.Controls.Add(this.label75);
-            this.panel3.Controls.Add(this.label36);
-            this.panel3.Controls.Add(this.label22);
-            this.panel3.Controls.Add(this.label35);
-            this.panel3.Controls.Add(this.label83);
-            this.panel3.Controls.Add(this.label81);
-            this.panel3.Controls.Add(this.label69);
-            this.panel3.Controls.Add(this.label74);
-            this.panel3.Controls.Add(this.label66);
-            this.panel3.Controls.Add(this.label80);
-            this.panel3.Controls.Add(this.label27);
-            this.panel3.Controls.Add(this.label73);
-            this.panel3.Controls.Add(this.label79);
-            this.panel3.Controls.Add(this.label34);
-            this.panel3.Controls.Add(this.label72);
-            this.panel3.Controls.Add(this.label23);
-            this.panel3.Controls.Add(this.label25);
-            this.panel3.Controls.Add(this.label68);
-            this.panel3.Controls.Add(this.label71);
-            this.panel3.Controls.Add(this.label65);
-            this.panel3.Controls.Add(this.label26);
-            this.panel3.Controls.Add(this.label63);
-            this.panel3.Controls.Add(this.label64);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(599, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(494, 586);
-            this.panel3.TabIndex = 1;
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(0, 318);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(494, 27);
-            this.label29.TabIndex = 5;
-            this.label29.Text = "THÔNG SỐ HỘP SỐ";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(31, 101);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(151, 19);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "Nhiệt độ nước làm mát:";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(31, 206);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(113, 19);
-            this.label28.TabIndex = 4;
-            this.label28.Text = "Nhiệt độ khí nạp:";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(31, 31);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(142, 19);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "Nhiệt độ dầu bôi trơn:";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(31, 66);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(178, 19);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "Nhiệt độ nhiên liệu trên Rail:";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(31, 487);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(122, 19);
-            this.label35.TabIndex = 4;
-            this.label35.Text = "Chế độ điều khiển:";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(31, 171);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(253, 19);
-            this.label27.TabIndex = 4;
-            this.label27.Text = "Nhiệt độ khí nạp trước van tái lưu thông:";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(31, 522);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(130, 19);
-            this.label34.TabIndex = 4;
-            this.label34.Text = "Sẵn sàng hoạt động:";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(31, 241);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(137, 19);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "Nhiệt độ khí xả về A:";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(31, 276);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(137, 19);
-            this.label25.TabIndex = 4;
-            this.label25.Text = "Nhiệt độ khí xả về B:";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(31, 136);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(161, 19);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Nhiệt độ khí nạp tăng áp:";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(19, 545);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 23);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "+0";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 4);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 23);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "ĐỘNG CƠ 2";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 454);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 23);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Vị trí trục";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 516);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 23);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Tốc độ trục";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(19, 483);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 23);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Trung gian";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc2;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(103, 586);
-            this.panel2.TabIndex = 1;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(23, 240);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(111, 19);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Áp lực hòm trục:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.plc_dc2_btn_khoi_dong);
-            this.panel1.Controls.Add(this.plc_dc2_btn_dung);
-            this.panel1.Controls.Add(this.label32);
-            this.panel1.Controls.Add(this.label62);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label50);
-            this.panel1.Controls.Add(this.label47);
-            this.panel1.Controls.Add(this.label42);
-            this.panel1.Controls.Add(this.label49);
-            this.panel1.Controls.Add(this.label46);
-            this.panel1.Controls.Add(this.label41);
-            this.panel1.Controls.Add(this.label48);
-            this.panel1.Controls.Add(this.label45);
-            this.panel1.Controls.Add(this.label44);
-            this.panel1.Controls.Add(this.label40);
-            this.panel1.Controls.Add(this.label43);
-            this.panel1.Controls.Add(this.label39);
-            this.panel1.Controls.Add(this.label33);
-            this.panel1.Controls.Add(this.label61);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label59);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label60);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label31);
-            this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.label58);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label57);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label54);
-            this.panel1.Controls.Add(this.label56);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label53);
-            this.panel1.Controls.Add(this.label55);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label52);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label51);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(103, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(496, 586);
-            this.panel1.TabIndex = 0;
-            // 
             // label55
             // 
             this.label55.AutoSize = true;
@@ -1154,6 +1102,28 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label8.TabIndex = 4;
             this.label8.Text = "Tốc độ tua bin tăng tốc 2:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(23, 240);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(111, 19);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "Áp lực hòm trục:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(382, 66);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(91, 19);
+            this.label52.TabIndex = 4;
+            this.label52.Text = "Ng vòng/phút";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -1196,10 +1166,29 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(496, 27);
+            this.label4.Size = new System.Drawing.Size(490, 27);
             this.label4.TabIndex = 3;
             this.label4.Text = "THÔNG SỐ ĐỘNG CƠ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.plc_dc1_pnl_lamp_right);
+            this.panel2.Controls.Add(this.plc_dc2_lbl_tocdo_chanvit);
+            this.panel2.Controls.Add(this.plc_dc1_pnl_lamp_lihop);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.plc_dc1_pnl_lamp_left);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.plc_dc2_lbl_vitri_chanvit);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(99, 582);
+            this.panel2.TabIndex = 1;
             // 
             // tableLayoutPanel1
             // 
@@ -1219,6 +1208,57 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1093, 586);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label38);
+            this.panel3.Controls.Add(this.label29);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label78);
+            this.panel3.Controls.Add(this.label24);
+            this.panel3.Controls.Add(this.label37);
+            this.panel3.Controls.Add(this.label77);
+            this.panel3.Controls.Add(this.label28);
+            this.panel3.Controls.Add(this.label76);
+            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.label84);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_dauHopso);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_khixaB);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_khinapTruocVL);
+            this.panel3.Controls.Add(this.label75);
+            this.panel3.Controls.Add(this.label36);
+            this.panel3.Controls.Add(this.label22);
+            this.panel3.Controls.Add(this.label35);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_chedo);
+            this.panel3.Controls.Add(this.plc_dc2_lb_apluc_daudkHopso);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_khixaA);
+            this.panel3.Controls.Add(this.label74);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_khiTangap);
+            this.panel3.Controls.Add(this.label80);
+            this.panel3.Controls.Add(this.label27);
+            this.panel3.Controls.Add(this.label73);
+            this.panel3.Controls.Add(this.label79);
+            this.panel3.Controls.Add(this.label34);
+            this.panel3.Controls.Add(this.label72);
+            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.labeo);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_khinap);
+            this.panel3.Controls.Add(this.label71);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_ncLammat);
+            this.panel3.Controls.Add(this.label26);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_dauboitron);
+            this.panel3.Controls.Add(this.plc_dc2_lbl_nhietdo_nlRail);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(601, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(490, 582);
+            this.panel3.TabIndex = 1;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // gsDongCo2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1226,66 +1266,87 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "gsDongCo2";
             this.Size = new System.Drawing.Size(1093, 586);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label37;
-        private EnhancedGlassButton.GlassButton plc_dc2_btn_khoi_dong;
-        private EnhancedGlassButton.GlassButton plc_dc2_btn_dung;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_dauHopso;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_khixaB;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_khinapTruocVL;
+        private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel plc_dc1_pnl_lamp_left;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label plc_dc2_lbl_vitri_chanvit;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Panel plc_dc1_pnl_lamp_right;
+        private System.Windows.Forms.Label plc_dc2_lbl_tocdo_chanvit;
+        private System.Windows.Forms.Panel plc_dc1_pnl_lamp_lihop;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label plc_dc2_lbl_chedo;
+        private System.Windows.Forms.Label plc_dc2_lb_apluc_daudkHopso;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_khixaA;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_khiTangap;
         private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label labeo;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_khinap;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_ncLammat;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_dauboitron;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_nlRail;
+        private System.Windows.Forms.Panel panel1;
+        private EnhancedGlassButton.GlassButton plc_dc1_btn_khoi_dong;
+        private EnhancedGlassButton.GlassButton plc_dc1_btn_dung;
+        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label labeo2;
+        private System.Windows.Forms.Label plc_dc2_lbl_nhietdo_ecu;
+        private System.Windows.Forms.Label plc_dc2_lbl_apluc_nl_sauphin;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label plc_dc2_lbl_dienap_ecu;
+        private System.Windows.Forms.Label plc_dc2_lbl_apluc_nhienlieuRail;
+        private System.Windows.Forms.Label plc_dc2_lbl_luong_nhien_lieu;
+        private System.Windows.Forms.Label plc_dc2_lbl_thoigian_hoatdong;
+        private System.Windows.Forms.Label plc_dc2_lbl_apluc_khinap;
+        private System.Windows.Forms.Label plc_dc2_lbl_apluc_homtruc;
+        private System.Windows.Forms.Label plc_dc2_lbl_spd_tangap2;
+        private System.Windows.Forms.Label plc_dc2_lbl_apluc_boitron;
+        private System.Windows.Forms.Label plc_dc2_lbl_spd_tangap1;
+        private System.Windows.Forms.Label plc_dc2_lbl_spd_dongco;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label labeo1;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Label label18;
@@ -1301,34 +1362,17 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Timer timer1;
     }
 }

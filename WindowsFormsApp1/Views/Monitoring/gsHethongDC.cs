@@ -23,6 +23,14 @@ namespace WindowsFormsApp1.Views
                 return _instance;
             }
         }
+        public void StartGetData()
+        {
+            timer1.Start();
+        }
+        public void StopGetData()
+        {
+            timer1.Stop();
+        }
         public gsHethongDC()
         {
             InitializeComponent();
@@ -43,6 +51,11 @@ namespace WindowsFormsApp1.Views
         {
             mMainContent.Instance.NextPage(PAGE.DONG_CO_3);
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
         }
     }
 }

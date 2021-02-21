@@ -29,6 +29,7 @@ namespace WindowsFormsApp1.Views.Monitoring
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -50,8 +51,10 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.pnlBodyData = new System.Windows.Forms.Panel();
             this.pnl_header = new System.Windows.Forms.Panel();
             this.lbl_title = new System.Windows.Forms.Label();
-            this.pic_back_click = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pic_home_click = new System.Windows.Forms.PictureBox();
+            this.pic_back_click = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -59,8 +62,9 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnl_header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_back_click)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_home_click)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_back_click)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -183,8 +187,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc3_gau_tocdo.ScaleNumbersStepScaleLines = 1;
             this.plc_dc3_gau_tocdo.Size = new System.Drawing.Size(203, 199);
             this.plc_dc3_gau_tocdo.TabIndex = 0;
-            this.plc_dc3_gau_tocdo.Text = "aGauge1";
-            this.plc_dc3_gau_tocdo.Value = 0F;
+            this.plc_dc3_gau_tocdo.Value = 1000F;
             // 
             // panel3
             // 
@@ -272,7 +275,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc2_gau_tocdo.ScaleNumbersStepScaleLines = 1;
             this.plc_dc2_gau_tocdo.Size = new System.Drawing.Size(203, 199);
             this.plc_dc2_gau_tocdo.TabIndex = 0;
-            this.plc_dc2_gau_tocdo.Text = "aGauge1";
             this.plc_dc2_gau_tocdo.Value = 0F;
             // 
             // panel1
@@ -361,7 +363,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.plc_dc1_gau_tocdo.ScaleNumbersStepScaleLines = 1;
             this.plc_dc1_gau_tocdo.Size = new System.Drawing.Size(203, 199);
             this.plc_dc1_gau_tocdo.TabIndex = 0;
-            this.plc_dc1_gau_tocdo.Text = "aGauge1";
             this.plc_dc1_gau_tocdo.Value = 0F;
             // 
             // tableLayoutPanel1
@@ -391,6 +392,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             // 
             // pnl_header
             // 
+            this.pnl_header.Controls.Add(this.pictureBox1);
             this.pnl_header.Controls.Add(this.pic_home_click);
             this.pnl_header.Controls.Add(this.pic_back_click);
             this.pnl_header.Controls.Add(this.lbl_title);
@@ -415,6 +417,31 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.lbl_title.Text = "TỔNG QUAN HỆ THỐNG";
             this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.loi;
+            this.pictureBox1.Location = new System.Drawing.Point(1009, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pic_home_click
+            // 
+            this.pic_home_click.BackColor = System.Drawing.Color.Gainsboro;
+            this.pic_home_click.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pic_home_click.Image = global::WindowsFormsApp1.Properties.Resources.home1;
+            this.pic_home_click.Location = new System.Drawing.Point(1055, 0);
+            this.pic_home_click.Name = "pic_home_click";
+            this.pic_home_click.Size = new System.Drawing.Size(38, 34);
+            this.pic_home_click.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_home_click.TabIndex = 5;
+            this.pic_home_click.TabStop = false;
+            this.pic_home_click.Click += new System.EventHandler(this.pic_home_click_Click);
+            // 
             // pic_back_click
             // 
             this.pic_back_click.BackColor = System.Drawing.Color.Gainsboro;
@@ -428,18 +455,9 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.pic_back_click.TabStop = false;
             this.pic_back_click.Click += new System.EventHandler(this.pic_back_click_Click);
             // 
-            // pic_home_click
+            // timer1
             // 
-            this.pic_home_click.BackColor = System.Drawing.Color.Gainsboro;
-            this.pic_home_click.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pic_home_click.Image = global::WindowsFormsApp1.Properties.Resources.home1;
-            this.pic_home_click.Location = new System.Drawing.Point(1063, 0);
-            this.pic_home_click.Name = "pic_home_click";
-            this.pic_home_click.Size = new System.Drawing.Size(30, 34);
-            this.pic_home_click.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_home_click.TabIndex = 5;
-            this.pic_home_click.TabStop = false;
-            this.pic_home_click.Click += new System.EventHandler(this.pic_home_click_Click);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // mMainContent
             // 
@@ -458,8 +476,9 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.pnl_header.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_back_click)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_home_click)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_back_click)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -489,5 +508,7 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pic_back_click;
         private System.Windows.Forms.PictureBox pic_home_click;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -80,6 +80,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bindable.cs" />
+    <Compile Include="Command.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +91,7 @@
     <Compile Include="Models\AmThanhModel.cs" />
     <Compile Include="Models\DongCoConfigModel.cs" />
     <Compile Include="Models\PageControlModel.cs" />
+    <Compile Include="Models\PLCDataModel.cs" />
     <Compile Include="PLCCom.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -219,6 +222,8 @@
     <None Include="Files\data_dongco_2.xlsx" />
     <None Include="Files\data_dongco_3.xlsx" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.Models.PLCDataModel.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp1.Views.Monitoring.gsDongCo1.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -243,6 +248,7 @@
     <Content Include="ReferenFiles\AdvancedHMIControls.dll" />
     <Content Include="ReferenFiles\MfgControl.AdvancedHMI.Controls.dll" />
     <Content Include="ReferenFiles\SMMAS.Common.dll" />
+    <None Include="Resources\loi.png" />
     <None Include="Resources\so do.PNG" />
     <None Include="Resources\may phat dien.png" />
     <None Include="Resources\dc2.png" />

@@ -26,6 +26,7 @@ namespace WindowsFormsApp1.Views.Monitoring
                 return _instance;
             }
         }
+        PLCDataModel _plcClass = new PLCDataModel();
         public mMainContent()
         {
             InitializeComponent();
@@ -43,21 +44,73 @@ namespace WindowsFormsApp1.Views.Monitoring
                 StaticConfig.LoadView(item.PageControl, pnlBodyData);
             }
 
-            NextPage(PAGE.HOME);
+            StaticConfig.ShowView(gsOverview.Instance, pnlBodyData);
+            lbl_title.Text = PageStoreLoad[0].Title;
+            PageStore.Add(PAGE.HOME);
         }
 
         public void NextPage(int index)
         {
-            PageStore.Add(index);
+            switch (index)
+            {
+                case PAGE.HE_THONG_DONG_CO:
+                    gsHethongDC.Instance.StartGetData();
+                    gsDongCo1.Instance.StopGetData();
+                    gsDongCo2.Instance.StopGetData();
+                    gsDongCo3.Instance.StopGetData();
+                    gsTongQuan.Instance.StopGetData();
+                    break;
+                case PAGE.DONG_CO_1:
+                    gsHethongDC.Instance.StopGetData();
+                    gsDongCo1.Instance.StartGetData();
+                    gsDongCo2.Instance.StopGetData();
+                    gsDongCo3.Instance.StopGetData();
+                    gsTongQuan.Instance.StopGetData();
+                    break;
+                case PAGE.DONG_CO_2:
+                    gsHethongDC.Instance.StopGetData();
+                    gsDongCo1.Instance.StopGetData();
+                    gsDongCo2.Instance.StartGetData();
+                    gsDongCo3.Instance.StopGetData();
+                    gsTongQuan.Instance.StopGetData();
+                    break;
+                case PAGE.DONG_CO_3:
+                    gsHethongDC.Instance.StopGetData();
+                    gsDongCo1.Instance.StopGetData();
+                    gsDongCo2.Instance.StopGetData();
+                    gsDongCo3.Instance.StartGetData();
+                    gsTongQuan.Instance.StopGetData();
+                    break;
+                case PAGE.TONGQUAT:
+                    gsHethongDC.Instance.StopGetData();
+                    gsDongCo1.Instance.StopGetData();
+                    gsDongCo2.Instance.StopGetData();
+                    gsDongCo3.Instance.StopGetData();
+                    gsTongQuan.Instance.StartGetData();
+                    break;
+                default:
+                    gsHethongDC.Instance.StopGetData();
+                    gsDongCo1.Instance.StopGetData();
+                    gsDongCo2.Instance.StopGetData();
+                    gsDongCo3.Instance.StopGetData();
+                    gsTongQuan.Instance.StopGetData();
+                    break;
+            }
+            if (index != PAGE.HOME)
+                PageStore.Add(index);
+            
             var ctrNeedShow = PageStoreLoad.Where(c => c.Index == index).FirstOrDefault();
             if (ctrNeedShow != null)
             {
                 StaticConfig.ShowView(ctrNeedShow.PageControl, pnlBodyData);
                 lbl_title.Text = ctrNeedShow.Title;
+
                 if (PageStore.Count == 1)
                     pic_back_click.Enabled = false;
                 else
                     pic_back_click.Enabled = true;
+
+
             }
        
         }
@@ -66,12 +119,7 @@ namespace WindowsFormsApp1.Views.Monitoring
         {
             
             var currentControl = PageStore[PageStore.Count - 2];
-            var findControl = PageStoreLoad.Where(c => c.Index == currentControl).FirstOrDefault();
-            if (findControl != null)
-            {
-                StaticConfig.ShowView(findControl.PageControl, pnlBodyData);
-                lbl_title.Text = findControl.Title;
-            }
+            NextPage(currentControl);
             PageStore.RemoveAt(PageStore.Count-1);
             if (PageStore.Count == 1)
                 pic_back_click.Enabled = false;
@@ -83,17 +131,29 @@ namespace WindowsFormsApp1.Views.Monitoring
         {
             if (PageStore.Count == 1)
                 return;
-            var findControl = PageStoreLoad.Where(c => c.Index == PAGE.HOME).FirstOrDefault();
-            if (findControl != null)
-            {
-                StaticConfig.ShowView(findControl.PageControl, pnlBodyData);
-                lbl_title.Text = findControl.Title;
-            }
+            NextPage(PAGE.HOME);
+
             PageStore.RemoveRange(1, PageStore.Count -1);
             if (PageStore.Count == 1)
                 pic_back_click.Enabled = false;
             else
                 pic_back_click.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(Form1.plcConnected == true)
+            {
+                int spdDC1 = PLCCom.getDevice("D4");
+                int spdDC2 = PLCCom.getDevice("D54");
+                int spdDC3 = PLCCom.getDevice("D104");
+                plc_dc1_gau_tocdo.Value = spdDC1;
+                plc_dc2_gau_tocdo.Value = spdDC2;
+                plc_dc3_gau_tocdo.Value = spdDC3;
+                plc_dc1_lbl_tocdo.Text = spdDC1.ToString();
+                plc_dc2_lbl_tocdo.Text = spdDC2.ToString();
+                plc_dc3_lbl_tocdo.Text = spdDC3.ToString();
+            }
         }
     }
 }

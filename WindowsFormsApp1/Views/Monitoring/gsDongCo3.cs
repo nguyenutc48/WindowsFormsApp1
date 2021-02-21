@@ -22,9 +22,22 @@ namespace WindowsFormsApp1.Views.Monitoring
                 return _instance;
             }
         }
+        public void StartGetData()
+        {
+            timer1.Start();
+        }
+        public void StopGetData()
+        {
+            timer1.Stop();
+        }
         public gsDongCo3()
         {
             InitializeComponent();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

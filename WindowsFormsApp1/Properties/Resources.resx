@@ -151,6 +151,9 @@
   <data name="7303672" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7303672.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="so do" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\so do.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\home.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,7 +163,7 @@
   <data name="may phat dien" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\may phat dien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="so do" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\so do.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="loi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

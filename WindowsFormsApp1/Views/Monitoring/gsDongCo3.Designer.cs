@@ -29,49 +29,26 @@ namespace WindowsFormsApp1.Views.Monitoring
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label20 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.plc_dc3_btn_khoi_dong = new EnhancedGlassButton.GlassButton();
             this.plc_dc3_btn_dung = new EnhancedGlassButton.GlassButton();
             this.label32 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
@@ -104,12 +81,11 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label23 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_tocdo_chanvit = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.plc_dc3_lbl_vitri_chanvit = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -120,11 +96,40 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.plc_dc3_pnl_lamp_right = new System.Windows.Forms.Panel();
+            this.plc_dc3_pnl_lamp_lihop = new System.Windows.Forms.Panel();
+            this.plc_dc3_pnl_lamp_left = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_luong_nhien_lieu = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_spd_tangap2 = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_spd_tangap1 = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_spd_dongco = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_nl_sauphin = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_nhienlieuRail = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_khinap = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_homtruc = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_apluc_boitron = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_nhietdo_ecu = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_dienap_ecu = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_thoigian_hoatdong = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khixaB = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khixaA = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khiTangap = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_khinap = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_ncLammat = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_dauboitron = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_nlRail = new System.Windows.Forms.Label();
+            this.plc_dc3_lbl_nhietdo_dauHopso = new System.Windows.Forms.Label();
+            this.plc_dc3_lb_apluc_daudkHopso = new System.Windows.Forms.Label();
+            this.plc_dc1_lbl_chedo = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label20
@@ -183,72 +188,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label32.Text = "ĐIỀU KHIỂN ĐỘNG CƠ";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label47
-            // 
-            this.label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label47.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(261, 340);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(115, 23);
-            this.label47.TabIndex = 3;
-            this.label47.Text = "0";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label46
-            // 
-            this.label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label46.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(261, 306);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(115, 23);
-            this.label46.TabIndex = 3;
-            this.label46.Text = "0";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label70
-            // 
-            this.label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label70.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(290, 274);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(115, 23);
-            this.label70.TabIndex = 3;
-            this.label70.Text = "0";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label67
-            // 
-            this.label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label67.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(290, 169);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(115, 23);
-            this.label67.TabIndex = 3;
-            this.label67.Text = "0";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label49
-            // 
-            this.label49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label49.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(261, 406);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(115, 23);
-            this.label49.TabIndex = 3;
-            this.label49.Text = "0";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label41
-            // 
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label41.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(261, 134);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(115, 23);
-            this.label41.TabIndex = 3;
-            this.label41.Text = "0";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label38
             // 
             this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -258,17 +197,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label38.Size = new System.Drawing.Size(488, 2);
             this.label38.TabIndex = 17;
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label43
-            // 
-            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(261, 204);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(115, 23);
-            this.label43.TabIndex = 3;
-            this.label43.Text = "0";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label75
             // 
@@ -280,28 +208,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label75.TabIndex = 4;
             this.label75.Text = "Độ C";
             this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label45.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(261, 272);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(115, 23);
-            this.label45.TabIndex = 3;
-            this.label45.Text = "0";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label44
-            // 
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(261, 238);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(115, 23);
-            this.label44.TabIndex = 3;
-            this.label44.Text = "0";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label78
             // 
@@ -336,39 +242,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label76.Text = "Độ C";
             this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label48
-            // 
-            this.label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label48.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(261, 377);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(115, 23);
-            this.label48.TabIndex = 3;
-            this.label48.Text = "0";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label82
-            // 
-            this.label82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label82.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(290, 402);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(115, 23);
-            this.label82.TabIndex = 3;
-            this.label82.Text = "0";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label40
-            // 
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(261, 99);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(115, 23);
-            this.label40.TabIndex = 3;
-            this.label40.Text = "0";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label84
             // 
             this.label84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -391,39 +264,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label36.Text = "Áp lực dầu điều khiển hộp số:";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label83
-            // 
-            this.label83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label83.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.Location = new System.Drawing.Point(290, 485);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(115, 23);
-            this.label83.TabIndex = 3;
-            this.label83.Text = "Tải chờ";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label81
-            // 
-            this.label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label81.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.Location = new System.Drawing.Point(290, 367);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(115, 23);
-            this.label81.TabIndex = 3;
-            this.label81.Text = "0";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label69
-            // 
-            this.label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label69.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(290, 239);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(115, 23);
-            this.label69.TabIndex = 3;
-            this.label69.Text = "0";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label74
             // 
             this.label74.AutoSize = true;
@@ -434,17 +274,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label74.TabIndex = 4;
             this.label74.Text = "Độ C";
             this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label66
-            // 
-            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label66.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(290, 134);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(115, 23);
-            this.label66.TabIndex = 3;
-            this.label66.Text = "0";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label80
             // 
@@ -490,17 +319,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label72.Text = "Độ C";
             this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label68
-            // 
-            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label68.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(290, 204);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(115, 23);
-            this.label68.TabIndex = 3;
-            this.label68.Text = "0";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label71
             // 
             this.label71.AutoSize = true;
@@ -512,39 +330,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label71.Text = "Độ C";
             this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label65
-            // 
-            this.label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label65.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(290, 99);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(115, 23);
-            this.label65.TabIndex = 3;
-            this.label65.Text = "0";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label63
-            // 
-            this.label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label63.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(290, 29);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(115, 23);
-            this.label63.TabIndex = 3;
-            this.label63.Text = "0";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label64
-            // 
-            this.label64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label64.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(290, 64);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(115, 23);
-            this.label64.TabIndex = 3;
-            this.label64.Text = "0";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label62
             // 
             this.label62.AutoSize = true;
@@ -555,50 +340,6 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label62.TabIndex = 4;
             this.label62.Text = "Độ C";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label50.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(261, 435);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(115, 23);
-            this.label50.TabIndex = 3;
-            this.label50.Text = "0";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label42
-            // 
-            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label42.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(261, 169);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(115, 23);
-            this.label42.TabIndex = 3;
-            this.label42.Text = "0";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label39
-            // 
-            this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(261, 64);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(115, 23);
-            this.label39.TabIndex = 3;
-            this.label39.Text = "0";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label33
-            // 
-            this.label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(261, 29);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(115, 23);
-            this.label33.TabIndex = 3;
-            this.label33.Text = "0";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label61
             // 
@@ -641,7 +382,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(494, 27);
+            this.label5.Size = new System.Drawing.Size(488, 27);
             this.label5.TabIndex = 4;
             this.label5.Text = "THÔNG SỐ ĐỘNG CƠ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -822,6 +563,18 @@ namespace WindowsFormsApp1.Views.Monitoring
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.plc_dc1_lbl_chedo);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_dauHopso);
+            this.panel3.Controls.Add(this.plc_dc3_lb_apluc_daudkHopso);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_khixaB);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_khinapTruocVL);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_khixaA);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_khiTangap);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_khinap);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_ncLammat);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_dauboitron);
+            this.panel3.Controls.Add(this.plc_dc3_lbl_nhietdo_nlRail);
             this.panel3.Controls.Add(this.label38);
             this.panel3.Controls.Add(this.label29);
             this.panel3.Controls.Add(this.label5);
@@ -833,18 +586,11 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel3.Controls.Add(this.label76);
             this.panel3.Controls.Add(this.label21);
             this.panel3.Controls.Add(this.label84);
-            this.panel3.Controls.Add(this.label82);
-            this.panel3.Controls.Add(this.label70);
-            this.panel3.Controls.Add(this.label67);
             this.panel3.Controls.Add(this.label75);
             this.panel3.Controls.Add(this.label36);
             this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.label35);
-            this.panel3.Controls.Add(this.label83);
-            this.panel3.Controls.Add(this.label81);
-            this.panel3.Controls.Add(this.label69);
             this.panel3.Controls.Add(this.label74);
-            this.panel3.Controls.Add(this.label66);
             this.panel3.Controls.Add(this.label80);
             this.panel3.Controls.Add(this.label27);
             this.panel3.Controls.Add(this.label73);
@@ -853,17 +599,13 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel3.Controls.Add(this.label72);
             this.panel3.Controls.Add(this.label23);
             this.panel3.Controls.Add(this.label25);
-            this.panel3.Controls.Add(this.label68);
             this.panel3.Controls.Add(this.label71);
-            this.panel3.Controls.Add(this.label65);
             this.panel3.Controls.Add(this.label26);
-            this.panel3.Controls.Add(this.label63);
-            this.panel3.Controls.Add(this.label64);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(599, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Location = new System.Drawing.Point(601, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(494, 586);
+            this.panel3.Size = new System.Drawing.Size(490, 582);
             this.panel3.TabIndex = 1;
             // 
             // label29
@@ -988,24 +730,25 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label26.Text = "Nhiệt độ khí nạp tăng áp:";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // plc_dc3_lbl_tocdo_chanvit
             // 
-            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(19, 545);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 23);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "+0";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.plc_dc3_lbl_tocdo_chanvit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_tocdo_chanvit.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_tocdo_chanvit.Location = new System.Drawing.Point(16, 545);
+            this.plc_dc3_lbl_tocdo_chanvit.Name = "plc_dc3_lbl_tocdo_chanvit";
+            this.plc_dc3_lbl_tocdo_chanvit.Size = new System.Drawing.Size(64, 23);
+            this.plc_dc3_lbl_tocdo_chanvit.TabIndex = 2;
+            this.plc_dc3_lbl_tocdo_chanvit.Text = "+0";
+            this.plc_dc3_lbl_tocdo_chanvit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 4);
+            this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 23);
+            this.label3.Size = new System.Drawing.Size(97, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "ĐỘNG CƠ 3";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1014,7 +757,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             // 
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(5, 454);
+            this.label2.Location = new System.Drawing.Point(2, 454);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 23);
             this.label2.TabIndex = 3;
@@ -1025,48 +768,41 @@ namespace WindowsFormsApp1.Views.Monitoring
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 516);
+            this.label1.Location = new System.Drawing.Point(2, 516);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "Tốc độ trục";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // plc_dc3_lbl_vitri_chanvit
             // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(19, 483);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 23);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Trung gian";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc1;
-            this.pictureBox1.Location = new System.Drawing.Point(5, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.plc_dc3_lbl_vitri_chanvit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_vitri_chanvit.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_vitri_chanvit.Location = new System.Drawing.Point(16, 483);
+            this.plc_dc3_lbl_vitri_chanvit.Name = "plc_dc3_lbl_vitri_chanvit";
+            this.plc_dc3_lbl_vitri_chanvit.Size = new System.Drawing.Size(64, 23);
+            this.plc_dc3_lbl_vitri_chanvit.TabIndex = 3;
+            this.plc_dc3_lbl_vitri_chanvit.Text = "Trung gian";
+            this.plc_dc3_lbl_vitri_chanvit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.plc_dc3_pnl_lamp_right);
+            this.panel2.Controls.Add(this.plc_dc3_pnl_lamp_lihop);
+            this.panel2.Controls.Add(this.plc_dc3_pnl_lamp_left);
+            this.panel2.Controls.Add(this.plc_dc3_lbl_tocdo_chanvit);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.plc_dc3_lbl_vitri_chanvit);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(103, 586);
+            this.panel2.Size = new System.Drawing.Size(99, 582);
             this.panel2.TabIndex = 1;
             // 
             // label14
@@ -1082,24 +818,25 @@ namespace WindowsFormsApp1.Views.Monitoring
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.plc_dc1_lbl_nhietdo_ecu);
+            this.panel1.Controls.Add(this.plc_dc1_lbl_dienap_ecu);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_thoigian_hoatdong);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_apluc_nl_sauphin);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_apluc_nhienlieuRail);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_apluc_khinap);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_apluc_homtruc);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_apluc_boitron);
+            this.panel1.Controls.Add(this.label42);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_luong_nhien_lieu);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_spd_tangap2);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_spd_tangap1);
+            this.panel1.Controls.Add(this.plc_dc3_lbl_spd_dongco);
             this.panel1.Controls.Add(this.plc_dc3_btn_khoi_dong);
             this.panel1.Controls.Add(this.plc_dc3_btn_dung);
             this.panel1.Controls.Add(this.label32);
             this.panel1.Controls.Add(this.label62);
             this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.label50);
-            this.panel1.Controls.Add(this.label47);
-            this.panel1.Controls.Add(this.label42);
-            this.panel1.Controls.Add(this.label49);
-            this.panel1.Controls.Add(this.label46);
-            this.panel1.Controls.Add(this.label41);
-            this.panel1.Controls.Add(this.label48);
-            this.panel1.Controls.Add(this.label45);
-            this.panel1.Controls.Add(this.label44);
-            this.panel1.Controls.Add(this.label40);
-            this.panel1.Controls.Add(this.label43);
-            this.panel1.Controls.Add(this.label39);
-            this.panel1.Controls.Add(this.label33);
             this.panel1.Controls.Add(this.label61);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label59);
@@ -1127,10 +864,10 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(103, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Location = new System.Drawing.Point(105, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(496, 586);
+            this.panel1.Size = new System.Drawing.Size(492, 582);
             this.panel1.TabIndex = 0;
             // 
             // label55
@@ -1196,7 +933,7 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(496, 27);
+            this.label4.Size = new System.Drawing.Size(490, 27);
             this.label4.TabIndex = 3;
             this.label4.Text = "THÔNG SỐ ĐỘNG CƠ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1219,6 +956,309 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1093, 586);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // plc_dc3_pnl_lamp_right
+            // 
+            this.plc_dc3_pnl_lamp_right.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.plc_dc3_pnl_lamp_right.Location = new System.Drawing.Point(71, 164);
+            this.plc_dc3_pnl_lamp_right.Name = "plc_dc3_pnl_lamp_right";
+            this.plc_dc3_pnl_lamp_right.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc3_pnl_lamp_right.TabIndex = 7;
+            // 
+            // plc_dc3_pnl_lamp_lihop
+            // 
+            this.plc_dc3_pnl_lamp_lihop.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.plc_dc3_pnl_lamp_lihop.Location = new System.Drawing.Point(25, 86);
+            this.plc_dc3_pnl_lamp_lihop.Name = "plc_dc3_pnl_lamp_lihop";
+            this.plc_dc3_pnl_lamp_lihop.Size = new System.Drawing.Size(52, 22);
+            this.plc_dc3_pnl_lamp_lihop.TabIndex = 8;
+            // 
+            // plc_dc3_pnl_lamp_left
+            // 
+            this.plc_dc3_pnl_lamp_left.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.plc_dc3_pnl_lamp_left.Location = new System.Drawing.Point(3, 164);
+            this.plc_dc3_pnl_lamp_left.Name = "plc_dc3_pnl_lamp_left";
+            this.plc_dc3_pnl_lamp_left.Size = new System.Drawing.Size(23, 37);
+            this.plc_dc3_pnl_lamp_left.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.dc1;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(93, 418);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label42
+            // 
+            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label42.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(261, 169);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(115, 23);
+            this.label42.TabIndex = 17;
+            this.label42.Text = "0";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_luong_nhien_lieu
+            // 
+            this.plc_dc3_lbl_luong_nhien_lieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_luong_nhien_lieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_luong_nhien_lieu.Location = new System.Drawing.Point(261, 134);
+            this.plc_dc3_lbl_luong_nhien_lieu.Name = "plc_dc3_lbl_luong_nhien_lieu";
+            this.plc_dc3_lbl_luong_nhien_lieu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_luong_nhien_lieu.TabIndex = 18;
+            this.plc_dc3_lbl_luong_nhien_lieu.Text = "0";
+            this.plc_dc3_lbl_luong_nhien_lieu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_spd_tangap2
+            // 
+            this.plc_dc3_lbl_spd_tangap2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_spd_tangap2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_spd_tangap2.Location = new System.Drawing.Point(261, 99);
+            this.plc_dc3_lbl_spd_tangap2.Name = "plc_dc3_lbl_spd_tangap2";
+            this.plc_dc3_lbl_spd_tangap2.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_spd_tangap2.TabIndex = 19;
+            this.plc_dc3_lbl_spd_tangap2.Text = "0";
+            this.plc_dc3_lbl_spd_tangap2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_spd_tangap1
+            // 
+            this.plc_dc3_lbl_spd_tangap1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_spd_tangap1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_spd_tangap1.Location = new System.Drawing.Point(261, 64);
+            this.plc_dc3_lbl_spd_tangap1.Name = "plc_dc3_lbl_spd_tangap1";
+            this.plc_dc3_lbl_spd_tangap1.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_spd_tangap1.TabIndex = 20;
+            this.plc_dc3_lbl_spd_tangap1.Text = "0";
+            this.plc_dc3_lbl_spd_tangap1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_spd_dongco
+            // 
+            this.plc_dc3_lbl_spd_dongco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_spd_dongco.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_spd_dongco.Location = new System.Drawing.Point(261, 29);
+            this.plc_dc3_lbl_spd_dongco.Name = "plc_dc3_lbl_spd_dongco";
+            this.plc_dc3_lbl_spd_dongco.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_spd_dongco.TabIndex = 21;
+            this.plc_dc3_lbl_spd_dongco.Text = "0";
+            this.plc_dc3_lbl_spd_dongco.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_nl_sauphin
+            // 
+            this.plc_dc3_lbl_apluc_nl_sauphin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_nl_sauphin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_nl_sauphin.Location = new System.Drawing.Point(261, 340);
+            this.plc_dc3_lbl_apluc_nl_sauphin.Name = "plc_dc3_lbl_apluc_nl_sauphin";
+            this.plc_dc3_lbl_apluc_nl_sauphin.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_nl_sauphin.TabIndex = 22;
+            this.plc_dc3_lbl_apluc_nl_sauphin.Text = "0";
+            this.plc_dc3_lbl_apluc_nl_sauphin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_nhienlieuRail
+            // 
+            this.plc_dc3_lbl_apluc_nhienlieuRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Location = new System.Drawing.Point(261, 306);
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Name = "plc_dc3_lbl_apluc_nhienlieuRail";
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_nhienlieuRail.TabIndex = 23;
+            this.plc_dc3_lbl_apluc_nhienlieuRail.Text = "0";
+            this.plc_dc3_lbl_apluc_nhienlieuRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_khinap
+            // 
+            this.plc_dc3_lbl_apluc_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_khinap.Location = new System.Drawing.Point(261, 272);
+            this.plc_dc3_lbl_apluc_khinap.Name = "plc_dc3_lbl_apluc_khinap";
+            this.plc_dc3_lbl_apluc_khinap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_khinap.TabIndex = 24;
+            this.plc_dc3_lbl_apluc_khinap.Text = "0";
+            this.plc_dc3_lbl_apluc_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_homtruc
+            // 
+            this.plc_dc3_lbl_apluc_homtruc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_homtruc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_homtruc.Location = new System.Drawing.Point(261, 238);
+            this.plc_dc3_lbl_apluc_homtruc.Name = "plc_dc3_lbl_apluc_homtruc";
+            this.plc_dc3_lbl_apluc_homtruc.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_homtruc.TabIndex = 25;
+            this.plc_dc3_lbl_apluc_homtruc.Text = "0";
+            this.plc_dc3_lbl_apluc_homtruc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_apluc_boitron
+            // 
+            this.plc_dc3_lbl_apluc_boitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_apluc_boitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_apluc_boitron.Location = new System.Drawing.Point(261, 204);
+            this.plc_dc3_lbl_apluc_boitron.Name = "plc_dc3_lbl_apluc_boitron";
+            this.plc_dc3_lbl_apluc_boitron.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_apluc_boitron.TabIndex = 26;
+            this.plc_dc3_lbl_apluc_boitron.Text = "0";
+            this.plc_dc3_lbl_apluc_boitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc1_lbl_nhietdo_ecu
+            // 
+            this.plc_dc1_lbl_nhietdo_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_nhietdo_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_nhietdo_ecu.Location = new System.Drawing.Point(261, 435);
+            this.plc_dc1_lbl_nhietdo_ecu.Name = "plc_dc1_lbl_nhietdo_ecu";
+            this.plc_dc1_lbl_nhietdo_ecu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc1_lbl_nhietdo_ecu.TabIndex = 27;
+            this.plc_dc1_lbl_nhietdo_ecu.Text = "0";
+            this.plc_dc1_lbl_nhietdo_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc1_lbl_dienap_ecu
+            // 
+            this.plc_dc1_lbl_dienap_ecu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_dienap_ecu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_dienap_ecu.Location = new System.Drawing.Point(261, 406);
+            this.plc_dc1_lbl_dienap_ecu.Name = "plc_dc1_lbl_dienap_ecu";
+            this.plc_dc1_lbl_dienap_ecu.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc1_lbl_dienap_ecu.TabIndex = 28;
+            this.plc_dc1_lbl_dienap_ecu.Text = "0";
+            this.plc_dc1_lbl_dienap_ecu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_thoigian_hoatdong
+            // 
+            this.plc_dc3_lbl_thoigian_hoatdong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_thoigian_hoatdong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_thoigian_hoatdong.Location = new System.Drawing.Point(261, 377);
+            this.plc_dc3_lbl_thoigian_hoatdong.Name = "plc_dc3_lbl_thoigian_hoatdong";
+            this.plc_dc3_lbl_thoigian_hoatdong.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_thoigian_hoatdong.TabIndex = 29;
+            this.plc_dc3_lbl_thoigian_hoatdong.Text = "0";
+            this.plc_dc3_lbl_thoigian_hoatdong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khixaB
+            // 
+            this.plc_dc3_lbl_nhietdo_khixaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khixaB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khixaB.Location = new System.Drawing.Point(290, 276);
+            this.plc_dc3_lbl_nhietdo_khixaB.Name = "plc_dc3_lbl_nhietdo_khixaB";
+            this.plc_dc3_lbl_nhietdo_khixaB.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khixaB.TabIndex = 18;
+            this.plc_dc3_lbl_nhietdo_khixaB.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khixaB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khinapTruocVL
+            // 
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Location = new System.Drawing.Point(290, 171);
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Name = "plc_dc3_lbl_nhietdo_khinapTruocVL";
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.TabIndex = 19;
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khinapTruocVL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khixaA
+            // 
+            this.plc_dc3_lbl_nhietdo_khixaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khixaA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khixaA.Location = new System.Drawing.Point(290, 241);
+            this.plc_dc3_lbl_nhietdo_khixaA.Name = "plc_dc3_lbl_nhietdo_khixaA";
+            this.plc_dc3_lbl_nhietdo_khixaA.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khixaA.TabIndex = 20;
+            this.plc_dc3_lbl_nhietdo_khixaA.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khixaA.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khiTangap
+            // 
+            this.plc_dc3_lbl_nhietdo_khiTangap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khiTangap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khiTangap.Location = new System.Drawing.Point(290, 136);
+            this.plc_dc3_lbl_nhietdo_khiTangap.Name = "plc_dc3_lbl_nhietdo_khiTangap";
+            this.plc_dc3_lbl_nhietdo_khiTangap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khiTangap.TabIndex = 21;
+            this.plc_dc3_lbl_nhietdo_khiTangap.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khiTangap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_khinap
+            // 
+            this.plc_dc3_lbl_nhietdo_khinap.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_khinap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_khinap.Location = new System.Drawing.Point(290, 206);
+            this.plc_dc3_lbl_nhietdo_khinap.Name = "plc_dc3_lbl_nhietdo_khinap";
+            this.plc_dc3_lbl_nhietdo_khinap.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_khinap.TabIndex = 22;
+            this.plc_dc3_lbl_nhietdo_khinap.Text = "0";
+            this.plc_dc3_lbl_nhietdo_khinap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_ncLammat
+            // 
+            this.plc_dc3_lbl_nhietdo_ncLammat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_ncLammat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_ncLammat.Location = new System.Drawing.Point(290, 101);
+            this.plc_dc3_lbl_nhietdo_ncLammat.Name = "plc_dc3_lbl_nhietdo_ncLammat";
+            this.plc_dc3_lbl_nhietdo_ncLammat.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_ncLammat.TabIndex = 23;
+            this.plc_dc3_lbl_nhietdo_ncLammat.Text = "0";
+            this.plc_dc3_lbl_nhietdo_ncLammat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_dauboitron
+            // 
+            this.plc_dc3_lbl_nhietdo_dauboitron.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_dauboitron.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_dauboitron.Location = new System.Drawing.Point(290, 31);
+            this.plc_dc3_lbl_nhietdo_dauboitron.Name = "plc_dc3_lbl_nhietdo_dauboitron";
+            this.plc_dc3_lbl_nhietdo_dauboitron.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_dauboitron.TabIndex = 24;
+            this.plc_dc3_lbl_nhietdo_dauboitron.Text = "0";
+            this.plc_dc3_lbl_nhietdo_dauboitron.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_nlRail
+            // 
+            this.plc_dc3_lbl_nhietdo_nlRail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_nlRail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_nlRail.Location = new System.Drawing.Point(290, 66);
+            this.plc_dc3_lbl_nhietdo_nlRail.Name = "plc_dc3_lbl_nhietdo_nlRail";
+            this.plc_dc3_lbl_nhietdo_nlRail.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_nlRail.TabIndex = 25;
+            this.plc_dc3_lbl_nhietdo_nlRail.Text = "0";
+            this.plc_dc3_lbl_nhietdo_nlRail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lbl_nhietdo_dauHopso
+            // 
+            this.plc_dc3_lbl_nhietdo_dauHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lbl_nhietdo_dauHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lbl_nhietdo_dauHopso.Location = new System.Drawing.Point(290, 402);
+            this.plc_dc3_lbl_nhietdo_dauHopso.Name = "plc_dc3_lbl_nhietdo_dauHopso";
+            this.plc_dc3_lbl_nhietdo_dauHopso.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lbl_nhietdo_dauHopso.TabIndex = 26;
+            this.plc_dc3_lbl_nhietdo_dauHopso.Text = "0";
+            this.plc_dc3_lbl_nhietdo_dauHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc3_lb_apluc_daudkHopso
+            // 
+            this.plc_dc3_lb_apluc_daudkHopso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc3_lb_apluc_daudkHopso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc3_lb_apluc_daudkHopso.Location = new System.Drawing.Point(290, 367);
+            this.plc_dc3_lb_apluc_daudkHopso.Name = "plc_dc3_lb_apluc_daudkHopso";
+            this.plc_dc3_lb_apluc_daudkHopso.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc3_lb_apluc_daudkHopso.TabIndex = 27;
+            this.plc_dc3_lb_apluc_daudkHopso.Text = "0";
+            this.plc_dc3_lb_apluc_daudkHopso.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // plc_dc1_lbl_chedo
+            // 
+            this.plc_dc1_lbl_chedo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.plc_dc1_lbl_chedo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plc_dc1_lbl_chedo.Location = new System.Drawing.Point(290, 485);
+            this.plc_dc1_lbl_chedo.Name = "plc_dc1_lbl_chedo";
+            this.plc_dc1_lbl_chedo.Size = new System.Drawing.Size(115, 23);
+            this.plc_dc1_lbl_chedo.TabIndex = 28;
+            this.plc_dc1_lbl_chedo.Text = "Tải chờ";
+            this.plc_dc1_lbl_chedo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // gsDongCo3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1228,11 +1268,11 @@ namespace WindowsFormsApp1.Views.Monitoring
             this.Size = new System.Drawing.Size(1093, 586);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1244,44 +1284,20 @@ namespace WindowsFormsApp1.Views.Monitoring
         private EnhancedGlassButton.GlassButton plc_dc3_btn_khoi_dong;
         private EnhancedGlassButton.GlassButton plc_dc3_btn_dung;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label59;
@@ -1314,11 +1330,11 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label plc_dc3_lbl_tocdo_chanvit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label plc_dc3_lbl_vitri_chanvit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label14;
@@ -1330,5 +1346,33 @@ namespace WindowsFormsApp1.Views.Monitoring
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel plc_dc3_pnl_lamp_right;
+        private System.Windows.Forms.Panel plc_dc3_pnl_lamp_lihop;
+        private System.Windows.Forms.Panel plc_dc3_pnl_lamp_left;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label plc_dc3_lbl_luong_nhien_lieu;
+        private System.Windows.Forms.Label plc_dc3_lbl_spd_tangap2;
+        private System.Windows.Forms.Label plc_dc3_lbl_spd_tangap1;
+        private System.Windows.Forms.Label plc_dc3_lbl_spd_dongco;
+        private System.Windows.Forms.Label plc_dc3_lbl_apluc_nl_sauphin;
+        private System.Windows.Forms.Label plc_dc3_lbl_apluc_nhienlieuRail;
+        private System.Windows.Forms.Label plc_dc3_lbl_apluc_khinap;
+        private System.Windows.Forms.Label plc_dc3_lbl_apluc_homtruc;
+        private System.Windows.Forms.Label plc_dc3_lbl_apluc_boitron;
+        private System.Windows.Forms.Label plc_dc1_lbl_nhietdo_ecu;
+        private System.Windows.Forms.Label plc_dc1_lbl_dienap_ecu;
+        private System.Windows.Forms.Label plc_dc3_lbl_thoigian_hoatdong;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_khixaB;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_khinapTruocVL;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_khixaA;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_khiTangap;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_khinap;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_ncLammat;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_dauboitron;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_nlRail;
+        private System.Windows.Forms.Label plc_dc3_lbl_nhietdo_dauHopso;
+        private System.Windows.Forms.Label plc_dc3_lb_apluc_daudkHopso;
+        private System.Windows.Forms.Label plc_dc1_lbl_chedo;
+        private System.Windows.Forms.Timer timer1;
     }
 }
