@@ -7,6 +7,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
+    public static class DONGCO
+    {
+        public const int DONG_CO_1 = 1;
+        public const int DONG_CO_2 = 2;
+        public const int DONG_CO_3 = 3;
+    }
     public static class PAGE
     {
         public const int HOME = 0;
@@ -16,9 +22,12 @@ namespace WindowsFormsApp1
         public const int DONG_CO_3 = 4;
         public const int DIAGRAM = 5;
         public const int TONGQUAT = 6;
+        public const int ALARM = 7;
     }
     public class StaticConfig
     {
+        public static string[] PosLiHop = new string[] { "Trung gian", "Tiến", "Lùi" };
+        public static string[] CheDoDieuKhien = new string[] { "Tại chỗ", "Từ xa" };
         public static void moveSidePanel(Control btn, Panel pnl_Content)
         {
             pnl_Content.Top = btn.Top;

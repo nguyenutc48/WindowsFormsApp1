@@ -88,7 +88,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\AlarmModel.cs" />
     <Compile Include="Models\AmThanhModel.cs" />
+    <Compile Include="Models\ControlAddressModel.cs" />
     <Compile Include="Models\DongCoConfigModel.cs" />
     <Compile Include="Models\PageControlModel.cs" />
     <Compile Include="Models\PLCDataModel.cs" />
@@ -101,6 +103,12 @@
     </Compile>
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsAlarm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Monitoring\gsAlarm.Designer.cs">
+      <DependentUpon>gsAlarm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Monitoring\gsDiagram.cs">
       <SubType>UserControl</SubType>
@@ -184,6 +192,9 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Monitoring\gsAlarm.resx">
+      <DependentUpon>gsAlarm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Monitoring\gsDiagram.resx">
       <DependentUpon>gsDiagram.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +228,9 @@
     <EmbeddedResource Include="Views\VirtuaData\vMain.resx">
       <DependentUpon>vMain.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ControlAddressDC1.xlsx" />
+    <None Include="ControlAddressDC2.xlsx" />
+    <None Include="ControlAddressDC3.xlsx" />
     <None Include="Files\configamthanh.xlsx" />
     <None Include="Files\data_dongco_1.xlsx" />
     <None Include="Files\data_dongco_2.xlsx" />

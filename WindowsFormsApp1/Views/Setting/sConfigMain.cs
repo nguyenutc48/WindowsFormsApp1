@@ -195,7 +195,7 @@ namespace WindowsFormsApp1.Views.Setting
 
                                 Form1.DongCoAdress.AddRange(TempList);
                             });
-                            btnLuuDC1.Enabled = true;
+                            //btnLuuDC1.Enabled = true;
                             MessageBox.Show("Lưu file cài đặt thông số cho động cơ 1 thành công");
 
                         }
@@ -266,7 +266,7 @@ namespace WindowsFormsApp1.Views.Setting
                                 }
                                 Form1.DongCoAdress.AddRange(TempList);
                             });
-                            btnLuuDC2.Enabled = true;
+                            //btnLuuDC2.Enabled = true;
                             MessageBox.Show("Lưu file cài đặt thông số cho động cơ 2 thành công");
                         }
                     }
@@ -337,7 +337,7 @@ namespace WindowsFormsApp1.Views.Setting
                                 }
                                 Form1.DongCoAdress.AddRange(TempList);
                             });
-                            btnLuuDC3.Enabled = true;
+                            //btnLuuDC3.Enabled = true;
                             MessageBox.Show("Lưu file cài đặt thông số cho động cơ 3 thành công");
 
                         }
