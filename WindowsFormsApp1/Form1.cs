@@ -14,17 +14,24 @@ using WindowsFormsApp1.Views;
 using WindowsFormsApp1.Views.Monitoring;
 using WindowsFormsApp1.Views.Setting;
 using WindowsFormsApp1.Views.VirtuaData;
+using WMPLib;
 
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
+        enum Control
+        {
+            Play,
+            Stop,
+            Pause
+        }
         bool scanRunning = false;
 
-        WMPLib.WindowsMediaPlayer wplayer1 = new WMPLib.WindowsMediaPlayer();
-        WMPLib.WindowsMediaPlayer wplayer2 = new WMPLib.WindowsMediaPlayer();
-        WMPLib.WindowsMediaPlayer wplayer3 = new WMPLib.WindowsMediaPlayer();
+        WindowsMediaPlayer wplayer1;// = new WMPLib.WindowsMediaPlayer();
+        WindowsMediaPlayer wplayer2;// = new WMPLib.WindowsMediaPlayer();
+        WindowsMediaPlayer wplayer3;// = new WMPLib.WindowsMediaPlayer();
         int soundIndex1_Old = 0;
         int soundIndex2_Old = 0;
         int soundIndex3_Old = 0;
@@ -120,8 +127,26 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void SoundControl(WindowsMediaPlayer player, string url,Control ctr)
+        {
+            if (ctr == Control.Play)
+            {
+                player.settings.setMode("loop", true);
+                player.URL = url;
+                player.controls.play();
+            }
+            else if (ctr == Control.Stop)
+                player.controls.stop();
+            else
+                player.controls.pause();
+        }
+
         private async void Form1_Load(object sender, EventArgs e)
         {
+            wplayer1 = new WindowsMediaPlayer();
+            wplayer2 = new WindowsMediaPlayer();
+            wplayer3 = new WindowsMediaPlayer();
+
             StaticConfig.LoadView(mMainContent.Instance,pnl_mainContent);
             StaticConfig.LoadView(sConfigMain.Instance, pnl_mainContent);
             StaticConfig.LoadView(vMain.Instance, pnl_mainContent);
@@ -254,13 +279,9 @@ namespace WindowsFormsApp1
                             soundIndex1_Old = soundIndex1;
                             var soundSelected = AmThanhConfigs.Where(a => a.Index == soundIndex1).FirstOrDefault();
                             if (soundSelected != null)
-                            {
-                                //wplayer1.controls.pause();
-                                //Thread.Sleep(1000);
-                                wplayer1.settings.setMode("loop", true);
-                                wplayer1.URL = soundSelected.TenFile;
-                                wplayer1.controls.play();
-                            }
+                                SoundControl(wplayer1, soundSelected.TenFile, Control.Play);
+                            else
+                                SoundControl(wplayer1, "", Control.Stop);
 
                         }
                         if (soundIndex2 != soundIndex2_Old)
@@ -269,13 +290,9 @@ namespace WindowsFormsApp1
                             soundIndex2_Old = soundIndex2;
                             var soundSelected = AmThanhConfigs.Where(a => a.Index == soundIndex2).FirstOrDefault();
                             if (soundSelected != null)
-                            {
-                                //wplayer2.controls.pause();
-                                //Thread.Sleep(1000);
-                                wplayer2.settings.setMode("loop", true);
-                                wplayer2.URL = soundSelected.TenFile;
-                                wplayer2.controls.play();
-                            }
+                                SoundControl(wplayer2, soundSelected.TenFile, Control.Play);
+                            else
+                                SoundControl(wplayer2, "", Control.Stop);
 
                         }
                         if (soundIndex3 != soundIndex3_Old)
@@ -284,13 +301,9 @@ namespace WindowsFormsApp1
                             soundIndex3_Old = soundIndex3;
                             var soundSelected = AmThanhConfigs.Where(a => a.Index == soundIndex3).FirstOrDefault();
                             if (soundSelected != null)
-                            {
-                                //wplayer3.controls.pause();
-                                //Thread.Sleep(1000);
-                                wplayer3.settings.setMode("loop", true);
-                                wplayer3.URL = soundSelected.TenFile;
-                                wplayer3.controls.play();
-                            }
+                                SoundControl(wplayer3, soundSelected.TenFile, Control.Play);
+                            else
+                                SoundControl(wplayer3, "", Control.Stop);
 
                         }
                     }
